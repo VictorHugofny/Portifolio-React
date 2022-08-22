@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Case Fullstack - Elogroup",
+        "description": "Desafio para vaga de estagio (ELOGROUP)",
+        "repositorio": "https://github.com/VictorHugofny/EloGroup_Case_Estagio_FullStack",
+        "homepage": "https://elo-group-case-estagio-full-stack.vercel.app/",
+        "language": ["https://cdn.iconscout.com/icon/free/png-256/vue-282497.png", "https://logospng.org/download/javascript/logo-javascript-1024.png"],
+        "background": "https://raw.githubusercontent.com/VictorHugofny/EloGroup_Case_Estagio_FullStack/main/src/assets/previa.gif"
+    },
+    {
+        "name": "Rpg de arena - Vue.js",
+        "description": "Jogo de rpg criado usando Vue.js",
+        "repositorio": "https://github.com/VictorHugofny/Rpg-de-Arena-Vue.js",
+        "homepage": "https://rpg-de-arena-vue-js.vercel.app/",
+        "language": ["https://cdn.iconscout.com/icon/free/png-256/vue-282497.png", "https://logospng.org/download/javascript/logo-javascript-1024.png"],
+        "background": "https://jovemnerd.com.br/wp-content/uploads/2021/03/NC_767-classes-rpg-WALLPAPER.jpg"
+    },
+    {
+        "name": "Projeto Filmes React",
+        "description": "Desafio para vaga de estagio (ELOGROUP)",
+        "repositorio": "https://github.com/VictorHugofny/Projeto-Filmes-React",
+        "homepage": "https://projeto-filmes-react.vercel.app/",
+        "language": ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png", "https://logospng.org/download/javascript/logo-javascript-1024.png"],
+        "background": "https://vejasp.abril.com.br/wp-content/uploads/2020/07/netflix-library.jpg"
+    },
+    {
+        "name": "Clones HTML/CSS/JS",
+        "description": "Clones de sites usando HTML/CSS/JS - Netflix, Disney+, Spotify, Tinder",
+        "repositorio": "https://github.com/VictorHugofny/Clones-HTML-CSS-JAVASCRIPT",
+        "homepage": "https://victorhugofny.github.io/Clones-HTML-CSS-JAVASCRIPT/",
+        "language": ["https://cdn-icons-png.flaticon.com/512/732/732190.png", "https://logospng.org/download/javascript/logo-javascript-1024.png"],
+        "background": "https://raw.githubusercontent.com/VictorHugofny/Clones-HTML-CSS-JAVASCRIPT/main/img/previa.gif"
+    },
+    {
+        "name": "Portifolio em Vue.js",
+        "description": "Meu portifolio criado usando Vue.js",
+        "repositorio": "https://github.com/VictorHugofny/Portifolio-Vue.js",
+        "homepage": "https://victorhugofny.vercel.app/",
+        "language": ["https://cdn.iconscout.com/icon/free/png-256/vue-282497.png", "https://logospng.org/download/javascript/logo-javascript-1024.png"],
+        "background": "https://raw.githubusercontent.com/VictorHugofny/Portifolio-Vue.js/main/src/assets/previa.gif"
+    },
+    {
+        "name": "Estudos Programacao WEB",
+        "description": "Meus estudos de programação Web",
+        "repositorio": "https://github.com/VictorHugofny/Estudos-Programacao",
+        "homepage": "https://github.com/VictorHugofny/Estudos-Programacao",
+        "language": ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png", "https://logospng.org/download/javascript/logo-javascript-1024.png"],
+        "background": "https://1.bp.blogspot.com/-3yCuuI4FJNI/XuFNwXNs_qI/AAAAAAAAnH4/kgpm3TqBEUACwq1N9FP2mTCfTh3VycR3wCLcBGAsYHQ/s1600/dicasdeestudo.jpg"
+    }
+]

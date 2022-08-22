@@ -1,0 +1,77 @@
+.inicio{
+    max-width: 900px;
+    margin:0 auto;
+}
+
+.inicio h1, p{
+    color: white;
+
+}
+.inicio h1{
+    color: #E4EDED;
+}
+.inicio .foto{
+    margin-top: 20px;
+    border: none;
+    border-radius: 100%;
+    width: 200px;
+    height: 100;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    border: rgb(0, 157, 255) 3px solid;
+    box-shadow: 4px 4px 51px 4px rgba(0, 157, 255, 0.435);
+}
+.inicio p{
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+.inicio button{
+    margin-top: 20px;
+}
+
+.inicio .nome-foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio .nome-foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.trabalho img{
+    margin-right: 20px;
+    width: 60px;
+    
+}
+
+.trabalho strong{
+    color: white;
+}
+
+.trabalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.itens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.trabalho p{
+    margin: 0;
+    font-size: 14px;
+}
+
+.itens img{
+    background: white;
+}
+
