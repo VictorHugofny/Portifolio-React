@@ -14,6 +14,7 @@ h1, a, span{
     flex-direction: row;
     margin: 0 auto;
     justify-content: center;
+    margin-top: 26px;
 
 }
 .card{
@@ -22,7 +23,7 @@ h1, a, span{
     border: 3px solid rgba(0, 0, 0, 0.956);
     margin: 10px;
     border-radius: 20px;
-    box-shadow: 10px 10px 36px -7px rgba(107,149,255,1);
+    box-shadow: 6px 6px 16px -6px rgb(124, 170, 255);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -38,7 +39,7 @@ h1, a, span{
     border-radius: 10px;
     background-color: rgb(12, 116, 234);
     color: rgb(255, 255, 255);
-    box-shadow: 10px 10px 31px 12px rgba(0, 0, 0, 0.435);
+    box-shadow: 6px 6px 41px 6px rgba(0, 0, 0, 0.435);
     
 }
 
@@ -78,3 +79,7 @@ h1, a, span{
     color: rgb(255, 240, 240);
 }
 
+.card:hover{
+    border: 3px solid black;
+    box-shadow: 10px 10px 36px -7px rgb(255, 255, 255);
+}
