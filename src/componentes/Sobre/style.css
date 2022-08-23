@@ -18,7 +18,6 @@
     border-radius: 100%;
     width: 200px;
     height: 100;
-    margin-bottom: 40px;
     border: rgb(0, 157, 255) 3px solid;
     box-shadow: 4px 4px 51px 4px rgba(0, 157, 255, 0.435);
 }
@@ -68,7 +67,7 @@
 }
 
 .trabalho p{
-    margin: 0;
+    margin:0 auto;
     font-size: 14px;
 }
 

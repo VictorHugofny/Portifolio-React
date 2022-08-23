@@ -23,6 +23,7 @@ function Sobre(){
                     </div>
                     
                 </div>
+                <p id='texto'>Sou <strong> Victor Hugo</strong>, estudante de Ciencia da computação no IFBaiano, Sou <strong> desenvolvedor </strong> e uso tecnologias como <strong>Javascript, React, Vue.js, Node, HTML e CSS </strong>e essa pagina foi construida por mim como <strong> portifolio </strong> usando o framework <strong> React.js</strong>, Atualmente estou estagiando como programador <strong>Fullstack na Elogroup</strong></p> 
             <div className='topo'>
             <div className='trabalho'>
                 <div className='itens'>
@@ -44,30 +45,27 @@ function Sobre(){
                 
             </div>
                 <div className='iconesL'>
-                    <img src='https://img.icons8.com/color/344/javascript--v1.png' width='50px'></img>
-                    <img src='https://img.icons8.com/color/344/vue-js.png' width='50px'></img>
-                    <img src='https://img.icons8.com/officel/344/react.png' width='50px'></img>
-                    <img src='https://img.icons8.com/fluency/452/node-js.png' width='50px'></img>
+                    <img src='https://img.icons8.com/color/344/javascript--v1.png' width='45px'></img>
+                    <img src='https://img.icons8.com/color/344/vue-js.png' width='45px'></img>
+                    <img src='https://img.icons8.com/officel/344/react.png' width='45px'></img>
+                    <img src='https://img.icons8.com/fluency/452/node-js.png' width='45px'></img>
                 </div>
             </div>
             <div>
             
-                <p id='texto'>Sou <strong> Victor Hugo</strong>, estudante de Ciencia da computação no IFBaiano, Sou <strong> desenvolvedor </strong> e uso tecnologias como <strong>Javascript, React, Vue.js, Node, HTML e CSS </strong>e essa pagina foi construida por mim como <strong> portifolio </strong> usando o framework <strong> React.js</strong>, Atualmente estou estagiando como programador <strong>Fullstack na Elogroup</strong></p> 
+                
             </div>
             <div>
-            
-                
-                
 
-                <h1 id='texto'>Experiencias</h1>
+                <h1 id='texto'>Experiencias 💎</h1>
                 <div id='texto' className='experiencias'>
-                    <p>- Desenvolvimento de paginas Web</p>
-                    <p>- Ministrei oficinas sobre Javascript</p>
-                    <p>- Javascript para automação de processos.</p>
-                    <p>- Utilização das práticas Scrum, metodologia ágil</p>
-                    <p>- Desenvolvimento do portal de serviços da SEFA e SEMAS do Pará.</p>
-                    <p>- Desenvolvimento da documentação e manuais internos.</p>
-                    <p>- Utilização da ferramenta Sydle para automação de processos.</p>
+                    <p>🔹 Desenvolvimento de paginas Web.</p>
+                    <p>🔹 Ministrei oficinas sobre Javascript.</p>
+                    <p>🔹 Javascript para automação de processos.</p>
+                    <p>🔹 Utilização do Scrum, metodologia ágil</p>
+                    <p>🔹 Desenvolvimento do portal da SEFA e SEMAS do Pará.</p>
+                    <p>🔹 Desenvolvimento da documentação e manuais internos.</p>
+                    <p>🔹 Utilização da ferramenta Sydle para automação de processos.</p>
                 </div>
             </div>
             </div>
