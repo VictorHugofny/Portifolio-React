@@ -16,8 +16,8 @@ function Sobre(){
                         <p class="line anim-typewriter">I am Developer! ❤️</p>
                    
                         <div className='button'>
-                            <button className='buttons' id="primeiroButton"> <img src='https://cdn-icons-png.flaticon.com/512/733/733609.png' width='20px'></img> GITHUB</button>
-                            <button className='buttons'><img src='https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1661221424~hmac=cc3fdb37a425f72a4e467648f40cb3fb' width='20px'></img> LINKEDIN</button>
+                            <button className='buttonsPerfil' id="primeiroButton"> <img src='https://cdn.icon-icons.com/icons2/2429/PNG/512/github_logo_icon_147285.png' width='20px'></img> GITHUB</button>
+                            <button className='buttonsPerfil'><img src='https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1661221424~hmac=cc3fdb37a425f72a4e467648f40cb3fb' width='20px'></img> LINKEDIN</button>
                         </div>
                         
                     </div>
@@ -41,9 +41,28 @@ function Sobre(){
                     
                 </div>
             </div>
-                
-            <h1>Sobre mim</h1>
-            <p>Sou <strong> Victor Hugo</strong>, estudante de Ciencia da computação no IFBaiano, Sou <strong> desenvolvedor </strong> e uso tecnologias como <strong>Javascript, React, Vue.js, Node, HTML e CSS </strong>e essa pagina foi construida por mim como <strong> portifolio </strong> usando o framework <strong> React.js</strong>, Atualmente estou estagiando como programador <strong>Fullstack na Elogroup</strong></p> 
+            <div>
+                <p id='texto'>Sou <strong> Victor Hugo</strong>, estudante de Ciencia da computação no IFBaiano, Sou <strong> desenvolvedor </strong> e uso tecnologias como <strong>Javascript, React, Vue.js, Node, HTML e CSS </strong>e essa pagina foi construida por mim como <strong> portifolio </strong> usando o framework <strong> React.js</strong>, Atualmente estou estagiando como programador <strong>Fullstack na Elogroup</strong></p> 
+            </div>
+            <div>
+                <h1 id='texto'>Habilidades</h1>
+            
+                <div className='iconesL'>
+                    <img src='https://img.icons8.com/color/344/javascript--v1.png' width='60px'></img>
+                    <img src='https://img.icons8.com/color/344/vue-js.png' width='60px'></img>
+                    <img src='https://img.icons8.com/officel/344/react.png' width='60px'></img>
+                    <img src='https://img.icons8.com/fluency/452/node-js.png' width='60px'></img>
+                </div>
+                <p>Utilização das práticas Scrum, metodologia ágil</p>
+
+                <h1 id='texto'>Experiencias</h1>
+                <div id='texto' className='experiencias'>
+                    <p>- Javascript para automação de processos.</p>
+                    <p>- Desenvolvimento do portal de serviços da SEFA e SEMAS do Pará.</p>
+                    <p>- Desenvolvimento da documentação e manuais internos.</p>
+                    <p>- Utilização da ferramenta Sydle para automação de processos.</p>
+                </div>
+            </div>
             </div>
         </div>
     )
