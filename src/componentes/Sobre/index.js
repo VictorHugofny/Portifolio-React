@@ -53,11 +53,12 @@ function Sobre(){
                     <img src='https://img.icons8.com/officel/344/react.png' width='60px'></img>
                     <img src='https://img.icons8.com/fluency/452/node-js.png' width='60px'></img>
                 </div>
-                <p>Utilização das práticas Scrum, metodologia ágil</p>
+                
 
                 <h1 id='texto'>Experiencias</h1>
                 <div id='texto' className='experiencias'>
                     <p>- Javascript para automação de processos.</p>
+                    <p>- Utilização das práticas Scrum, metodologia ágil</p>
                     <p>- Desenvolvimento do portal de serviços da SEFA e SEMAS do Pará.</p>
                     <p>- Desenvolvimento da documentação e manuais internos.</p>
                     <p>- Utilização da ferramenta Sydle para automação de processos.</p>
