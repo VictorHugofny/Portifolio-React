@@ -110,13 +110,6 @@
     color: rgb(255, 255, 255);
 }
 
-.trabalho{
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    border-top: 2px solid #3a3a44;
-    border-bottom: 2px solid #3a3a44;
-}
-
 #texto{
     margin-top: 30px;
     margin-bottom: 30px;
@@ -133,4 +126,19 @@
 }
 .experiencias p{
     font-size: 20px;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-top: 2px solid #3a3a44;
+    border-bottom: 2px solid #3a3a44;
+    flex-wrap: wrap;
+}
+
+.topo .iconesL{
+    margin-top: 20px;
 }
