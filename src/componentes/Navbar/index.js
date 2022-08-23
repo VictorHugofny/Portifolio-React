@@ -1,6 +1,7 @@
 import './style.css'
 
 function Navbar(){
+    
     return(
         <nav class="navMenu">
             <a href="#">Sobre</a>
