@@ -1,5 +1,7 @@
 import sobre from './sobre.json'
 import './style.css'
+<script crossOrigin='anonymous' src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js" defer></script>
+
 
 function Sobre(){
 
@@ -11,10 +13,11 @@ function Sobre(){
                     <img className='foto' src={sobre.foto}></img>
                     <div>
                         <h1>{sobre.name}</h1>
-                        
-                        <div>
-                            <button>GITHUB</button>
-                            <button>LINKEDIN</button>
+                        <p class="line anim-typewriter">I am Developer! ❤️</p>
+                   
+                        <div className='button'>
+                            <button className='buttons' id="primeiroButton"> <img src='https://cdn-icons-png.flaticon.com/512/733/733609.png' width='20px'></img> GITHUB</button>
+                            <button className='buttons'><img src='https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1661221424~hmac=cc3fdb37a425f72a4e467648f40cb3fb' width='20px'></img> LINKEDIN</button>
                         </div>
                         
                     </div>
@@ -30,7 +33,7 @@ function Sobre(){
                     </div>
                 </div>
                 <div className='itens'>
-                    <img src='https://upload.wikimedia.org/wikipedia/commons/9/9c/Instituto_Federal_Baiano_-_Marca_Vertical_2015.svg'></img>
+                    <img src='https://images2.imgbox.com/52/bd/m1eeXjcG_o.png'></img>
                     <div>
                         <p> Instituto Federal Baiano</p>
                         <strong>Ciencia da computação</strong>

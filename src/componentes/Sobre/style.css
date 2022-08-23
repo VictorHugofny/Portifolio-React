@@ -1,6 +1,8 @@
 .inicio{
     max-width: 900px;
     margin:0 auto;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .inicio h1, p{
@@ -16,14 +18,13 @@
     border-radius: 100%;
     width: 200px;
     height: 100;
-    margin-right: 30px;
     margin-bottom: 40px;
     border: rgb(0, 157, 255) 3px solid;
     box-shadow: 4px 4px 51px 4px rgba(0, 157, 255, 0.435);
 }
 .inicio p{
     font-size: 24px;
-    margin-bottom: 60px;
+    margin-bottom: 6px;
 }
 .inicio button{
     margin-top: 20px;
@@ -72,6 +73,23 @@
 }
 
 .itens img{
-    background: white;
+    background: rgba(255, 255, 255, 0);
 }
 
+.button{
+    display: flex;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+}
+
+.buttons img{
+    margin-right: 6px;
+}
+
+#primeiroButton{
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+}
