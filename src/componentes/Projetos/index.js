@@ -32,7 +32,7 @@ function Projetos(){
                                 <img className='language' src={projeto.language[0]} width='24px'></img>
                             </div>
                             
-                                <div>
+                                <div className='rodapeProjeto'>
                                     <div>
                                     <strong>{projeto.description}</strong>
                                         
