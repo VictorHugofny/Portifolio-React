@@ -8,7 +8,7 @@ function Sobre(){
         <div className='inicio' id="inicio">
             <div>
                 <div className='nome-foto'>
-                    <img className='foto' src={sobre.foto}></img>
+                    <img className='foto' src={foto}></img>
                     <div>
                         <h1>{sobre.name}</h1>
                         <p class="line anim-typewriter">I am Developer! ❤️</p>
