@@ -6,6 +6,7 @@ function Academico(){
     return(
 
 <div className="trabalhos" id="academico">
+    <br></br><br></br>
     <h1>Trabalhos Acadêmicos</h1>
     <p>Abaixo meus trabalhos e estudos como artigos e minicursos</p>
 
