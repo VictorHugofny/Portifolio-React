@@ -7,7 +7,7 @@ function Sobre(){
 
 
     return(
-        <div className='inicio'>
+        <div className='inicio' id="inicio">
             <div>
                 <div className='nome-foto'>
                     <img className='foto' src={sobre.foto}></img>

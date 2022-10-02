@@ -11,8 +11,8 @@ body {
 }
 .navMenu{
     background-color: #292930;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     position: -webkit-sticky; /* Necessário para funcionar no Safari */
     position: sticky;
     top: 0;
@@ -21,7 +21,7 @@ body {
 .navMenu a {
   color: #f6f4e6;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 22px;
   text-transform: uppercase;
   font-weight: 500;
   display: inline-block;
@@ -34,3 +34,26 @@ body {
   color: #3abffd;
 }
 
+@media only screen and (max-width: 600px) {
+  .navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 16px;  
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 15px;  
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 12px;  
+  }
+}

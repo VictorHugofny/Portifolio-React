@@ -4,9 +4,9 @@ function Navbar(){
     
     return(
         <nav class="navMenu">
-            <a href="#">Sobre</a>
-            <a href="#">Projetos</a>
-            <a href="#">Academico</a>
+            <a href="#inicio">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#academico">Academico</a>
         </nav>
     )
 }
