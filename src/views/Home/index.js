@@ -3,6 +3,7 @@ import Projetos from '../../componentes/Projetos'
 import Academico from '../../componentes/Academico'
 import { useEffect, useState} from 'react';
 import Sobre from '../../componentes/Sobre'
+import Footer from '../../componentes/Footer'
 
 
 
@@ -24,6 +25,7 @@ function Home(){
             <Sobre/>
             <Projetos/>
             <Academico/>
+            <Footer/>
         </div>
 
         
