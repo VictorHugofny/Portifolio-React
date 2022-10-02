@@ -1,11 +1,9 @@
 import sobre from './sobre.json'
 import './style.css'
-<script crossOrigin='anonymous' src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js" defer></script>
+import foto from '../../assets/foto.jpg'
 
 
 function Sobre(){
-
-
     return(
         <div className='inicio' id="inicio">
             <div>
@@ -14,6 +12,8 @@ function Sobre(){
                     <div>
                         <h1>{sobre.name}</h1>
                         <p class="line anim-typewriter">I am Developer! ❤️</p>
+
+                        
                    
                         <div className='button'>
                             <button className='buttonsPerfil' id="primeiroButton"> <img src='https://cdn.icon-icons.com/icons2/2429/PNG/512/github_logo_icon_147285.png' width='20px'></img> GITHUB</button>
@@ -23,7 +23,7 @@ function Sobre(){
                     </div>
                     
                 </div>
-                <p id='texto'>Sou <strong> Victor Hugo</strong>, estudante de Ciencia da computação no IFBaiano, Sou <strong> desenvolvedor </strong> e uso tecnologias como <strong>Javascript, React, Vue.js, Node, HTML e CSS </strong>e essa pagina foi construida por mim como <strong> portifolio </strong> usando o framework <strong> React.js</strong>, Atualmente estou estagiando como programador <strong>Fullstack na Elogroup</strong></p> 
+                <p id='texto'>Sou <strong> Victor Hugo</strong>, estudante de Ciencia da computação no IFBaiano, Sou <strong> desenvolvedor </strong> e uso tecnologias como <strong>Javascript, React, Vue.js, Node, Bulma e Bootstrap </strong>e essa pagina foi construida por mim como <strong> portifolio </strong> usando o framework <strong> React.js</strong>, Atualmente estou estagiando como programador <strong>Fullstack na Elogroup</strong></p> 
             <div className='topo'>
             <div className='trabalho'>
                 <div className='itens'>
@@ -57,15 +57,21 @@ function Sobre(){
             </div>
             <div>
 
-                <h1 id='texto'>Experiencias 💎</h1>
+                <h1>Experiencias 💎</h1>
+                
                 <div id='texto' className='experiencias'>
-                    <p>🔹 Desenvolvimento de paginas Web.</p>
-                    <p>🔹 Ministrei oficinas sobre Javascript.</p>
-                    <p>🔹 Javascript para automação de processos.</p>
-                    <p>🔹 Utilização do Scrum, metodologia ágil</p>
-                    <p>🔹 Desenvolvimento do portal da SEFA e SEMAS do Pará.</p>
-                    <p>🔹 Desenvolvimento da documentação e manuais internos.</p>
+                
+                    <p>🔹 Desenvolvimento Web.</p>
+                    <p>🔹 Javascript</p>
+                    <p>⠀⠀⠀🔹 Automação de processos.</p>
+                    <p>⠀⠀⠀🔹 Desenvolvimento com React.js e Vue.js. </p>
+                    <p>⠀⠀⠀🔹 Ministrei oficinas sobre a linguagem.</p>
+                    <p>🔹 Utilização diaria do Scrum, metodologia ágil</p>
                     <p>🔹 Utilização da ferramenta Sydle para automação de processos.</p>
+                    <p>🔹 Desenvolvimento de portais digitais para orgãos publicos.</p>
+                    <p>🔹 Automações de processos com lowcode SydleOne.</p>
+                    <p>🔹 Criação da documentação e manuais internos das tecnologias usadas.</p>
+                    
                 </div>
             </div>
             </div>

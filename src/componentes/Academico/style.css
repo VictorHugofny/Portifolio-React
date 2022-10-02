@@ -2,14 +2,20 @@
     padding: 0;
     margin: 0;
 }
+
 h2{
     color: white;
+}
+h4{
+    color: rgb(146, 144, 144);
 }
 
 figure { 
     width: 80%; 
     min-width: 16.5em; 
     margin:0 auto;
+    max-width: 800px;
+
     }
 .boxVideo {
     position: relative;
@@ -18,6 +24,7 @@ figure {
     height: 0;
     margin:0 auto;
     margin-bottom: 20px;
+    
 }
 .boxVideo iframe {
     position: absolute;
@@ -25,4 +32,16 @@ figure {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+object{
+    max-width: 1000px;
+}
+
+#academico{
+    margin-top: 30px;
+}
+
+.trabalhos{
+    margin-top: 30px;
 }
