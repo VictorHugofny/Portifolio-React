@@ -1,5 +1,6 @@
 import api from '../../services/api';
 import Projetos from '../../componentes/Projetos'
+import Academico from '../../componentes/Academico'
 import { useEffect, useState} from 'react';
 import Sobre from '../../componentes/Sobre'
 
@@ -22,6 +23,7 @@ function Home(){
         <div>
             <Sobre/>
             <Projetos/>
+            <Academico/>
         </div>
 
         

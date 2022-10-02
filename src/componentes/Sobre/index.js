@@ -17,7 +17,7 @@ function Sobre(){
                    
                         <div className='button'>
                             <button className='buttonsPerfil' id="primeiroButton"> <img src='https://cdn.icon-icons.com/icons2/2429/PNG/512/github_logo_icon_147285.png' width='20px'></img> GITHUB</button>
-                            <button className='buttonsPerfil'><img src='https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1661221424~hmac=cc3fdb37a425f72a4e467648f40cb3fb' width='20px'></img> LINKEDIN</button>
+                            <button className='buttonsPerfil'><img src='https://cdn-icons-png.flaticon.com/512/3536/3536505.png' width='20px'></img> LINKEDIN</button>
                         </div>
                         
                     </div>
