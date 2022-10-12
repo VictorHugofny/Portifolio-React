@@ -40,7 +40,7 @@ function Projetos(){
                         
                             <div className='buttons'>
                                 <a target='blank' href={projeto.homepage}> <button>Pagina</button> </a>
-                                <a target='blank' href={projeto.svn_url}> <button>Repositorio</button> </a>
+                                <a target='blank' href={projeto.repositorio}> <button>Repositorio</button> </a>
                             </div>
                         </div>
                     </div>

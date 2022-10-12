@@ -1,6 +1,10 @@
 import sobre from './sobre.json'
 import './style.css'
 import foto from '../../assets/foto.jpg'
+import linkedin from '../../assets/linkedin.png'
+import github from '../../assets/github.png'
+
+
 
 
 function Sobre(){
@@ -14,8 +18,8 @@ function Sobre(){
                         <p class="line anim-typewriter">I am Developer! ❤️</p>
 
                         <div className='button'>
-                            <a target="_blank" href="https://github.com/VictorHugofny"><button className='buttonsPerfil' id="primeiroButton"> <img src='https://cdn.icon-icons.com/icons2/2429/PNG/512/github_logo_icon_147285.png' width='20px'></img> GITHUB</button></a>
-                            <a target="_blank" href="https://www.linkedin.com/in/victor-hugo-santana/"><button className='buttonsPerfil'><img src='https://cdn-icons-png.flaticon.com/512/3536/3536505.png' width='20px'></img> LINKEDIN</button></a>
+                            <a target="_blank" href="https://github.com/VictorHugofny"><button className='buttonsPerfil' id="primeiroButton"> <img src={github} width='20px'></img> GITHUB</button></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/victor-hugo-santana/"><button className='buttonsPerfil'><img src={linkedin} width='20px'></img> LINKEDIN</button></a>
                         </div>
                         
                     </div>
