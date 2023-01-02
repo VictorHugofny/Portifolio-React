@@ -1,11 +1,9 @@
-import sobre from './sobre.json'
-import './style.css'
-import foto from '../../assets/foto.jpg'
-import linkedin from '../../assets/linkedin.png'
-import github from '../../assets/github.png'
-
-
-
+import sobre from './sobre.json';
+import './style.css';
+import foto from '../../assets/foto.jpg';
+import linkedin from '../../assets/linkedin.png';
+import github from '../../assets/github.png';
+import elogroupLogo from '../../assets/elogroup.jpg';
 
 function Sobre(){
     return(
@@ -21,15 +19,13 @@ function Sobre(){
                             <a target="_blank" href="https://github.com/VictorHugofny"><button className='buttonsPerfil' id="primeiroButton"> <img src={github} width='20px'></img> GITHUB</button></a>
                             <a target="_blank" href="https://www.linkedin.com/in/victor-hugo-santana/"><button className='buttonsPerfil'><img src={linkedin} width='20px'></img> LINKEDIN</button></a>
                         </div>
-                        
                     </div>
-                    
                 </div>
                 <p id='texto'>Sou <strong> Victor Hugo</strong>, estudante de Ciencia da computação no IFBaiano, Sou <strong> desenvolvedor </strong> e uso tecnologias como <strong>Javascript, React, Vue.js, Node, Bulma e Bootstrap </strong>e essa pagina foi construida por mim como <strong> portifolio </strong> usando o framework <strong> React.js</strong>, Atualmente estou estagiando como programador na <strong> Elogroup</strong></p> 
             <div className='topo'>
             <div className='trabalho'>
                 <div className='itens'>
-                    <img src='https://media-exp1.licdn.com/dms/image/C4E0BAQHJ6MGWfi7L-Q/company-logo_100_100/0/1656940868172?e=1669248000&v=beta&t=7QguwsYQ4yHgkKcYvDxQ_ELzcCB2wVePdXaNEeFIncQ'></img><br></br>
+                    <img src={elogroupLogo}></img><br></br>
                     <div>
                         <p> Elogroup </p>
                         <strong> Intern | Developer </strong> 
