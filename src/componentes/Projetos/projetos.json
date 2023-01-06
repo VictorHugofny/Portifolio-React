@@ -8,6 +8,14 @@
         "background": "https://raw.githubusercontent.com/VictorHugofny/EloGroup_Case_Estagio_FullStack/main/src/assets/previa.gif"
     },
     {
+        "name": "Técnico Zootecnia IFBAIANO-SBF",
+        "description": "Aplicativo mobile que reúne informações sobre o curso de Zootecnia, como ementas e matérias.",
+        "repositorio": "https://github.com/VictorHugofny",
+        "homepage": "https://play.google.com/store/apps/details?id=com.OraiteGames.CursoZootecniaIFBAIANOSB",
+        "language": ["https://preview.redd.it/tu3gt6ysfxq71.png?auto=webp&s=10ab55d9dc09e7ed6ea59bd5916800a5272d5969", "https://cdn.cdnlogo.com/logos/c/27/c.svg"],
+        "background": "https://play-lh.googleusercontent.com/m0OnVSczrswcfFydE2OsD7ljgCxUPjM6EeXrvAoVA0uhvdWKZXynw8RGoMo_-Q-Q-wk=w416-h235-rw"
+    },
+    {
         "name": "Rpg de arena - Vue.js",
         "description": "Jogo de rpg criado usando Vue.js",
         "repositorio": "https://github.com/VictorHugofny/Rpg-de-Arena-Vue.js",
