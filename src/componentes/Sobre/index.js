@@ -4,14 +4,24 @@ import foto from '../../assets/foto.jpg';
 import linkedin from '../../assets/linkedin.png';
 import github from '../../assets/github.png';
 import elogroupLogo from '../../assets/elogroup.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect, useState} from 'react';
 
 function Sobre(){
+    useEffect(() => {
+        AOS.init();
+      }, [])
+
     return(
-        <div className='inicio' id="inicio">
+        <div className='inicio'  id="inicio">
             <div>
                 <div className='nome-foto'>
-                    <img className='foto' src={foto}></img>
-                    <div>
+                    <div  data-aos="fade-down" data-aos-duration = "900">
+                        <img className='foto'  src={foto}></img>
+                    </div>
+                    
+                    <div data-aos="fade-up" data-aos-duration = "900">
                         <h1>{sobre.name}</h1>
                         <p class="line anim-typewriter">I am Developer! ❤️</p>
 
@@ -21,8 +31,13 @@ function Sobre(){
                         </div>
                     </div>
                 </div>
+                <div data-aos="zoom-in" data-aos-duration = "900">
                 <p id='texto'>Sou <strong> Victor Hugo</strong>, estudante de Ciencia da computação no IFBaiano, Sou <strong> desenvolvedor </strong> e uso tecnologias como <strong>Javascript, Typescript, React, Vue.js, Node, Tailwind e Bootstrap </strong>e essa pagina foi construida por mim como <strong> portifolio </strong> usando o framework <strong> React.js</strong>, Atualmente estou estagiando como desenvolvedor na <strong> Elogroup</strong></p> 
-            <div className='topo'>
+                </div>
+                
+            <div className='topo' data-aos="fade-right"
+     
+     data-aos-easing="ease-in-sine" data-aos-duration = "1200">
             <div className='trabalho'>
                 <div className='itens'>
                     <img src={elogroupLogo}></img><br></br>
@@ -53,7 +68,7 @@ function Sobre(){
             
                 
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-duration = "800">
 
                 <h1>Experiencias 💎</h1>
                 

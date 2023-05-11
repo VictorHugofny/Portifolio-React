@@ -1,16 +1,18 @@
 import projetos from './projetos.json'
 import { useEffect, useState} from 'react';
 import './style.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Projetos(){
 
-    useEffect(()=>{
-       
-    },[])
+    useEffect(() => {
+        AOS.init();
+      }, [])
 
 
     return(
-    <div className='projetos-info' id="projetos">
+    <div className='projetos-info' id="projetos" data-aos="fade-up-right">
         <br></br><br></br> 
         <h1 id='sobremim'>Projetos 🔧</h1>
         <div className='container'>

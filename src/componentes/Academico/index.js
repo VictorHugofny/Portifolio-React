@@ -1,7 +1,12 @@
-
 import './style.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect, useState} from 'react';
 
 function Academico(){
+    useEffect(() => {
+        AOS.init();
+      }, [])
     
     return(
 
@@ -10,7 +15,7 @@ function Academico(){
     <h1>Trabalhos Acadêmicos</h1>
     <p>Abaixo meus trabalhos e estudos como artigos e minicursos</p>
 
-    <div className="trabalhos"> 
+    <div className="trabalhos" data-aos="fade-up" data-aos-duration = "1200"> 
 
         <h2>ARTIGO: "SEGURANÇA DA INFORMAÇÃO NO CONTEXTO ESCOLAR"</h2> 
         <p>Escrito por Victor Hugo de Carvalho Santana, Douglas Silva Santos, Luis Henrique de Almeida Gomes</p> 
@@ -21,7 +26,7 @@ function Academico(){
         <br></br> <br></br>
         <a target="_blank" href="https://editorarealize.com.br/artigo/visualizar/80791"><button> <p className="btntext"> Publicação </p></button></a>
     </div>
-    <div className="trabalhos"> 
+    <div className="trabalhos" data-aos="fade-up" data-aos-duration = "1200"> 
         <h2>MINICURSO - INTRODUÇÃO A ALGORITMO EM JAVASCRIPT</h2> 
         <p>Ministrado por Victor Hugo, Douglas Silva, Marcos Santos</p> 
         <a> Publicado em 26 de março de 2021</a>
