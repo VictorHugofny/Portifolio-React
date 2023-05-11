@@ -12,7 +12,7 @@ function Projetos(){
 
 
     return(
-    <div className='projetos-info' id="projetos" data-aos="fade-up-right">
+    <div className='projetos-info' id="projetos" data-aos="fade-up" data-aos-duration = "900">
         <br></br><br></br> 
         <h1 id='sobremim'>Projetos 🔧</h1>
         <div className='container'>
