@@ -70,7 +70,7 @@ function Sobre(){
             </div>
             <div data-aos="fade-up" data-aos-duration = "800">
 
-                <h1>Experiencias 💎</h1>
+                <h1>Experiência 💎</h1>
                 
                 <div id='texto' className='experiencias'>
                 
