@@ -23,7 +23,7 @@ function Sobre(){
                     
                     <div data-aos="fade-up" data-aos-duration = "900">
                         <h1>{sobre.name}</h1>
-                        <p class="line anim-typewriter">I am Developer! ❤️</p>
+                        <p class="line anim-typewriter">I am Developer! 💙</p>
 
                         <div className='button'>
                             <a target="_blank" href="https://github.com/VictorHugofny"><button className='buttonsPerfil' id="primeiroButton"> <img src={github} width='20px'></img> GITHUB</button></a>
