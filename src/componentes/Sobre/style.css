@@ -18,8 +18,8 @@
     border-radius: 100%;
     width: 200px;
     height: 100;
-    border: rgb(0, 157, 255) 3px solid;
-    box-shadow: 4px 4px 51px 4px rgba(0, 157, 255, 0.435);
+    border: rgb(29, 150, 255) 3px solid;
+    box-shadow: 4px 4px 51px 4px rgba(39, 183, 255, 0.435);
 }
 .inicio p{
     font-size: 21px;

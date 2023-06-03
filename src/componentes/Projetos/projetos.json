@@ -7,14 +7,7 @@
         "language": ["https://cdn.iconscout.com/icon/free/png-256/vue-282497.png", "https://logospng.org/download/javascript/logo-javascript-1024.png"],
         "background": "https://raw.githubusercontent.com/VictorHugofny/EloGroup_Case_Estagio_FullStack/main/src/assets/previa.gif"
     },
-    {
-        "name": "Técnico Zootecnia IFBAIANO-SBF",
-        "description": "Aplicativo mobile que reúne informações sobre o curso de Zootecnia, como ementas e matérias.",
-        "repositorio": "https://github.com/VictorHugofny",
-        "homepage": "https://play.google.com/store/apps/details?id=com.OraiteGames.CursoZootecniaIFBAIANOSB",
-        "language": ["https://preview.redd.it/tu3gt6ysfxq71.png?auto=webp&s=10ab55d9dc09e7ed6ea59bd5916800a5272d5969", "https://cdn.cdnlogo.com/logos/c/27/c.svg"],
-        "background": "https://play-lh.googleusercontent.com/m0OnVSczrswcfFydE2OsD7ljgCxUPjM6EeXrvAoVA0uhvdWKZXynw8RGoMo_-Q-Q-wk=w416-h235-rw"
-    },
+    
     {
         "name": "Rpg de arena - Vue.js",
         "description": "Jogo de rpg criado usando Vue.js",
@@ -30,6 +23,14 @@
         "homepage": "https://projeto-filmes-react.vercel.app/",
         "language": ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png", "https://logospng.org/download/javascript/logo-javascript-1024.png"],
         "background": "https://vejasp.abril.com.br/wp-content/uploads/2020/07/netflix-library.jpg"
+    },
+    {
+        "name": "Técnico Zootecnia IFBAIANO-SBF",
+        "description": "Aplicativo mobile que reúne informações sobre o curso de Zootecnia, como ementas e matérias.",
+        "repositorio": "https://github.com/VictorHugofny",
+        "homepage": "https://play.google.com/store/apps/details?id=com.OraiteGames.CursoZootecniaIFBAIANOSB",
+        "language": ["https://preview.redd.it/tu3gt6ysfxq71.png?auto=webp&s=10ab55d9dc09e7ed6ea59bd5916800a5272d5969", "https://cdn.cdnlogo.com/logos/c/27/c.svg"],
+        "background": "https://play-lh.googleusercontent.com/m0OnVSczrswcfFydE2OsD7ljgCxUPjM6EeXrvAoVA0uhvdWKZXynw8RGoMo_-Q-Q-wk=w416-h235-rw"
     },
     {
         "name": "Clones HTML/CSS/JS",
