@@ -1,6 +1,6 @@
 import sobre from './sobre.json';
 import './style.css';
-import foto from '../../assets/foto.jpg';
+import foto from '../../assets/foto.jpeg';
 import linkedin from '../../assets/linkedin.png';
 import github from '../../assets/github.png';
 import elogroupLogo from '../../assets/elogroup.jpg';
