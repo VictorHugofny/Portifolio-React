@@ -43,7 +43,7 @@ function Sobre(){
                     <img src={elogroupLogo}></img><br></br>
                     <div>
                         <p> Elogroup </p>
-                        <strong> Intern | Developer </strong> 
+                        <strong> Developer 2 </strong> 
                     </div>
                 </div>
                 <div className='itens'>
