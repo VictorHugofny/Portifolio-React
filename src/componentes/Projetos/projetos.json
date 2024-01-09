@@ -1,5 +1,12 @@
 [
     {
+        "name": "Portal dos Atos Autorizativos (SEMAS-PA)",
+        "description": "Desenvolvedor responsável pelos módulos de Portal, Processos e Serviços.",
+        "homepage": "https://portal-dos-atos-autorizativos.semas.pa.gov.br/semas-pa/home",
+        "language": ["data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAZlBMVEUAAAD///8dHR2lpaXl5eW5ubnp6enGxsb6+vry8vLS0tK3t7c9PT12dnZnZ2eXl5cPDw/a2trNzc0UFBRiYmLAwMAyMjKJiYmPj4+enp5RUVGtra0sLCwiIiJCQkItLS1NTU1zc3Olivw1AAACEklEQVR4nO3d626CQBCGYagInvF8rFbv/yZrE3fB+sNYZzLTzftcwfcFgd1hm2YfqcsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACeW2+Gg0JKtbSu82Bb5rJ21o3ubXrC/a721qVapjP5fnk+tK7VGClcwKu5da9opNIvzw/WxSKdK5jna+tiwUCp4Ni6WDBupyqqrpDOp3WxqN/0c/YGE9JcwuJonUVHvAtL6yRKpvES+rlvZE1CQUcLEFl1aHiyTqJleCvYsw6ipro1nFkHUZN+w/R/pfFJM7JOoiW+LfxsdYQ1b/wv6yha4vwi1VVbe+W9sM6ipL17SrPjrx3wOw5bTwPEhuwkce5v1i0+iSr9dRSfJq6sGz0QnwiX7v4xxUJ6qt93VzHbCFf0uH6oZb+u+bsXs58vpN3BrHzDXUV/T1QJ+6pp6PF3KuHcPJYn1lmUTGPFgXUULad4Ea2TqFml/jPNzqFhbZ1ETbgTu9ZB1IQloJ+TCtLSbxjmIpV1EC3H8KTpWCfREsfobg5jSItv/FS/Ks9DwcI6iZK4okn0hT9p7RGtszQuu46Qbmt+7uf40Unp3J6bDfBU62Cimy+u9fOsf3KxLhZVz8P+74LxpIKo3tm6VstSoaCzfeHqeeLXrNw8YwK5vyTp9YthsqttAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAV3wDiqUZ1a+a7UIAAAAASUVORK5CYII=", "https://logospng.org/download/javascript/logo-javascript-1024.png"],
+        "background": "https://www.semas.pa.gov.br/wp-content/uploads/2021/01/portal-atos-1.png"
+    },
+    {
         "name": "Case Fullstack - Elogroup",
         "description": "Desafio para vaga de estagio (ELOGROUP)",
         "repositorio": "https://github.com/VictorHugofny/EloGroup_Case_Estagio_FullStack",
@@ -23,14 +30,6 @@
         "homepage": "https://projeto-filmes-react.vercel.app/",
         "language": ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png", "https://logospng.org/download/javascript/logo-javascript-1024.png"],
         "background": "https://vejasp.abril.com.br/wp-content/uploads/2020/07/netflix-library.jpg"
-    },
-    {
-        "name": "Técnico Zootecnia IFBAIANO-SBF",
-        "description": "Aplicativo mobile que reúne informações sobre o curso de Zootecnia, como ementas e matérias.",
-        "repositorio": "https://github.com/VictorHugofny",
-        "homepage": "https://play.google.com/store/apps/details?id=com.OraiteGames.CursoZootecniaIFBAIANOSB",
-        "language": ["https://preview.redd.it/tu3gt6ysfxq71.png?auto=webp&s=10ab55d9dc09e7ed6ea59bd5916800a5272d5969", "https://cdn.cdnlogo.com/logos/c/27/c.svg"],
-        "background": "https://play-lh.googleusercontent.com/m0OnVSczrswcfFydE2OsD7ljgCxUPjM6EeXrvAoVA0uhvdWKZXynw8RGoMo_-Q-Q-wk=w416-h235-rw"
     },
     {
         "name": "Clones HTML/CSS/JS",

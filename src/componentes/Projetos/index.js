@@ -19,9 +19,8 @@ function Projetos(){
                     
             {
             projetos.map((projeto)=>{
-                
                 const background = {
-                    background: `linear-gradient(to bottom, rgba(0, 20, 140, 0.404), rgba(3, 1, 017, 0.293)),url(${projeto.background})`,
+                    background: `linear-gradient(rgb(0 46 196 / 26%), rgb(0, 0, 5)) center bottom / contain no-repeat, url(${projeto.background})`,
                     "background-repeat": "no-repeat",
                     "background-size": "contain",
                     "background-position": "bottom"
@@ -42,7 +41,9 @@ function Projetos(){
                         
                             <div className='buttons'>
                                 <a target='blank' href={projeto.homepage}> <button>Pagina</button> </a>
-                                <a target='blank' href={projeto.repositorio}> <button>Repositorio</button> </a>
+                                {projeto.repositorio && (
+                                    <a target='blank' href={projeto.repositorio}> <button>Repositorio</button> </a>
+                                )}
                             </div>
                         </div>
                     </div>

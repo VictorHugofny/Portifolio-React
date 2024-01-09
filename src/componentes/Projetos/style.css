@@ -63,10 +63,10 @@ h1, a, span{
     margin-left: 8px;
 }
 
-.card .top{
-    background-color: rgb(45, 45, 45);
-    border-top-left-radius: 10px ;
-    border-top-right-radius: 10px ;
+.card .top {
+    background-color: rgb(0 21 44);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
