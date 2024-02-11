@@ -6,7 +6,7 @@ function Navbar(){
         <nav class="navMenu">
             <a href="/">Sobre</a>
             <a href="/#projetos">Projetos</a>
-            <a href="/#academico">Academico</a>
+            <a href="/#academico">Acadêmico</a>
             <a href="/extra">Extra</a>
         </nav>
     )
