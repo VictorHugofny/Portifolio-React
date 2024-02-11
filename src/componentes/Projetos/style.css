@@ -18,7 +18,7 @@ h1, a, span{
 
 }
 .card {
-    width: 430px;
+    width: 450px;
     height: 250px;
     border: 3px solid rgb(0, 0, 0);
     margin: 10px;
@@ -55,4 +55,125 @@ h1, a, span{
 .rodapeCard > p{
     font-weight:100;
     font-size: 15px;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 700px) {
+    .card {
+        width: 370px;
+        height: 250px;
+        border: 3px solid rgb(0, 0, 0);
+        margin: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: stretch;
+    
+    }
+
+    .rodapeCard > p{
+        font-weight:100;
+        font-size: 13px;
+    }
+
+    
+    .card h1{
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .card {
+        margin-top: 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 420px) {
+    .card {
+        width: 350px;
+        height: 250px;
+        border: 3px solid rgb(0, 0, 0);
+        margin: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: stretch;
+    
+    }
+
+    .rodapeCard > p{
+        font-weight:100;
+        font-size: 13px;
+    }
+
+    
+    .card h1{
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .card {
+        margin-top: 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 370px) {
+    .card {
+        width: 320px;
+        height: 250px;
+        border: 3px solid rgb(0, 0, 0);
+        margin: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: stretch;
+    
+    }
+
+    .rodapeCard > p{
+        font-weight:100;
+        font-size: 13px;
+    }
+
+    
+    .card h1{
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .card {
+        margin-top: 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 300px) {
+    .card {
+        width: 300px;
+        height: 250px;
+        border: 3px solid rgb(0, 0, 0);
+        margin: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: stretch;
+    
+    }
+
+    .rodapeCard > p{
+        font-weight:100;
+        font-size: 13px;
+    }
+
+    
+    .card h1{
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .card {
+        margin-top: 10px;
+    }
+    
 }
