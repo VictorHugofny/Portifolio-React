@@ -1,0 +1,38 @@
+/* .div-extra {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+}
+
+.card-extra {
+    height: 300px;
+    max-width: 650px;
+    width: 400vw;
+    background-color: rgb(0, 0, 0);
+    margin: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid rgb(83, 83, 83);
+}
+
+.card-extra:hover{
+    border: 3px solid rgb(0, 33, 123);
+}
+
+#programacao{
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.788)),url("https://raw.githubusercontent.com/VictorHugofny/repoImagens/main/1561918586810.jpg");
+}
+
+#gameplay{
+    background-image: linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0, 0.788)),url("https://raw.githubusercontent.com/VictorHugofny/repoImagens/main/games.png");
+
+}
+
+#youtube{
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.788)), url("https://raw.githubusercontent.com/VictorHugofny/repoImagens/main/unnamed.png") repeat center center / contain; 
+
+} */

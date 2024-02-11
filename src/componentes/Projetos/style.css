@@ -14,39 +14,19 @@ h1, a, span{
     flex-direction: row;
     margin: 0 auto;
     justify-content: center;
-    margin-top: 26px;
+    margin-top: 20px;
 
 }
-.card{
+.card {
     width: 430px;
     height: 250px;
-    border: 3px solid rgba(0, 0, 0, 0.956);
+    border: 3px solid rgb(0, 0, 0);
     margin: 10px;
-    border-radius: 20px;
-    box-shadow: 6px 6px 16px -6px rgb(124, 170, 255);
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
     align-items: stretch;
-}
 
-.card button{
-    font-size: 16px;
-    border: none;
-    margin-top: 10px;
-    margin-bottom: 6px;
-    padding: 8px;
-    border-radius: 10px;
-    background-color: rgb(12, 116, 234);
-    color: rgb(255, 255, 255);
-    box-shadow: 6px 6px 41px 6px rgba(0, 0, 0, 0.435);
-    
-}
-
-.card button:hover{
-    background-color: aliceblue;
-    color: black;
-    cursor: pointer;
 }
 
 .card a{
@@ -54,29 +34,25 @@ h1, a, span{
 }
 
 .card h1{
-    font-size: 20px;
-    padding: 6px;
+    font-size: 16px;
+    padding: 8px;
 }
 
-.card .language{
-    margin: 0px;
-    margin-left: 8px;
-}
-
-.card .top {
-    background-color: rgb(0 21 44);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+.card .rodapeProjeto {
+    border-top: 4px solid rgb(40, 0, 169);
+    background-color: rgba(0, 7, 28, 0.943);
+    height: 80px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.card strong{
-    color: rgb(255, 240, 240);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
 }
 
 .card:hover{
-    border: 3px solid black;
-    box-shadow: 10px 10px 36px -7px rgb(255, 255, 255);
+    border: 3px solid rgba(43, 114, 200, 0.489);
+}
+
+.rodapeCard > p{
+    font-weight:100;
+    font-size: 15px;
 }

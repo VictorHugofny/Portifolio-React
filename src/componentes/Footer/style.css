@@ -1,13 +1,17 @@
-a{
+a {
     text-decoration: none;
-    color: rgb(129, 129, 129);
-  }
+    color: rgb(148 193 255);
+}
 
 .footer strong{
     color: white;
 }
 
 .footer{
-    margin-top: 20px;
-    margin-bottom: 60px;
+    padding-top: 20px;
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    border-top: 2px solid rgb(0, 60, 255);
+    background-color: rgb(19, 19, 19);
 }

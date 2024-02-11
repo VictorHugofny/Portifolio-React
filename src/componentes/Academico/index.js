@@ -11,9 +11,7 @@ function Academico(){
     return(
 
 <div className="trabalhos" id="academico">
-    <br></br><br></br>
     <h1>Trabalhos Acadêmicos</h1>
-    <p>Abaixo meus trabalhos e estudos como artigos e minicursos</p>
 
     <div className="trabalhos" data-aos="fade-up" data-aos-duration = "1200"> 
 
@@ -38,23 +36,8 @@ function Academico(){
             </div>
         </figure>
 
-        <h2>Universitario World - Jogo desenvolvido na Unity</h2> 
-        <p>Desenvolvido por Victor Hugo, Luis Henrique e Joedson </p> 
-        <a> Publicado em 2020</a>
-        <br></br><br></br>
-        <figure>
-            <div className="boxVideo">
-                <iframe width="250" height="180" src="https://www.youtube.com/embed/DYop9lguBeo" frameborder="0" allowfullscreen></iframe> 
-            </div>
-        </figure>
-
-        <a target="_blank" href="https://gamejolt.com/games/UniversitarioWorld/480550"><button> <p className="btntext"> Baixar Jogo </p></button></a>
-
-
     </div>
-
 </div>
-    )
-}
+)}
 
 export default Academico;

@@ -5,7 +5,7 @@
     padding-right: 6%;
 }
 
-.inicio h1, p{
+.inicio h1, p, h2, h3, h4, h5, h6, li{
     color: white;
 
 }
@@ -22,7 +22,7 @@
     box-shadow: 4px 4px 51px 4px rgb(32, 166, 255);
 }
 .inicio p{
-    font-size: 21px;
+    font-size: 20px;
     margin-bottom: 6px;
 }
 .inicio button{
@@ -141,4 +141,41 @@
 
 .topo .iconesL{
     margin-top: 20px;
+}
+.conteudo-exp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.cards-experiencia {
+    text-align: left;
+    padding: 20px;
+    background: #0000003d;
+    border: solid #3e3e49 2px;
+    margin-top:30px;
+    margin-bottom: 0px;
+}
+
+.cards-experiencia:hover {
+    text-align: left;
+    padding: 20px;
+    background: #0000003d;
+    border: solid #0d79cc5f 2px;
+}
+
+.topo-card {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.topo-card > img{
+    margin-right: 10px;
+}
+a {
+    text-decoration: none;
+    color: rgb(148 193 255);
 }
