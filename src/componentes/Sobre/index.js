@@ -42,7 +42,7 @@ function Sobre() {
                 <div className='topo' data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1200">
                     <div className='trabalho'>
                         <div className='itens'>
-                            <img src={elogroupLogo}></img><br></br>
+                            <img src={elogroupLogo} className='elogroupLogo'></img><br></br>
                             <div>
                                 <p> Elogroup </p>
                                 <strong> Developer 2 </strong>
