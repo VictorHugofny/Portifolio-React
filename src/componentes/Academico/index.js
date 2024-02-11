@@ -14,10 +14,11 @@ function Academico(){
     <h1>Trabalhos Acadêmicos</h1>
 
     <div className="trabalhos" data-aos="fade-up" data-aos-duration = "1200"> 
-
-        <h2>ARTIGO: "SEGURANÇA DA INFORMAÇÃO NO CONTEXTO ESCOLAR"</h2> 
-        <p>Escrito por Victor Hugo de Carvalho Santana, Douglas Silva Santos, Luis Henrique de Almeida Gomes</p> 
-        <h4>Editora Realize</h4> <a> Publicado em 17 de janeiro de 2022</a><br></br><br></br>
+        <a target='blank' href='https://editorarealize.com.br/artigo/visualizar/80791'><h3>ARTIGO: "SEGURANÇA DA INFORMAÇÃO NO CONTEXTO ESCOLAR"</h3> 
+         Editora Realize (2022), clique aqui para ir até a revista.</a>
+        <br></br><br></br>
+        <p>Escrito por Victor Hugo de Carvalho Santana, Douglas Silva Santos, Luis Henrique de Almeida Gomes e Damon Ferreira Farias</p> 
+        <br></br>
         <object data="https://editorarealize.com.br/editora/anais/conedu/2021/TRABALHO_EV150_MD1_SA119_ID1208_22092021174849.pdf#zoom=92" type="application/pdf" width="90%" height="600" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">
             <a target="_blank" href="https://editorarealize.com.br/artigo/visualizar/80791"><button> <p className="btntext"> Abrir pdf do Artigo </p></button></a>
         </object>
