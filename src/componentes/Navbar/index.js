@@ -7,7 +7,7 @@ function Navbar(){
             <a href="/">Sobre</a>
             <a href="/#projetos">Projetos</a>
             <a href="/#academico">Acadêmico</a>
-            <a href="/extra">Outros</a>
+            {/* <a href="/extra">Outros</a> */}
         </nav>
     )
 }
