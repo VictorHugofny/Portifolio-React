@@ -49,7 +49,7 @@ function Sobre() {
                             </div>
                         </div>
                         <div className='itens'>
-                            <img src='https://images2.imgbox.com/52/bd/m1eeXjcG_o.png'></img>
+                            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Instituto_Federal_Baiano_-_Marca_Vertical_2015.svg/1200px-Instituto_Federal_Baiano_-_Marca_Vertical_2015.svg.png'></img>
                             <div>
                                 <p> Instituto Federal Baiano</p>
                                 <strong>Ciencia da computação</strong>
