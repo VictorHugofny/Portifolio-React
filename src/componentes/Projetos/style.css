@@ -7,6 +7,13 @@ body {
     color: #FFF;
 }
 
+.nameProject{
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    width: 100%;
+}
+
 
 .container {
     width: 100%;
@@ -127,7 +134,7 @@ body {
     }
 
     .card h1 {
-        font-size: 14px; /* Reduz o tamanho da fonte para caber melhor em telas menores */
+        font-size: 20px; /* Reduz o tamanho da fonte para caber melhor em telas menores */
         padding: 8px;
     }
 
@@ -135,4 +142,6 @@ body {
         height: 60px; /* Ajusta a altura do rodapé */
         padding: 8px;
     }
+
+
 }

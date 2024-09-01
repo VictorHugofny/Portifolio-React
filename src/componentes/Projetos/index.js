@@ -32,11 +32,11 @@ function Projetos(){
 
 
                             <div class="content">
-                                <span class="title">{projeto.name}</span>
                                 <p class="desc">{projeto.description}</p>
                             </div>
-
+                            <h1 className='nameProject'>{projeto.name}</h1>
                             <div class="arrow">
+                                
                                 <span>&#8673;</span>
                             </div>
                         </div>
