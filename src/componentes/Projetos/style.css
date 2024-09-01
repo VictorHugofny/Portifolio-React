@@ -134,7 +134,7 @@ body {
     }
 
     .card h1 {
-        font-size: 20px; /* Reduz o tamanho da fonte para caber melhor em telas menores */
+        font-size: 26px; /* Reduz o tamanho da fonte para caber melhor em telas menores */
         padding: 8px;
     }
 
