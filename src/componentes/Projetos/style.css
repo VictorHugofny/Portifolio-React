@@ -145,3 +145,24 @@ body {
 
 
 }
+
+/* * Media query para telas pequenas */ 
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 65%; /* Aumenta a largura para se ajustar à tela */
+        height: auto; /* Ajusta a altura automaticamente */
+        margin: 10px auto; /* Centraliza os cartões e ajusta a margem */
+    }
+
+    .card h1 {
+        font-size: 26px; /* Reduz o tamanho da fonte para caber melhor em telas menores */
+        padding: 8px;
+    }
+
+    .card .rodapeProjeto {
+        height: 60px; /* Ajusta a altura do rodapé */
+        padding: 8px;
+    }
+
+
+}
