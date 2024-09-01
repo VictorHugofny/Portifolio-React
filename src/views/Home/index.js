@@ -26,6 +26,7 @@ function Home(){
 
         <div>
             <Sobre/>
+            <br></br><br></br>
             <Projetos/>
             <Academico/>
             <Footer/>

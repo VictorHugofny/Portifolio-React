@@ -10,7 +10,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 .navMenu{
-  z-index: 1;
+  z-index: 1000;
   background-color: #080808;
   padding-top: 10px;
   padding-bottom: 10px;

@@ -1,179 +1,138 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+    font-family: Segoe UI;
 }
 
-h1, a, span{
-    color: rgb(255, 255, 255);
+body {
+    margin: 0;
+    color: #FFF;
 }
+
 
 .container {
-    max-width: 1500px;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 0 auto;
+    align-items: center;
     justify-content: center;
-    margin-top: 20px;
-
+    flex-direction: column;
+    /* background-color: #444; */
 }
+
 .card {
-    width: 450px;
-    height: 250px;
-    border: 3px solid rgb(0, 0, 0);
-    margin: 10px;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: stretch;
-
-}
-
-.card a{
-    text-decoration: none;
-}
-
-.card h1{
-    font-size: 16px;
-    padding: 8px;
-}
-
-.card .rodapeProjeto {
-    border-top: 4px solid rgb(40, 0, 169);
-    background-color: rgba(0, 7, 28, 0.943);
-    height: 80px;
+    border-radius: 16px;
+    box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+    cursor: pointer;
+    width: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#41ABFD, #00427593);
+    transition: all .5s;
+    margin-bottom: 30px;
 }
 
-.card:hover{
-    border: 3px solid rgba(43, 114, 200, 0.489);
+.card:hover {
+    background-image: linear-gradient(#41ABFD, #07002c);
 }
 
-.rodapeCard > p{
-    font-weight:100;
-    font-size: 15px;
+.card .img {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
 }
 
-/* Mobile styles */
-@media only screen and (max-width: 700px) {
+.card .img span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+}
+
+.card:hover .img {
+    width: 600px;
+    opacity: 1;
+}
+
+.card:hover .img span {
+    font-size: 28px;
+}
+
+.card .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.card:hover .content {
+    height: auto;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card .content p {
+    margin: 0;
+}
+
+.card .content .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card .content .desc {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.card .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card:hover .arrow {
+    transform: rotate(0);
+}
+
+.card .arrow span {
+    font-size: 24px;
+}
+
+
+/* * Media query para telas pequenas */ 
+@media only screen and (max-width: 768px) {
     .card {
-        width: 370px;
-        height: 250px;
-        border: 3px solid rgb(0, 0, 0);
-        margin: 10px;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        align-items: stretch;
-    
+        width: 70%; /* Aumenta a largura para se ajustar à tela */
+        height: auto; /* Ajusta a altura automaticamente */
+        margin: 10px auto; /* Centraliza os cartões e ajusta a margem */
     }
 
-    .rodapeCard > p{
-        font-weight:100;
-        font-size: 13px;
-    }
-
-    
-    .card h1{
-        font-size: 14px;
+    .card h1 {
+        font-size: 14px; /* Reduz o tamanho da fonte para caber melhor em telas menores */
         padding: 8px;
     }
 
-    .card {
-        margin-top: 10px;
-    }
-    
-}
-
-@media only screen and (max-width: 420px) {
-    .card {
-        width: 350px;
-        height: 250px;
-        border: 3px solid rgb(0, 0, 0);
-        margin: 10px;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        align-items: stretch;
-    
-    }
-
-    .rodapeCard > p{
-        font-weight:100;
-        font-size: 13px;
-    }
-
-    
-    .card h1{
-        font-size: 14px;
+    .card .rodapeProjeto {
+        height: 60px; /* Ajusta a altura do rodapé */
         padding: 8px;
     }
-
-    .card {
-        margin-top: 10px;
-    }
-    
-}
-
-@media only screen and (max-width: 370px) {
-    .card {
-        width: 320px;
-        height: 250px;
-        border: 3px solid rgb(0, 0, 0);
-        margin: 10px;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        align-items: stretch;
-    
-    }
-
-    .rodapeCard > p{
-        font-weight:100;
-        font-size: 13px;
-    }
-
-    
-    .card h1{
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    .card {
-        margin-top: 10px;
-    }
-    
-}
-
-@media only screen and (max-width: 300px) {
-    .card {
-        width: 300px;
-        height: 250px;
-        border: 3px solid rgb(0, 0, 0);
-        margin: 10px;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        align-items: stretch;
-    
-    }
-
-    .rodapeCard > p{
-        font-weight:100;
-        font-size: 13px;
-    }
-
-    
-    .card h1{
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    .card {
-        margin-top: 10px;
-    }
-    
 }
