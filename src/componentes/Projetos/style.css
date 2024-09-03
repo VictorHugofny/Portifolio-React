@@ -87,7 +87,7 @@ body {
     transform: translateY(30px);
 }
 
-.card:hover .content {
+.card .content {
     height: auto;
     padding: 20px;
     opacity: 1;
