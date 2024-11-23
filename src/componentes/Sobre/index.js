@@ -36,7 +36,7 @@ function Sobre() {
                 <div data-aos="zoom-in" data-aos-duration="900">
 
                     <p id='texto'>
-                        Sou <strong>Victor Hugo</strong>, desenvolvedor full-stack, atualmente sou <strong>Desenvolvedor III</strong> na <strong>EloGroup</strong>, onde utilizo <strong>Scrum</strong> e tecnologias como <strong>JavaScript, Typescript, React.js, Node, Stencil.js, Sydle e MongoDB</strong>. Também ministrei oficinas de programação e contribuo para documentações internas nos projetos que atuo.</p>
+                        Sou <strong>Victor Hugo</strong>, desenvolvedor full-stack, atualmente sou <strong>Desenvolvedor III</strong> na <strong>EloGroup</strong>, onde utilizo <strong>Scrum</strong> e tecnologias como <strong>JavaScript, Typescript, Node.js, Stencil.js, Sydle, PostgreSQL, Elasticsearch e MongoDB</strong>. Também ministrei oficinas de programação e contribuo para documentações internas nos projetos que atuo.</p>
                 </div>
 
                 <div className='topo' data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1200">
