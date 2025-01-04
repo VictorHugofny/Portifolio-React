@@ -26,7 +26,9 @@ function Projetos(){
                   };
                 return(
                     <a href={projeto.homepage} target='blank'>
+
                         <div class="card">
+
                             <div class="img" style={background}>
                             </div>
 
