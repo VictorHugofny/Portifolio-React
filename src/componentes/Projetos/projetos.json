@@ -7,6 +7,13 @@
         "background": "https://raw.githubusercontent.com/VictorHugofny/Portifolio-React/main/src/assets/saberflix%20png.png"
     },
     {
+        "name": "SIGERH - PARÁ",
+        "description": "Atuei como desenvolvedor da ELOGROUP no 'Sistema de Gerenciamento de Recursos Hídricos - SIGERH'",
+        "homepage": "https://portal-dos-atos-autorizativos.semas.pa.gov.br/sistema-recursos-hidricos+obter-atos-autorizativos-de-recursos-hidricos+65775aa10c1eb452fc432a6f",
+        "language": ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png", "https://logospng.org/download/javascript/logo-javascript-1024.png"],
+        "background": "https://www.semas.pa.gov.br/wp-content/uploads/2024/10/up_ag_60279_0ddc2b63-083a-ab9f-fbef-338676e0bdff.jpg"
+    },
+    {
         "name": "Portal dos Atos Autorizativos (SEMAS-PA)",
         "description": "Atuei como desenvolvedor da ELOGROUP no Portal, Processos e Serviços. o Portal dos Atos Autorizativos da Secretaria de Estado de Meio Ambiente e Sustentabilidade (Semas)",
         "homepage": "https://portal-dos-atos-autorizativos.semas.pa.gov.br/semas-pa/home",

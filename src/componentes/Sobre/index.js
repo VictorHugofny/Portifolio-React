@@ -36,7 +36,7 @@ function Sobre() {
                 <div data-aos="zoom-in" data-aos-duration="900">
 
                     <p id='texto'>
-                        Sou <strong>Victor Hugo</strong>, desenvolvedor full-stack tenho experiência na criação de portais digitais para órgãos públicos, com foco em automação de processos. Atualmente sou <strong>Desenvolvedor II</strong> na <strong>EloGroup</strong>, utilizei <strong>Scrum, SydleOne e Javascript</strong> para otimizar processos. Habilidades incluem <strong>Javascript, React.js, Node, Stencil.js, Sydle e MongoDB</strong>. Ministrei oficinas de programação e contribuí para documentações internas.</p>
+                        Sou <strong>Victor Hugo</strong>, desenvolvedor full-stack, atualmente sou <strong>Desenvolvedor III</strong> na <strong>EloGroup</strong>, onde utilizo <strong>Scrum</strong> e tecnologias como <strong>JavaScript, Typescript, Node.js, Stencil.js, Sydle, PostgreSQL, Elasticsearch e MongoDB</strong>. Também ministrei oficinas de programação e contribuo para documentações internas nos projetos que atuo.</p>
                 </div>
 
                 <div className='topo' data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1200">
@@ -45,7 +45,7 @@ function Sobre() {
                             <img src={elogroupLogo} className='elogroupLogo'></img><br></br>
                             <div>
                                 <p> Elogroup </p>
-                                <strong> Developer 2 </strong>
+                                <strong> Developer 3</strong>
                             </div>
                         </div>
                         <div className='itens'>
@@ -83,7 +83,15 @@ function Sobre() {
                             <div className='tab-experiencia'>
                                 <div className='conteudo-exp'>
                                     <h3>Desenvolvimento de Portais Digitais e Automação de Processos</h3>
-                                    <li>Utilização de SydleOne e JavaScript para desenvolver portais digitais personalizados para órgãos públicos, automação de processos para melhorar a eficiência operacional e a experiência do usuário.</li>
+                                    <li>Atuando com SydleOne, JavaScript, Elasticsearch, Stenil.js, PostgreSQL, Typescript</li>
+                                    <li>Desenvolvilmento de portais digitais personalizados para órgãos públicos </li>
+                                    <li>Automação e Desenvolvilmento de processos e serviços com foco no tema meio ambiente</li>
+                                </div>
+                                <div className='conteudo-exp'>
+                                    <h3>WebComponentes em Stencil.js e Sydle One</h3>
+                                    <li>Atuação como Tech Lead em projetos de desenvolvimento de Web Components.</li>
+                                    <li>Criação de Web Components para aplicações com Stencil.js e Sydle UI.</li>
+                                    <li>Desenvolvimento de Web Components com foco na área GEO.</li>
                                 </div>
 
                                 <div className='conteudo-exp'>
