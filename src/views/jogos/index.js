@@ -56,6 +56,16 @@ function Home(){
                 <div className="boxVideo">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/YR71Sd6-zTY?si=QwSnXHCkwYIJG7Bi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
+                    <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/ZuQlsZxOmfM?si=9Qn87rjFaC8lWoh0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                    </iframe>
             </figure>
         </div>
     )
