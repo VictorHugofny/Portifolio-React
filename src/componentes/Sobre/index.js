@@ -46,7 +46,7 @@ function Sobre() {
                             <img src={elogroupLogo} className='elogroupLogo'></img><br></br>
                             <div>
                                 <p> Elogroup </p>
-                                <strong> Developer 3</strong>
+                                <strong> Desenvolvedor III & Tech Lead</strong>
                             </div>
                         </div>
                         <div className='itens'>
