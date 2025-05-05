@@ -123,6 +123,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    
 }
 .experiencias p{
     font-size: 20px;
@@ -156,6 +157,8 @@
     border: solid #3e3e49 2px;
     margin-top:30px;
     margin-bottom: 0px;
+
+    border-radius: 1rem;
 }
 
 .cards-experiencia:hover {

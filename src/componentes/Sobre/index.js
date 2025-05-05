@@ -36,7 +36,8 @@ function Sobre() {
                 <div data-aos="zoom-in" data-aos-duration="900">
 
                     <p id='texto'>
-                        Sou <strong>Victor Hugo</strong>, desenvolvedor full-stack, atualmente sou <strong>Desenvolvedor III</strong> na <strong>EloGroup</strong>, onde utilizo <strong>Scrum</strong> e tecnologias como <strong>JavaScript, Typescript, Node.js, Stencil.js, Sydle, PostgreSQL, Elasticsearch e MongoDB</strong>. Também ministrei oficinas de programação e contribuo para documentações internas nos projetos que atuo.</p>
+                        Sou <strong>Victor Hugo</strong>, Desenvolvedor III e Tech Lead na <strong>EloGroup</strong>, com atuação em soluções digitais voltadas para órgãos públicos, especialmente na área ambiental. Tenho experiência com <strong>SYDLE One</strong>, desenvolvimento de <strong>Web Components</strong> com <strong>Stencil.js</strong>, além de tecnologias como <strong>JavaScript, TypeScript, Node.js, PostgreSQL, Elasticsearch</strong> e <strong>MongoDB</strong>. Atuo com <strong>Scrum</strong>, especificando tarefas, conduzindo code reviews. Também ministrei oficinas de programação e contribuo ativamente com documentação técnica nos projetos.
+                    </p>
                 </div>
 
                 <div className='topo' data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1200">
@@ -82,41 +83,38 @@ function Sobre() {
 
                             <div className='tab-experiencia'>
                                 <div className='conteudo-exp'>
-                                    <h3>Desenvolvimento de Portais Digitais e Automação de Processos</h3>
-                                    <li>Atuando com SydleOne, JavaScript, Elasticsearch, Stenil.js, PostgreSQL, Typescript</li>
-                                    <li>Desenvolvilmento de portais digitais personalizados para órgãos públicos </li>
-                                    <li>Automação e Desenvolvilmento de processos e serviços com foco no tema meio ambiente</li>
+                                    <h3>Tech Lead e Desenvolvimento em SYDLE One</h3>
+                                    <li>Atuação como Tech Lead, promovendo boas práticas com foco em automação de processos, arquitetura técnica e integração de serviços digitais.</li>
+                                    <li>Desenvolvimento de portais digitais personalizados na plataforma SYDLE One, com aplicação direta em projetos como SIGERH, SICAR e Licenciamento Ambiental da SEMAS-PA.</li>
                                 </div>
+
                                 <div className='conteudo-exp'>
-                                    <h3>WebComponentes em Stencil.js e Sydle One</h3>
-                                    <li>Atuação como Tech Lead em projetos de desenvolvimento de Web Components.</li>
-                                    <li>Criação de Web Components para aplicações com Stencil.js e Sydle UI.</li>
-                                    <li>Desenvolvimento de Web Components com foco na área GEO.</li>
+                                    <h3>Web Components Geoespaciais</h3>
+                                    <li>Criação de Web Components reutilizáveis com Stencil.js, JavaScript, TypeScript e Node.js, integrados ao SYDLE One.</li>
+                                    <li>Exploração de conceitos GIS como projeções geográficas, análises espaciais e sobreposição de geometrias, utilizando ferramentas como QGIS.</li>
+                                    <li>Desenvolvimento de POCs e soluções inovadoras, indo além dos limites convencionais da plataforma SYDLE.</li>
                                 </div>
 
                                 <div className='conteudo-exp'>
                                     <h3>Frontend</h3>
-                                    <li>React/Vue.js, Express.js e Node.js para criar aplicações web dinâmicas, robustas e escaláveis, com consumo de APIs que facilitam a comunicação entre o frontend e o backend.</li>
+                                    <li>Desenvolvimento de interfaces modernas e responsivas com React.js, Vue.js e Stencil.js.</li>
+                                    <li>Integração de serviços por meio de APIs REST e foco na experiência do usuário.</li>
                                 </div>
 
                                 <div className='conteudo-exp'>
                                     <h3>Backend</h3>
-                                    <li>
-                                        Express.js para o desenvolvimento de APIs escaláveis.
-                                    </li>
-                                    <li>
-                                        MongoDB e PostgreSQL para gerenciar eficientemente dados nos projetos de desenvolvimento.
-                                    </li>
+                                    <li>Criação de APIs performáticas com Node.js e Express.js.</li>
+                                    <li>Trabalho com bancos relacionais e não relacionais, como PostgreSQL, MongoDB e Elasticsearch.</li>
                                 </div>
 
                                 <div className='conteudo-exp'>
-                                    <h3>Desenvolvimento Mobile e Jogos</h3>
-                                    <li>
-                                        React Native e Unity para criar aplicativos móveis multiplataforma e jogos imersivos.
-                                    </li>
+                                    <h3>Mobile e Desenvolvimento de Jogos</h3>
+                                    <li>Criação de apps multiplataforma com React Native.</li>
+                                    <li>Desenvolvimento de jogos 2D/3D com Unity e Godot, aplicando conceitos de lógica e interatividade.</li>
                                 </div>
                             </div>
                         </div>
+
 
 
                     </div>
@@ -131,29 +129,36 @@ function Sobre() {
 
                             <div className='tab-experiencia'>
                                 <div className='conteudo-exp'>
-                                    <h3>Utilização de Metodologias Ágeis</h3>
-                                    <li>Proficiente na aplicação de metodologias ágeis, com ênfase em Scrum, para uma gestão eficiente e flexível de projetos.</li>
+                                    <h3>Liderança Técnica e Mentoria</h3>
+                                    <li>Condução de code reviews, apoio contínuo ao time e onboarding técnico com foco em Web Components e SYDLE.</li>
+                                    <li>Fomento à colaboração e à autonomia da equipe, garantindo alinhamento técnico e qualidade nas entregas.</li>
                                 </div>
 
                                 <div className='conteudo-exp'>
-                                    <h3>Criação de Documentação e Manuais Internos</h3>
-                                    <li>Habilidade comprovada na elaboração de documentação abrangente e manuais internos para as tecnologias adotadas, garantindo clareza e consistência nos processos.</li>
+                                    <h3>Metodologias Ágeis</h3>
+                                    <li>Atuação diária com Scrum, participando de plannings, refinamentos e sprints, sempre com foco em entregas de valor e melhoria contínua.</li>
                                 </div>
 
                                 <div className='conteudo-exp'>
-                                    <h3>Ministração de Oficinas de Programação:</h3>
+                                    <h3>Comunicação e Documentação</h3>
+                                    <li>Produção de documentação técnica clara e completa, repasses estruturados e apresentações técnicas para stakeholders internos e externos.</li>
+                                </div>
+
+                                <div className='conteudo-exp'>
+                                    <h3>Compartilhamento de Conhecimento</h3>
+                                    <li>Facilitador de oficinas e workshops sobre desenvolvimento de software, promovendo ambientes de aprendizado prático e colaborativo.</li>
+                                </div>
+
+                                <div className='conteudo-exp'>
+                                    <h3>Produção Acadêmica</h3>
                                     <li>
-                                        Experiência sólida na condução de oficinas práticas sobre programação em diversas linguagens, proporcionando um ambiente de aprendizado dinâmico e interativo.
+                                        Autor do artigo <a target='_blank' href='https://editorarealize.com.br/artigo/visualizar/80791'>“Segurança da Informação no Contexto Escolar”</a> (Editora Realize, 2022), abordando práticas de proteção de dados no ambiente educacional.
                                     </li>
-                                </div>
-
-                                <div className='conteudo-exp'>
-                                    <h3>Publicação de Artigo</h3>
-                                    <li>
-                                        Autor do artigo <a target='blank' href='https://editorarealize.com.br/artigo/visualizar/80791'> Segurança da Informação no Contexto Escolar" (Editora Realize, 2022)</a>, abordando estratégias e soluções relevantes para promover a segurança da informação em ambientes educacionais.                            </li>
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </div>

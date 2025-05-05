@@ -3,21 +3,24 @@
         "name": "SaberFlix - TCC",
         "description": "A 𝗦𝗮𝗯𝗲𝗿𝗙𝗹𝗶𝘅 é uma plataforma gratuita que categoriza e disponibiliza informações sobre filmes que podem ser utilizados na educação",
         "homepage": "https://www.saberflix.net.br/",
-        "language": ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png", "https://logospng.org/download/javascript/logo-javascript-1024.png"],
+        "language": ["React", "Node.js", "MongoDB", "Express.js"],
+        "repositorio": null,
         "background": "https://raw.githubusercontent.com/VictorHugofny/Portifolio-React/main/src/assets/saberflix%20png.png"
     },
     {
         "name": "SIGERH - PARÁ",
         "description": "Atuei como desenvolvedor da ELOGROUP no 'Sistema de Gerenciamento de Recursos Hídricos - SIGERH'",
         "homepage": "https://portal-dos-atos-autorizativos.semas.pa.gov.br/sistema-recursos-hidricos+obter-atos-autorizativos-de-recursos-hidricos+65775aa10c1eb452fc432a6f",
-        "language": ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png", "https://logospng.org/download/javascript/logo-javascript-1024.png"],
+        "language": ["Sydle", "Javascript", "ElasticSearch", "Stencil.js", "Web Components"],
+        "repositorio": null,
         "background": "https://www.semas.pa.gov.br/wp-content/uploads/2024/10/up_ag_60279_0ddc2b63-083a-ab9f-fbef-338676e0bdff.jpg"
     },
     {
         "name": "Portal dos Atos Autorizativos (SEMAS-PA)",
         "description": "Atuei como desenvolvedor da ELOGROUP no Portal, Processos e Serviços. o Portal dos Atos Autorizativos da Secretaria de Estado de Meio Ambiente e Sustentabilidade (Semas)",
         "homepage": "https://portal-dos-atos-autorizativos.semas.pa.gov.br/semas-pa/home",
-        "language": ["data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAZlBMVEUAAAD///8dHR2lpaXl5eW5ubnp6enGxsb6+vry8vLS0tK3t7c9PT12dnZnZ2eXl5cPDw/a2trNzc0UFBRiYmLAwMAyMjKJiYmPj4+enp5RUVGtra0sLCwiIiJCQkItLS1NTU1zc3Olivw1AAACEklEQVR4nO3d626CQBCGYagInvF8rFbv/yZrE3fB+sNYZzLTzftcwfcFgd1hm2YfqcsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACeW2+Gg0JKtbSu82Bb5rJ21o3ubXrC/a721qVapjP5fnk+tK7VGClcwKu5da9opNIvzw/WxSKdK5jna+tiwUCp4Ni6WDBupyqqrpDOp3WxqN/0c/YGE9JcwuJonUVHvAtL6yRKpvES+rlvZE1CQUcLEFl1aHiyTqJleCvYsw6ipro1nFkHUZN+w/R/pfFJM7JOoiW+LfxsdYQ1b/wv6yha4vwi1VVbe+W9sM6ipL17SrPjrx3wOw5bTwPEhuwkce5v1i0+iSr9dRSfJq6sGz0QnwiX7v4xxUJ6qt93VzHbCFf0uH6oZb+u+bsXs58vpN3BrHzDXUV/T1QJ+6pp6PF3KuHcPJYn1lmUTGPFgXUULad4Ea2TqFml/jPNzqFhbZ1ETbgTu9ZB1IQloJ+TCtLSbxjmIpV1EC3H8KTpWCfREsfobg5jSItv/FS/Ks9DwcI6iZK4okn0hT9p7RGtszQuu46Qbmt+7uf40Unp3J6bDfBU62Cimy+u9fOsf3KxLhZVz8P+74LxpIKo3tm6VstSoaCzfeHqeeLXrNw8YwK5vyTp9YthsqttAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAV3wDiqUZ1a+a7UIAAAAASUVORK5CYII=", "https://logospng.org/download/javascript/logo-javascript-1024.png"],
+        "language": ["Sydle", "Javascript", "ElasticSearch"],
+        "repositorio": null,
         "background": "https://www.semas.pa.gov.br/wp-content/uploads/2021/01/portal-atos-1.png"
     },
     
@@ -25,6 +28,10 @@
         "name": "Clones Interfaces famosas",
         "description": "Clones de sites usando HTML/CSS/JS - Netflix, Disney+, Spotify, Tinder",
         "homepage": "https://victorhugofny.github.io/Clones-HTML-CSS-JAVASCRIPT/",
+        "repositorio": "https://github.com/VictorHugofny/Clones-HTML-CSS-JAVASCRIPT",
+
+        "language": ["CSS", "HTML"],
+
         "background": "https://raw.githubusercontent.com/VictorHugofny/Clones-HTML-CSS-JAVASCRIPT/main/img/previa.gif"
     },
     
@@ -32,14 +39,18 @@
         "name": "Case Fullstack - Elogroup",
         "description": "Desafio para vaga de estagio (ELOGROUP)",
         "homepage": "https://elo-group-case-estagio-full-stack.vercel.app/",
-        "language": ["https://cdn.iconscout.com/icon/free/png-256/vue-282497.png", "https://logospng.org/download/javascript/logo-javascript-1024.png"],
+        "language": ["Vue.js", "Javascript"],
+        "repositorio": "https://github.com/VictorHugofny/EloGroup_Case_Estagio_FullStack",
         "background": "https://raw.githubusercontent.com/VictorHugofny/EloGroup_Case_Estagio_FullStack/main/src/assets/previa.gif"
     },
     {
         "name": "Universitario World",
         "description": "Jogo desenvolvido na Unity",
         "homepage": "https://www.youtube.com/watch?v=DYop9lguBeo&ab_channel=AcademicStudies",
-        "background": "https://m.gjcdn.net/fireside-post-image/800/2993169-m2kyu7ri-v4.webp"
+        "background": "https://m.gjcdn.net/fireside-post-image/800/2993169-m2kyu7ri-v4.webp",
+        "repositorio": null,
+        "language": ["Unity", "C#"]
+
     }
   
     

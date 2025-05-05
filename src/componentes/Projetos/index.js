@@ -1,51 +1,57 @@
 import projetos from './projetos.json'
-import { useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
 import './style.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-function Projetos(){
+function Projetos() {
 
     useEffect(() => {
         AOS.init();
-      }, [])
+    }, [])
 
-   
-    return(
-        <div className='projetos-info' id="projetos" data-aos="fade-up" data-aos-duration = "900">
-        <br></br> 
-        <h1 id='sobremim'>Projetos 🔧</h1>
-        <br></br> 
-        <div className='container'>
-            {
-            projetos.map((projeto)=>{
-                const background = {
-                    background: `url(${projeto.background}) center center / cover no-repeat`,
-                    backgroundSize: "cover",       // Ajusta a imagem para cobrir o elemento
-                    backgroundRepeat: "no-repeat", // Garante que a imagem não se repita
-                  };
-                return(
-                    <a href={projeto.homepage} target='blank'>
 
-                        <div class="card">
+    return (
+        <div className='projetos-info' id="projetos" data-aos="fade-up" data-aos-duration="900">
+            <br></br>
+            <h1 id='sobremim'>Projetos 🔧</h1>
 
-                            <div class="img" style={background}>
+
+            <br></br>
+            <div className='project-grid'>
+                {
+                    projetos.map((projeto) => {
+
+                        return (
+
+                            <div className="project-card">
+                                <div className="project-image">
+                                    <img src={projeto.background} alt="Projeto" />
+                                </div>
+                                <div className="project-content">
+                                    <h3 className="project-title">{projeto.name}</h3>
+                                    <p className="project-description">
+                                        {projeto.description}
+                                    </p>
+                                    <div className="project-tags">
+                                        {projeto.language.map((lang, index) => (
+                                            <span key={index}>{lang}</span>
+                                        ))}
+                                    </div>
+                                    <div className="project-links">
+                                        <a href={projeto.homepage} target="_blank" rel="noopener noreferrer">🔗 Ver Projeto</a>
+                                            {projeto.repositorio ?
+                                                <a href={projeto.repositorio} target="_blank" rel="noopener noreferrer">💻 Código</a>
+                                                
+                                            :null}
+                                    </div>
+                                </div>
                             </div>
 
-
-                            <div class="content">
-                                <p class="desc">{projeto.description}</p>
-                            </div>
-                            <h1 className='nameProject'>{projeto.name}</h1>
-                            <div class="arrow">
-                                
-                                <span>&#8673;</span>
-                            </div>
-                        </div>
-                    </a>
-                )})}
+                        )
+                    })}
+            </div>
         </div>
-    </div>
     )
 }
 

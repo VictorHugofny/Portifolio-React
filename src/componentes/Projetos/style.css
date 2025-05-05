@@ -1,168 +1,94 @@
-* {
-    font-family: Segoe UI;
-}
-
 body {
-    margin: 0;
     color: #FFF;
-}
-
-.nameProject{
-    margin-top: 20px;
-    color: rgb(255, 255, 255);
-    font-size: 26px;
-    width: 100%;
-}
-
-
-.container {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    /* background-color: #444; */
-}
-
-.card {
-    border-radius: 16px;
-    box-shadow: rgb(0, 0, 0) 0px 5px 15px;
-    cursor: pointer;
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    background-image: linear-gradient(#41ABFD, #00427593);
-    transition: all .5s;
-    margin-bottom: 30px;
-}
-
-.card:hover {
-    background-image: linear-gradient(#41ABFD, #07002c);
-}
-
-.card .img {
-    width: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-    background-size: cover;
-    background-position: center;
-    transition: all .5s;
-    z-index: 2;
-    position: relative;
-    opacity: .8;
-}
-
-.card .img span {
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 100;
-    font-style: italic;
-    transition: all .5s;
-}
-
-.card:hover .img {
-    width: 600px;
-    opacity: 1;
-}
-
-.card:hover .img span {
-    font-size: 28px;
-}
-
-.card .content {
-    padding: 0px 20px;
-    height: 0;
-    opacity: 0;
-    transition: all .5s;
-    position: relative;
-    box-sizing: border-box;
-    overflow: hidden;
-    transform: translateY(30px);
-}
-
-.card .content {
-    height: auto;
-    padding: 20px;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.card .content p {
     margin: 0;
-}
-
-.card .content .title {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.card .content .desc {
-    font-size: 20px;
-    font-weight: 100;
-    opacity: .8;
-    margin-top: 8px;
-}
-
-.card .arrow {
-    padding: 15px;
-    transform: rotate(-180deg);
-    transition: all .5s;
-}
-
-.card:hover .arrow {
-    transform: rotate(0);
-}
-
-.card .arrow span {
-    font-size: 24px;
-}
-
-
-/* * Media query para telas pequenas */ 
-@media only screen and (max-width: 768px) {
-    .card {
-        width: 70%; /* Aumenta a largura para se ajustar à tela */
-        height: auto; /* Ajusta a altura automaticamente */
-        margin: 10px auto; /* Centraliza os cartões e ajusta a margem */
-    }
-
-    .card h1 {
-        font-size: 26px; /* Reduz o tamanho da fonte para caber melhor em telas menores */
-        padding: 8px;
-    }
-
-    .card .rodapeProjeto {
-        height: 60px; /* Ajusta a altura do rodapé */
-        padding: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+  }
+  
+  /* Grid para os cards */
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards por linha */
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  
+  .project-card {
+    background-color: #00000049;
+    border-radius: 1rem;
+    border: 2px solid rgb(89, 89, 89);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.12);
+        border: solid #0d79cc5f 2px;
     }
 
 
-}
-
-/* * Media query para telas pequenas */ 
-@media only screen and (max-width: 600px) {
-    .card {
-        width: 65%; /* Aumenta a largura para se ajustar à tela */
-        height: auto; /* Ajusta a altura automaticamente */
-        margin: 10px auto; /* Centraliza os cartões e ajusta a margem */
+  
+  .project-image img {
+    width: 100%;
+    height: 220px;
+    display: block;
+  }
+  
+  .project-content {
+    padding: 1.5rem;
+  }
+  
+  .project-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-tags span {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+  }
+  
+  .project-links a {
+    margin-right: 1rem;
+    color: #1e88e5;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .project-links a:hover {
+    color: #1565c0;
+  }
+  
+  /* Responsividade para telas menores (mobile) */
+  @media (max-width: 768px) {
+    .project-grid {
+      grid-template-columns: 1fr;
     }
-
-    .card h1 {
-        font-size: 26px; /* Reduz o tamanho da fonte para caber melhor em telas menores */
-        padding: 8px;
-    }
-
-    .card .rodapeProjeto {
-        height: 60px; /* Ajusta a altura do rodapé */
-        padding: 8px;
-    }
-
-
-}
+  }
+  

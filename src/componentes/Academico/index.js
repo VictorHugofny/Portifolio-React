@@ -13,7 +13,7 @@ function Academico(){
 <div className="trabalhos" id="academico">
     <h1>Trabalhos Acadêmicos</h1>
 
-    <div className="trabalhos" data-aos="fade-up" data-aos-duration = "1200"> 
+    <div className="trabalhos" data-aos="fade-up" data-aos-duration = "200"> 
         <a target='blank' href='https://editorarealize.com.br/artigo/visualizar/80791'><h3>ARTIGO: "SEGURANÇA DA INFORMAÇÃO NO CONTEXTO ESCOLAR"</h3> 
          Editora Realize (2022), clique aqui para ir até a revista.</a>
         <br></br><br></br>
