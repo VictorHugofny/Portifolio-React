@@ -23,6 +23,15 @@
         "repositorio": null,
         "background": "https://www.semas.pa.gov.br/wp-content/uploads/2021/01/portal-atos-1.png"
     },
+    {
+        "name": "DEV TOOLS",
+        "description": "Ferramentas para desenvolvedores",
+        "homepage": "https://victor-dev-tools.vercel.app/",
+        "background": "https://framerusercontent.com/images/mfr3k6tL2fQYqS4nCizWQFVYNk.jpg",
+        "repositorio": null,
+        "language": ["JS", "NODE.JS", "REACT.JS"]
+
+    },
 
     
 
