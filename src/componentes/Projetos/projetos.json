@@ -23,30 +23,13 @@
         "repositorio": null,
         "background": "https://www.semas.pa.gov.br/wp-content/uploads/2021/01/portal-atos-1.png"
     },
-    
-    {
-        "name": "Clones Interfaces famosas",
-        "description": "Clones de sites usando HTML/CSS/JS - Netflix, Disney+, Spotify, Tinder",
-        "homepage": "https://victorhugofny.github.io/Clones-HTML-CSS-JAVASCRIPT/",
-        "repositorio": "https://github.com/VictorHugofny/Clones-HTML-CSS-JAVASCRIPT",
 
-        "language": ["CSS", "HTML"],
-
-        "background": "https://raw.githubusercontent.com/VictorHugofny/Clones-HTML-CSS-JAVASCRIPT/main/img/previa.gif"
-    },
     
-    {
-        "name": "Case Fullstack - Elogroup",
-        "description": "Desafio para vaga de estagio (ELOGROUP)",
-        "homepage": "https://elo-group-case-estagio-full-stack.vercel.app/",
-        "language": ["Vue.js", "Javascript"],
-        "repositorio": "https://github.com/VictorHugofny/EloGroup_Case_Estagio_FullStack",
-        "background": "https://raw.githubusercontent.com/VictorHugofny/EloGroup_Case_Estagio_FullStack/main/src/assets/previa.gif"
-    },
+
     {
         "name": "Universitario World",
         "description": "Jogo desenvolvido na Unity",
-        "homepage": "https://www.youtube.com/watch?v=DYop9lguBeo&ab_channel=AcademicStudies",
+        "homepage": "https://gamejolt.com/games/UniversitarioWorld/480550",
         "background": "https://m.gjcdn.net/fireside-post-image/800/2993169-m2kyu7ri-v4.webp",
         "repositorio": null,
         "language": ["Unity", "C#"]

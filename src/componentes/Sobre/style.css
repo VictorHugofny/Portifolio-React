@@ -85,6 +85,7 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid rgb(57, 137, 250);
+    
 
 }
 
@@ -138,6 +139,7 @@
     border-top: 2px solid #3a3a44;
     border-bottom: 2px solid #3a3a44;
     flex-wrap: wrap;
+    
 }
 
 .topo .iconesL{

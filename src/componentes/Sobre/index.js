@@ -1,6 +1,7 @@
 import sobre from './sobre.json';
 import './style.css';
 import foto from '../../assets/foto.jpeg';
+import avatar from '../../assets/logo-cartoon.png'
 import linkedin from '../../assets/linkedin.png';
 import github from '../../assets/github.png';
 import elogroupLogo from '../../assets/elogroup.jpg';
@@ -8,35 +9,75 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect, useState } from 'react';
 import iconeSoftware from '../../assets/iconeDesenvolvilmento.png';
-import iconeSocial from '../../assets/social.png'
+import iconeSocial from '../../assets/social.png';
+import './ProfileImage.css'; // CSS separado
+
+
+function ProfileImage() {
+    const [showLogo, setShowLogo] = useState(false);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setShowLogo(prev => !prev);
+        }, 3000); // troca a cada 3 segundos
+        return () => clearInterval(interval);
+    }, []);
+
+   return (
+        <div data-aos="fade-down" data-aos-duration="1900" className="profile-container">
+            <img
+                src={foto}
+                alt="Profile"
+                className={`profile-image ${showLogo ? 'hidden' : 'visible'}`}
+            />
+            <img
+                src={avatar}
+                alt="Avatar"
+                className={`profile-image ${showLogo ? 'visible' : 'hidden'}`}
+            />
+        </div>
+    );
+}
 
 function Sobre() {
     useEffect(() => {
         AOS.init();
-    }, [])
+    }, []);
 
     return (
         <div className='inicio' id="inicio">
+             <br></br>
+              <br></br>
             <div>
                 <div className='nome-foto'>
                     <div data-aos="fade-down" data-aos-duration="900">
-                        <img className='foto' src={foto}></img>
+                        {/* Aqui usamos o componente ProfileImage */}
+                        <ProfileImage />
                     </div>
 
                     <div data-aos="fade-up" data-aos-duration="900">
                         <h1>{sobre.name}</h1>
-                        <p class="line anim-typewriter">Desenvolvedor</p>
+                        <p className="line anim-typewriter">Desenvolvedor e Tech Lead</p>
 
                         <div className='button'>
-                            <a target="_blank" href="https://github.com/VictorHugofny"><button className='buttonsPerfil' id="primeiroButton"> <img src={github} width='20px'></img> GITHUB</button></a>
-                            <a target="_blank" href="https://www.linkedin.com/in/victor-hugo-santana/"><button className='buttonsPerfil'><img src={linkedin} width='20px'></img> LINKEDIN</button></a>
+                            <a target="_blank" href="https://github.com/VictorHugofny">
+                                <button className='buttonsPerfil' id="primeiroButton">
+                                    <img src={github} width='20px' alt="GitHub" /> GITHUB
+                                </button>
+                            </a>
+                            <a target="_blank" href="https://www.linkedin.com/in/victor-hugo-santana/">
+                                <button className='buttonsPerfil'>
+                                    <img src={linkedin} width='20px' alt="LinkedIn" /> LINKEDIN
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
+
                 <div data-aos="zoom-in" data-aos-duration="900">
 
                     <p id='texto'>
-                        Sou <strong>Victor Hugo</strong>, Desenvolvedor III e Tech Lead na <strong>EloGroup</strong>, com atuação em soluções digitais voltadas para órgãos públicos, especialmente na área ambiental. Tenho experiência com <strong>SYDLE One</strong>, desenvolvimento de <strong>Web Components</strong> com <strong>Stencil.js</strong>, além de tecnologias como <strong>JavaScript, TypeScript, Node.js, PostgreSQL, Elasticsearch</strong> e <strong>MongoDB</strong>. Atuo com <strong>Scrum</strong>, especificando tarefas, conduzindo code reviews. Também ministrei oficinas de programação e contribuo ativamente com documentação técnica nos projetos.
+                        Sou <strong>Victor Hugo, Desenvolvedor IV (Sênior) e Tech Lead</strong> na <strong>EloGroup</strong>, com atuação em soluções digitais voltadas para órgãos públicos, especialmente na área ambiental. Tenho experiência com <strong>SYDLE One</strong>, desenvolvimento de <strong>Web Components</strong> com <strong>Stencil.js</strong>, além de tecnologias como <strong>JavaScript, TypeScript, Node.js, PostgreSQL, Elasticsearch</strong> e <strong>MongoDB</strong>. Atuo com <strong>Scrum</strong>, especificando tarefas, conduzindo code reviews. Também ministrei oficinas de programação e contribuo ativamente com documentação técnica nos projetos.
                     </p>
                 </div>
 
@@ -46,14 +87,14 @@ function Sobre() {
                             <img src={elogroupLogo} className='elogroupLogo'></img><br></br>
                             <div>
                                 <p> Elogroup </p>
-                                <strong> Desenvolvedor III & Tech Lead</strong>
+                                <strong>  Desenvolvedor IV / Tech Lead (Sênior) </strong>
                             </div>
                         </div>
                         <div className='itens'>
                             <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Instituto_Federal_Baiano_-_Marca_Vertical_2015.svg/1200px-Instituto_Federal_Baiano_-_Marca_Vertical_2015.svg.png'></img>
                             <div>
                                 <p> Instituto Federal Baiano</p>
-                                <strong>Ciencia da computação</strong>
+                                <strong>Ciencia da computação 🎓</strong>
                             </div>
 
                         </div>
@@ -163,7 +204,7 @@ function Sobre() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Sobre;

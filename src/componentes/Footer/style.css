@@ -12,6 +12,8 @@ a {
     height: 100px;
     margin-top: 30px;
     margin-bottom: 0px;
-    border-top: 1px solid rgb(0, 118, 197);
+    border-top: 2px solid rgb(0, 118, 197);
+    box-shadow: 2px 2px 10px 2px rgb(32, 166, 255);
     background-color: #080808;
+    
 }

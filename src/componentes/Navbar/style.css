@@ -19,6 +19,8 @@ body {
   top: 0;
   width: 100%;
   border-bottom: 1px solid rgb(0, 118, 197);
+      box-shadow: 1px 1px 8px 1px rgb(32, 166, 255);
+
 }
 
 .navMenu a {
