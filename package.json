@@ -2,7 +2,7 @@
   "name": "meu-app-do-react",
   "version": "0.1.0",
   "engines": {
-    "node": "18.x"
+    "node": "22.x"
   },
   "private": true,
   "dependencies": {
