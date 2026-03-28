@@ -1,11 +1,11 @@
 .profile-container {
     position: relative;
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
-    border: rgb(60, 150, 254) 3px solid;
-    box-shadow: 2px 2px 20px 2px rgb(32, 166, 255);
+    border: rgb(128, 1, 160) 3px solid;
+    box-shadow: 2px 2px 20px 2px rgb(129, 32, 255);
 }
 
 .profile-image {
@@ -27,6 +27,7 @@
 
 .profile-image.hidden {
     opacity: 0;
-    transform: scale(1.2); /* aumenta levemente ao desaparecer */
+    transform: scale(1.2);
+    /* aumenta levemente ao desaparecer */
     z-index: 1;
 }

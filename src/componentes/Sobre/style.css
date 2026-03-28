@@ -1,13 +1,17 @@
 .inicio {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 120px 6% 60px;
+    padding: 0px 6% 60px;
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 18px;
 }
 
-.inicio h1, .inicio p, .inicio h2, .inicio h3, .inicio li {
+.inicio h1,
+.inicio p,
+.inicio h2,
+.inicio h3,
+.inicio li {
     color: var(--text-primary);
 }
 

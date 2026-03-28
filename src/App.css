@@ -2,19 +2,20 @@
   text-align: center;
 }
 
-button{
+button {
   border: none;
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 20px;
   margin-left: 10px;
-  padding-left:40px;
+  padding-left: 40px;
   padding-right: 40px;
-  background-color: #3188EB;
-  box-shadow: 4px 4px 30px 4px rgba(0, 145, 255, 0.369);
+  background-color: #000000;
+  box-shadow: 4px 4px 30px 4px rgba(191, 96, 255, 0.527);
 }
 
-a, button{
+a,
+button {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 16px;
@@ -51,23 +52,29 @@ a, button{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
 body::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 12px;
+  /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: rgb(30, 30, 30);        /* color of the tracking area */
+  background: rgb(30, 30, 30);
+  /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(0, 149, 255);    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 2px solid rgb(1, 15, 98);  /* creates padding around scroll thumb */
+  background-color: rgb(157, 99, 204);
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 2px solid rgb(1, 15, 98);
+  /* creates padding around scroll thumb */
 }
 
 a {
