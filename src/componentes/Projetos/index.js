@@ -9,6 +9,12 @@ import {
     IconUnity, IconCSharp, IconMongoDB, IconExpress
 } from '../Sobre/SVGIcons';
 
+// Import local images
+import saberflixImg from '../../assets/saberflix.png';
+import devtoolsImg from '../../assets/DEVTOOLS.png';
+import eloGroupImg from '../../assets/elogroup.jpg';
+import sigerhGif from '../../assets/chrome_CxkeZYfgdq (2).gif';
+
 // Componente para Tags de Tecnologia com Ícones
 const TechTag = ({ tech }) => {
     const getIcon = (name) => {
@@ -156,6 +162,16 @@ function Projetos() {
         document.body.style.overflow = 'unset';
     };
 
+    const getImage = (project) => {
+        const imageMap = {
+            'saberflix': saberflixImg,
+            'sigerh': sigerhGif,
+            'portal-atos': devtoolsImg,
+            'universitario-world': 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800'
+        };
+        return imageMap[project.id] || project.background;
+    };
+
     const featuredProject = projetos.find(p => p.featured);
     const regularProjects = projetos.filter(p => !p.featured);
 
@@ -173,7 +189,7 @@ function Projetos() {
                         <h3 className="sub-title">Em Destaque</h3>
                         <div className='featured-card glass-morphism' onClick={() => openModal(featuredProject)}>
                             <div className='featured-image'>
-                                <img src={featuredProject.background} alt={featuredProject.name} />
+                                <img src={getImage(featuredProject)} alt={featuredProject.name} />
                                 <div className='featured-badge'>DESTAQUE</div>
                             </div>
                             <div className='featured-content'>
@@ -205,7 +221,7 @@ function Projetos() {
                         >
                             <div className="project-card glass-morphism">
                                 <div className="card-top">
-                                    <img src={project.background} alt={project.name} />
+                                    <img src={getImage(project)} alt={project.name} />
                                     <div className="card-hover-overlay">
                                         <div className="overlay-content">
                                             <p>{project.description}</p>
@@ -242,7 +258,7 @@ function Projetos() {
             <ProjectModal 
                 isOpen={isModalOpen} 
                 onClose={closeModal} 
-                project={selectedProject} 
+                project={{...selectedProject, background: selectedProject ? getImage(selectedProject) : ''}} 
             />
         </section>
     );
