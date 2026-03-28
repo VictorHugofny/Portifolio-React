@@ -1,49 +1,98 @@
-[   
+[
     {
-        "name": "SaberFlix - TCC",
-        "description": "A 𝗦𝗮𝗯𝗲𝗿𝗙𝗹𝗶𝘅 é uma plataforma gratuita que categoriza e disponibiliza informações sobre filmes que podem ser utilizados na educação",
-        "homepage": "https://www.saberflix.net.br/",
-        "language": ["React", "Node.js", "MongoDB", "Express.js"],
-        "repositorio": null,
-        "background": "https://raw.githubusercontent.com/VictorHugofny/Portifolio-React/main/src/assets/saberflix%20png.png"
-    },
-    {
+        "id": "sigerh",
         "name": "SIGERH - PARÁ",
-        "description": "Atuei como desenvolvedor da ELOGROUP no 'Sistema de Gerenciamento de Recursos Hídricos - SIGERH'",
-        "homepage": "https://portal-dos-atos-autorizativos.semas.pa.gov.br/sistema-recursos-hidricos+obter-atos-autorizativos-de-recursos-hidricos+65775aa10c1eb452fc432a6f",
-        "language": ["Sydle", "Javascript", "ElasticSearch", "Stencil.js", "Web Components"],
-        "repositorio": null,
-        "background": "https://www.semas.pa.gov.br/wp-content/uploads/2024/10/up_ag_60279_0ddc2b63-083a-ab9f-fbef-338676e0bdff.jpg"
+        "featured": true,
+        "description": "Sistema de gerenciamento de recursos hídricos com funcionalidades geoespaciais avançadas.",
+        "longDescription": "O SIGERH é uma plataforma robusta desenvolvida para o estado do Pará, focada no monitoramento e gestão estratégica de recursos hídricos. O sistema integra dados complexos de bacias hidrográficas com visualizações em tempo real.",
+        "client": "SEMAS-PA (Secretaria de Estado de Meio Ambiente e Sustentabilidade)",
+        "role": "Tech Lead / Software Engineer IV",
+        "language": ["SYDLE", "Stencil.js", "Web Components", "JavaScript", "ElasticSearch"],
+        "responsibilities": [
+            "Arquitetura de Web Components geoespaciais",
+            "Gestão técnica da equipe de desenvolvimento",
+            "Otimização de consultas geoespaciais e performance",
+            "Definição de padrões de integração com a plataforma SYDLE"
+        ],
+        "metrics": [
+            "🏛 Sistema Governamental",
+            "🌍 Uso estadual (PA)",
+            "⚡ Alta complexidade",
+            "📊 Processamento geoespacial"
+        ],
+        "background": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200",
+        "homepage": "https://redesim.pa.gov.br/",
+        "year": "2024"
     },
     {
-        "name": "Portal dos Atos Autorizativos (SEMAS-PA)",
-        "description": "Atuei como desenvolvedor da ELOGROUP no Portal, Processos e Serviços. o Portal dos Atos Autorizativos da Secretaria de Estado de Meio Ambiente e Sustentabilidade (Semas)",
-        "homepage": "https://portal-dos-atos-autorizativos.semas.pa.gov.br/semas-pa/home",
-        "language": ["Sydle", "Javascript", "ElasticSearch"],
-        "repositorio": null,
-        "background": "https://www.semas.pa.gov.br/wp-content/uploads/2021/01/portal-atos-1.png"
+        "id": "portal-atos",
+        "name": "Portal dos Atos Autorizativos",
+        "featured": false,
+        "description": "Portal institucional para processos ambientais e licenciamento eletrônico.",
+        "longDescription": "Desenvolvimento de um portal centralizado para a gestão de atos autorizativos, permitindo que cidadãos e empresas acompanhem processos de licenciamento ambiental de forma transparente e ágil.",
+        "client": "SEMAS-PA",
+        "role": "Software Engineer IV",
+        "language": ["SYDLE", "JavaScript", "ElasticSearch"],
+        "responsibilities": [
+            "Desenvolvimento de interfaces dinâmicas em SYDLE",
+            "Modelagem de processos BPM complexos",
+            "Integração com serviços externos de autenticação",
+            "Implementação de regras de negócio para licenciamento ambiental"
+        ],
+        "metrics": [
+            "🏛 Governamental",
+            "📄 Licenciamento eletrônico",
+            "🏢 Uso institucional"
+        ],
+        "background": "https://images.unsplash.com/photo-1454165833767-027ffea70288?auto=format&fit=crop&q=80&w=800",
+        "homepage": "https://www.semas.pa.gov.br/",
+        "year": "2023"
     },
     {
-        "name": "DEV TOOLS",
-        "description": "Ferramentas para desenvolvedores",
-        "homepage": "https://victor-dev-tools.vercel.app/",
-        "background": "https://framerusercontent.com/images/mfr3k6tL2fQYqS4nCizWQFVYNk.jpg",
-        "repositorio": null,
-        "language": ["JS", "NODE.JS", "REACT.JS"]
-
+        "id": "saberflix",
+        "name": "SaberFlix - TCC",
+        "featured": false,
+        "description": "Plataforma educacional para catalogação de filmes educacionais.",
+        "longDescription": "Projeto de conclusão de curso focado na curadoria e disponibilização de conteúdos audiovisuais acadêmicos. A plataforma permite aos professores criar trilhas de aprendizagem baseadas em documentários e curtas-metragens.",
+        "client": "IF Baiano (Acadêmico)",
+        "role": "Desenvolvedor Fullstack",
+        "language": ["React", "Node.js", "MongoDB", "Express.js"],
+        "responsibilities": [
+            "Design da arquitetura fullstack (MERN)",
+            "Implementação de sistema de streaming simulado",
+            "Gestão de banco de dados NoSQL",
+            "Criação de interface baseada em UX educacional"
+        ],
+        "metrics": [
+            "🎓 Projeto Acadêmico (Finalista)",
+            "🎥 Educacional",
+            "🚀 MERN Stack"
+        ],
+        "background": "https://images.unsplash.com/photo-1522812631522-c36394ab926e?auto=format&fit=crop&q=80&w=800",
+        "homepage": "https://suap.ifbaiano.edu.br/media/edu/projeto_final/TCC_II_-_SABERFLIX-468450e2b8734f75a8c75af0c4ddad49.pdf",
+        "year": "2022"
     },
-
-    
-
     {
+        "id": "universitario-world",
         "name": "Universitario World",
-        "description": "Jogo desenvolvido na Unity",
-        "homepage": "https://gamejolt.com/games/UniversitarioWorld/480550",
-        "background": "https://m.gjcdn.net/fireside-post-image/800/2993169-m2kyu7ri-v4.webp",
-        "repositorio": null,
-        "language": ["Unity", "C#"]
-
+        "featured": false,
+        "description": "Projeto experimental de jogo acadêmico com elementos de gamificação.",
+        "longDescription": "Um jogo interativo desenvolvido para simular a vida acadêmica e engajar estudantes em atividades digitais. Foco em lógica de jogo, física e interações 3D.",
+        "client": "Experimental",
+        "role": "Game Developer",
+        "language": ["Unity", "C#"],
+        "responsibilities": [
+            "Desenvolvimento de scripts de comportamento em C#",
+            "Design de níveis e mecânicas de gamificação",
+            "Otimização de performance em dispositivos móveis",
+            "Integração de assets 3D e sistemas de partículas"
+        ],
+        "metrics": [
+            "🎮 Game Dev",
+            "🕹 Unity Engine",
+            "✨ Gamificação"
+        ],
+        "background": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800",
+        "year": "2021"
     }
-  
-    
 ]
