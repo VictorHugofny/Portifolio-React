@@ -1,12 +1,17 @@
 import './style.css'
 
 function Footer(){
-    
     return(
-        <div className='footer'>
-            <strong>Portifolio by</strong>  <a href="https://github.com/VictorHugofny">victorhugofny</a> <br></br><br></br>
-            <a href="https://github.com/VictorHugofny"> <strong>victorhugofny@gmail.com</strong> </a> <br></br>
-        </div>
+        <footer className='footer'>
+            <div className="container footer-content">
+                <div className="footer-info">
+                    <strong>Portfólio by</strong> <a href="https://github.com/VictorHugofny" target="_blank" rel="noreferrer">Victor Hugo (victorhugofny)</a>
+                </div>
+                <div className="footer-contact">
+                    <a href="mailto:victorhugofny@gmail.com"><strong>victorhugofny@gmail.com</strong></a>
+                </div>
+            </div>
+        </footer>
     )
 }
 

@@ -1,17 +1,73 @@
+:root {
+  /* Colors - Deep Purple/Dark UI */
+  --bg-primary: #0A0510;
+  --bg-secondary: #130a21;
+  --bg-card: rgba(29, 13, 50, 0.4);
+  
+  --text-primary: #ffffff;
+  --text-secondary: #a19db3;
+  --text-highlight: #a855f7;
+  
+  --accent-purple: #8b5cf6;
+  --accent-purple-light: #c084fc;
+  --accent-glow: rgba(139, 92, 246, 0.5);
+
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.02);
+  --glass-border: rgba(139, 92, 246, 0.15);
+  --glass-blur: blur(8px);
+
+  /* Glow Utilities */
+  --glow-radial-bg: radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.15) 0%, transparent 60%);
+
+  /* Typography */
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Fira Code', 'Courier New', monospace;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--font-main);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Global Ambient Glows mirroring the Mockup */
+body::before {
+  content: '';
+  position: fixed;
+  top: -20vh;
+  left: -20vw;
+  width: 80vw;
+  height: 80vh;
+  background-image: radial-gradient(circle at 50% 50%, rgba(109, 40, 217, 0.15), transparent 60%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  bottom: -20vh;
+  right: -20vw;
+  width: 80vw;
+  height: 80vh;
+  background-image: radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.12), transparent 60%);
+  z-index: -1;
+  pointer-events: none;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: var(--font-mono);
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -19,5 +75,35 @@ html {
 
 a {
   text-decoration: none;
-  color: rgb(148 193 255);
+  color: var(--accent-purple-light);
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--text-primary);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Utilities for the purple glows from mockup */
+.mockup-glow-container {
+  position: relative;
+}
+
+.mockup-glow-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.4) 0%, transparent 70%);
+  filter: blur(40px);
+  z-index: -1;
+  pointer-events: none;
 }

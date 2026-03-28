@@ -11,6 +11,7 @@ import { useEffect, useState } from 'react';
 import iconeSoftware from '../../assets/iconeDesenvolvilmento.png';
 import iconeSocial from '../../assets/social.png';
 import './ProfileImage.css'; // CSS separado
+import Background3D from '../Background3D';
 
 
 function ProfileImage() {
@@ -23,7 +24,7 @@ function ProfileImage() {
         return () => clearInterval(interval);
     }, []);
 
-   return (
+    return (
         <div data-aos="fade-down" data-aos-duration="1900" className="profile-container">
             <img
                 src={foto}
@@ -45,27 +46,27 @@ function Sobre() {
     }, []);
 
     return (
-        <div className='inicio' id="inicio">
-             <br></br>
-              <br></br>
-            <div>
-                <div className='nome-foto'>
-                    <div data-aos="fade-down" data-aos-duration="900">
-                        {/* Aqui usamos o componente ProfileImage */}
+        <section className='inicio-wrapper' id="inicio" style={{ position: 'relative', overflow: 'hidden' }}>
+            <Background3D />
+            <div className='inicio' style={{ position: 'relative', zIndex: 1 }}>
+                <br></br>
+                <div className='hero-content'>
+                    <div className='mockup-glow-container' data-aos="fade-down" data-aos-duration="900">
                         <ProfileImage />
-                    </div>
+                    </div>                    <div className='hero-text-block' data-aos="fade-up" data-aos-duration="900">
+                        <p className='hero-greeting'>Opa! Sou o <span className='highlight-purple'>Victor Hugo</span></p>
+                        <h1 className='hero-main-title'>
+                            Construindo sistemas que <span className='highlight-purple outline-text'>evoluem</span>
+                        </h1>
+                        <h2 className='hero-subtitle'>Software Enginee(IV) e Techlead na EloGroup.</h2>
 
-                    <div data-aos="fade-up" data-aos-duration="900">
-                        <h1>{sobre.name}</h1>
-                        <p className="line anim-typewriter">Desenvolvedor e Tech Lead</p>
-
-                        <div className='button'>
-                            <a target="_blank" href="https://github.com/VictorHugofny">
+                        <div className='button hero-buttons'>
+                            <a target="_blank" rel="noreferrer" href="https://github.com/VictorHugofny">
                                 <button className='buttonsPerfil' id="primeiroButton">
                                     <img src={github} width='20px' alt="GitHub" /> GITHUB
                                 </button>
                             </a>
-                            <a target="_blank" href="https://www.linkedin.com/in/victor-hugo-santana/">
+                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/victor-hugo-santana/">
                                 <button className='buttonsPerfil'>
                                     <img src={linkedin} width='20px' alt="LinkedIn" /> LINKEDIN
                                 </button>
@@ -111,99 +112,57 @@ function Sobre() {
                         <img src='https://seeklogo.com/images/S/stencil-logo-2361B95AA4-seeklogo.com.png' width='50px'></img>
                     </div>
                 </div>
-                <h1 id='sobremim'>Experiências 💎</h1>
-
-                <div className='expeirencias'>
-                    <div data-aos="fade-up" data-aos-duration="800">
-
-                        <div className='cards-experiencia'>
-                            <div className='topo-card'>
-                                <img src={iconeSoftware} width="40px" />
-                                <h2>Desenvolvimento de Software</h2>
+                <div className='work-experience-section' id='experiencias'>
+                    <h2 className='section-title'>Work Experience</h2>
+                    <div className='work-grid'>
+                        {/* Card 1 */}
+                        <div className='work-card mockup-glow-container' data-aos="fade-up" data-aos-duration="800">
+                            <div className='work-icon-wrapper'>
+                                <span role="img" aria-label="star" style={{ fontSize: '24px', filter: 'drop-shadow(0 0 10px rgba(139, 92, 246, 0.8))' }}>⭐</span>
                             </div>
-
-                            <div className='tab-experiencia'>
-                                <div className='conteudo-exp'>
-                                    <h3>Tech Lead e Desenvolvimento em SYDLE One</h3>
-                                    <li>Atuação como Tech Lead, promovendo boas práticas com foco em automação de processos, arquitetura técnica e integração de serviços digitais.</li>
-                                    <li>Desenvolvimento de portais digitais personalizados na plataforma SYDLE One, com aplicação direta em projetos como SIGERH, SICAR e Licenciamento Ambiental da SEMAS-PA.</li>
-                                </div>
-
-                                <div className='conteudo-exp'>
-                                    <h3>Web Components Geoespaciais</h3>
-                                    <li>Criação de Web Components reutilizáveis com Stencil.js, JavaScript, TypeScript e Node.js, integrados ao SYDLE One.</li>
-                                    <li>Exploração de conceitos GIS como projeções geográficas, análises espaciais e sobreposição de geometrias, utilizando ferramentas como QGIS.</li>
-                                    <li>Desenvolvimento de POCs e soluções inovadoras, indo além dos limites convencionais da plataforma SYDLE.</li>
-                                </div>
-
-                                <div className='conteudo-exp'>
-                                    <h3>Frontend</h3>
-                                    <li>Desenvolvimento de interfaces modernas e responsivas com React.js, Vue.js e Stencil.js.</li>
-                                    <li>Integração de serviços por meio de APIs REST e foco na experiência do usuário.</li>
-                                </div>
-
-                                <div className='conteudo-exp'>
-                                    <h3>Backend</h3>
-                                    <li>Criação de APIs performáticas com Node.js e Express.js.</li>
-                                    <li>Trabalho com bancos relacionais e não relacionais, como PostgreSQL, MongoDB e Elasticsearch.</li>
-                                </div>
-
-                                <div className='conteudo-exp'>
-                                    <h3>Mobile e Desenvolvimento de Jogos</h3>
-                                    <li>Criação de apps multiplataforma com React Native.</li>
-                                    <li>Desenvolvimento de jogos 2D/3D com Unity e Godot, aplicando conceitos de lógica e interatividade.</li>
-                                </div>
+                            <div className='work-card-content'>
+                                <h3>Tech Lead / Sênior</h3>
+                                <p>EloGroup - Liderança técnica e Integração ambiental.</p>
+                                <a href="#projetos"><button className='btn-know-more'>KNOW MORE</button></a>
                             </div>
                         </div>
-
-
-
-                    </div>
-
-                    <div data-aos="fade-up" data-aos-duration="800">
-
-                        <div className='cards-experiencia'>
-                            <div className='topo-card'>
-                                <img src={iconeSocial} width="40px" />
-                                <h2>Habilidades Pessoais</h2>
+                        {/* Card 2 */}
+                        <div className='work-card mockup-glow-container' data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                            <div className='work-icon-wrapper' style={{ background: 'rgba(234, 179, 8, 0.05)' }}>
+                                <span role="img" aria-label="bulb" style={{ fontSize: '24px', filter: 'drop-shadow(0 0 10px rgba(234, 179, 8, 0.8))' }}>💡</span>
                             </div>
-
-                            <div className='tab-experiencia'>
-                                <div className='conteudo-exp'>
-                                    <h3>Liderança Técnica e Mentoria</h3>
-                                    <li>Condução de code reviews, apoio contínuo ao time e onboarding técnico com foco em Web Components e SYDLE.</li>
-                                    <li>Fomento à colaboração e à autonomia da equipe, garantindo alinhamento técnico e qualidade nas entregas.</li>
-                                </div>
-
-                                <div className='conteudo-exp'>
-                                    <h3>Metodologias Ágeis</h3>
-                                    <li>Atuação diária com Scrum, participando de plannings, refinamentos e sprints, sempre com foco em entregas de valor e melhoria contínua.</li>
-                                </div>
-
-                                <div className='conteudo-exp'>
-                                    <h3>Comunicação e Documentação</h3>
-                                    <li>Produção de documentação técnica clara e completa, repasses estruturados e apresentações técnicas para stakeholders internos e externos.</li>
-                                </div>
-
-                                <div className='conteudo-exp'>
-                                    <h3>Compartilhamento de Conhecimento</h3>
-                                    <li>Facilitador de oficinas e workshops sobre desenvolvimento de software, promovendo ambientes de aprendizado prático e colaborativo.</li>
-                                </div>
-
-                                <div className='conteudo-exp'>
-                                    <h3>Produção Acadêmica</h3>
-                                    <li>
-                                        Autor do artigo <a target='_blank' href='https://editorarealize.com.br/artigo/visualizar/80791'>“Segurança da Informação no Contexto Escolar”</a> (Editora Realize, 2022), abordando práticas de proteção de dados no ambiente educacional.
-                                    </li>
-                                </div>
+                            <div className='work-card-content'>
+                                <h3>SYDLE One & BPM</h3>
+                                <p>Desenvolvimento em portais personalizados e automações SIGERH.</p>
+                                <a href="#projetos"><button className='btn-know-more'>KNOW MORE</button></a>
                             </div>
                         </div>
-
-
+                        {/* Card 3 */}
+                        <div className='work-card mockup-glow-container' data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                            <div className='work-icon-wrapper' style={{ background: 'rgba(56, 189, 248, 0.05)' }}>
+                                <span role="img" aria-label="coffee" style={{ fontSize: '24px', filter: 'drop-shadow(0 0 10px rgba(56, 189, 248, 0.8))' }}>☕</span>
+                            </div>
+                            <div className='work-card-content'>
+                                <h3>Web Components</h3>
+                                <p>Projeções GIS, Stencil.js, CSS Modules e Micro-frontends.</p>
+                                <a href="#projetos"><button className='btn-know-more'>KNOW MORE</button></a>
+                            </div>
+                        </div>
+                        {/* Card 4 */}
+                        <div className='work-card mockup-glow-container' data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                            <div className='work-icon-wrapper' style={{ background: 'rgba(168, 85, 247, 0.05)' }}>
+                                <span role="img" aria-label="mobile" style={{ fontSize: '24px', filter: 'drop-shadow(0 0 10px rgba(168, 85, 247, 0.8))' }}>📱</span>
+                            </div>
+                            <div className='work-card-content'>
+                                <h3>Backend & Mobile</h3>
+                                <p>Criação de APIs, Bancos MongoDB/PG e Cross-Platform.</p>
+                                <a href="#projetos"><button className='btn-know-more'>KNOW MORE</button></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

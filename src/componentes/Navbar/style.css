@@ -1,71 +1,60 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background: linear-gradient(rgba(0, 0, 0, 0.450), rgba(0, 0, 0, 0.550)), url("https://raw.githubusercontent.com/VictorHugofny/repoImagens/main/Projects%20Page%20(2).png");
-  font-family: "Montserrat", sans-serif;
-}
-.navMenu{
-  z-index: 1000;
-  background-color: #080808;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  position: -webkit-sticky; /* Necessário para funcionar no Safari */
+.navMenu {
   position: sticky;
   top: 0;
   width: 100%;
-  border-bottom: 1px solid rgb(0, 118, 197);
-      box-shadow: 1px 1px 8px 1px rgb(32, 166, 255);
+  z-index: 1000;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-bottom: 1px solid var(--glass-border);
+  padding: 16px 0;
+  transition: all var(--transition-normal);
+}
 
+.navContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
 }
 
 .navMenu a {
-  color: #f6f4e6;
-  text-decoration: none;
-  font-size: 19px;
-  text-transform: uppercase;
+  color: var(--text-secondary);
+  font-size: 16px;
   font-weight: 500;
-  display: inline-block;
-  padding-left: 24px;
-  padding-right: 24px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 4px 0;
+  transition: color var(--transition-fast);
+}
+
+.navMenu a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent-cyan);
+  transition: width var(--transition-fast);
+  box-shadow: 0 0 8px var(--accent-glow);
 }
 
 .navMenu a:hover {
-  color: #3abffd;
+  color: var(--text-primary);
 }
 
-@media only screen and (max-width: 600px) {
+.navMenu a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .navContainer {
+    gap: 16px;
+  }
   .navMenu a {
-    color: #f6f4e6;
-    text-decoration: none;
-    font-size: 16px;  
-    padding-left: 10px;
-    padding-right: 10px;
+    font-size: 13px;
   }
 }
 
-@media only screen and (max-width: 400px) {
-  .navMenu a {
-    color: #f6f4e6;
-    text-decoration: none;
-    font-size: 14px;  
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .navMenu a {
-    color: #f6f4e6;
-    text-decoration: none;
-    font-size: 12px;  
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}

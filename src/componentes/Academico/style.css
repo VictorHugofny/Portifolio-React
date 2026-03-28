@@ -1,32 +1,100 @@
-*{
-    padding: 0;
-    margin: 0;
+.academico-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h2{
-    color: white;
-}
-h4{
-    color: rgb(146, 144, 144);
+.academico-title {
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: 48px;
+    text-align: center;
 }
 
-figure { 
-    width: 80%; 
-    min-width: 16.5em; 
-    margin:0 auto;
-    max-width: 800px;
+.academico-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    width: 100%;
+}
 
+@media (min-width: 900px) {
+    .academico-grid {
+        grid-template-columns: 1fr 1fr;
     }
-.boxVideo {
-    position: relative;
-    padding-bottom: 56.25%; 
-    padding-top: 25px;
-    height: 0;
-    margin:0 auto;
-    margin-bottom: 20px;
-    
 }
-.boxVideo iframe {
+
+.academico-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    backdrop-filter: var(--glass-blur);
+    transition: all var(--transition-normal);
+}
+
+.academico-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(99, 102, 241, 0.4);
+    box-shadow: 0 12px 32px rgba(99, 102, 241, 0.1);
+}
+
+.academico-card-header h3 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin: 12px 0 0 0;
+}
+
+.academico-badge {
+    background: rgba(0, 229, 255, 0.1);
+    color: var(--accent-cyan);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1px solid rgba(0, 229, 255, 0.2);
+}
+
+.academico-card-body p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.academico-card-body strong {
+    color: var(--text-primary);
+}
+
+.academico-embed {
+    margin-top: 24px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--glass-border);
+    background: #000;
+}
+
+.pdf-embed object {
+    display: block;
+    width: 100%;
+    min-height: 400px;
+}
+
+.video-embed {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+
+.video-embed iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -34,14 +102,20 @@ figure {
     height: 100%;
 }
 
-object{
-    max-width: 850px;
+.academico-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--accent-indigo);
+    border: 1px solid var(--accent-indigo);
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all var(--transition-fast);
 }
 
-#academico{
-    margin-top: 40px;
-}
-
-.trabalhos{
-    margin-top: 20px;
+.academico-btn:hover {
+    background: var(--accent-indigo);
+    color: #fff;
+    box-shadow: 0 0 16px rgba(99, 102, 241, 0.4);
 }
