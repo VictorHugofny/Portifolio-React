@@ -4,7 +4,7 @@
     padding: 0px 6% 60px;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 10px;
 }
 
 .inicio h1,
@@ -26,8 +26,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 24px;
-    margin-bottom: 60px;
+    gap: 40px;
+    margin-bottom: 100px;
     margin-top: 40px;
 }
 
@@ -127,6 +127,13 @@
     border: 1px solid var(--glass-border);
     border-radius: 12px;
     backdrop-filter: var(--glass-blur);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#texto p {
+    margin: 0;
 }
 
 #texto strong {
@@ -134,60 +141,212 @@
     font-weight: 600;
 }
 
-/* Tops/Skills Bar */
-.topo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 32px;
-    padding: 32px;
+/* Professional Summary Grid */
+.professional-summary {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+@media (min-width: 900px) {
+    .professional-summary {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.summary-card {
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
-    border-radius: 16px;
+    border-radius: 20px;
+    padding: 24px;
     backdrop-filter: var(--glass-blur);
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
-}
-
-.trabalho {
+    transition: all var(--transition-normal);
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
 }
 
-.itens {
+.summary-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent-purple-light);
+    box-shadow: 0 12px 40px rgba(139, 92, 246, 0.15);
+}
+
+.card-header {
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
-.itens img {
-    border-radius: 8px;
-    background: #fff;
-    padding: 4px;
+.company-logo {
     width: 48px;
     height: 48px;
-    object-fit: contain;
+    border-radius: 10px;
+    object-fit: cover;
+    background: #fff;
+    padding: 4px;
 }
 
-.iconesL {
+.institution-logo-container {
+    width: 48px;
+    height: 48px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
+    align-items: center;
     justify-content: center;
 }
 
-.iconesL img {
-    width: 45px;
-    height: 45px;
-    object-fit: contain;
-    transition: transform var(--transition-fast);
+.institution-logo-container svg {
+    width: 100%;
+    height: 100%;
 }
 
-.iconesL img:hover {
-    transform: scale(1.1) translateY(-4px);
-    filter: drop-shadow(0 0 8px var(--accent-glow));
+.title-area h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
 }
+
+.badge-senior {
+    font-size: 0.7rem;
+    background: rgba(139, 92, 246, 0.2);
+    color: var(--accent-purple-light);
+    padding: 2px 8px;
+    border-radius: 12px;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.status-tag {
+    font-size: 0.75rem;
+    color: var(--accent-cyan);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.status-tag::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: var(--accent-cyan);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--accent-cyan);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.main-role {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    line-height: 1.2;
+}
+
+.simple-text {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* External Links Styling */
+.external-link {
+    text-decoration: none;
+    transition: all var(--transition-fast);
+}
+
+.external-link .simple-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: all var(--transition-fast);
+}
+
+.external-link:hover .simple-text {
+    background: rgba(139, 92, 246, 0.1);
+    border-color: rgba(139, 92, 246, 0.3);
+    color: var(--text-primary);
+}
+
+.external-link svg {
+    opacity: 0.5;
+    transition: all var(--transition-fast);
+}
+
+.external-link:hover svg {
+    opacity: 1;
+    transform: translate(2px, -2px);
+    color: var(--accent-purple-light);
+}
+
+.simple-text-mini {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+    padding: 8px 10px;
+}
+
+.card-info-summary {
+    margin-top: 4px;
+    border-left: 2px solid var(--accent-purple);
+    background: rgba(139, 92, 246, 0.03);
+    border-radius: 0 8px 8px 0;
+}
+
+/* Tech Grid Small */
+.tech-grid-small {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 12px;
+}
+
+.tech-item-mini {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all var(--transition-fast);
+}
+
+.tech-item-mini:hover {
+    background: rgba(139, 92, 246, 0.1);
+    border-color: rgba(139, 92, 246, 0.2);
+    transform: scale(1.05);
+}
+
+.tech-item-mini svg {
+    width: 28px;
+    height: 28px;
+}
+
+.tech-item-mini span {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
 
 /* Work Experience Section Model */
 .section-title {

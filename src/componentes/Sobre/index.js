@@ -8,10 +8,9 @@ import elogroupLogo from '../../assets/elogroup.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect, useState } from 'react';
-import iconeSoftware from '../../assets/iconeDesenvolvilmento.png';
-import iconeSocial from '../../assets/social.png';
 import './ProfileImage.css'; // CSS separado
 import Background3D from '../Background3D';
+import { IconJS, IconTS, IconReact, IconNode, IconDatabase, IconIFBaiano, IconExternal } from './SVGIcons';
 
 
 function ProfileImage() {
@@ -40,6 +39,7 @@ function ProfileImage() {
     );
 }
 
+
 function Sobre() {
     useEffect(() => {
         AOS.init();
@@ -49,16 +49,16 @@ function Sobre() {
         <section className='inicio-wrapper' id="inicio" style={{ position: 'relative', overflow: 'hidden' }}>
             <Background3D />
             <div className='inicio' style={{ position: 'relative', zIndex: 1 }}>
-                <br></br>
                 <div className='hero-content'>
                     <div className='mockup-glow-container' data-aos="fade-down" data-aos-duration="900">
                         <ProfileImage />
-                    </div>                    <div className='hero-text-block' data-aos="fade-up" data-aos-duration="900">
+                    </div>
+                    <div className='hero-text-block' data-aos="fade-up" data-aos-duration="900">
                         <p className='hero-greeting'>Opa! Sou o <span className='highlight-purple'>Victor Hugo</span></p>
                         <h1 className='hero-main-title'>
                             Construindo sistemas que <span className='highlight-purple outline-text'>evoluem</span>
                         </h1>
-                        <h2 className='hero-subtitle'>Software Enginee(IV) e Techlead na EloGroup.</h2>
+                        <h2 className='hero-subtitle'>Software Engineer (IV) e Tech Lead na EloGroup.</h2>
 
                         <div className='button hero-buttons'>
                             <a target="_blank" rel="noreferrer" href="https://github.com/VictorHugofny">
@@ -75,41 +75,96 @@ function Sobre() {
                     </div>
                 </div>
 
-                <div data-aos="zoom-in" data-aos-duration="900">
-
-                    <p id='texto'>
-                        Sou <strong>Victor Hugo, Desenvolvedor IV (Sênior) e Tech Lead</strong> na <strong>EloGroup</strong>, com atuação em soluções digitais voltadas para órgãos públicos, especialmente na área ambiental. Tenho experiência com <strong>SYDLE One</strong>, desenvolvimento de <strong>Web Components</strong> com <strong>Stencil.js</strong>, além de tecnologias como <strong>JavaScript, TypeScript, Node.js, PostgreSQL, Elasticsearch</strong> e <strong>MongoDB</strong>. Atuo com <strong>Scrum</strong>, especificando tarefas, conduzindo code reviews. Também ministrei oficinas de programação e contribuo ativamente com documentação técnica nos projetos.
+                <div data-aos="zoom-in" data-aos-duration="900" id='texto'>
+                    <p>
+                        Sou <strong>Victor Hugo, Desenvolvedor IV (Sênior) e Tech Lead</strong> na <strong>EloGroup</strong>, atuando na construção de soluções digitais para órgãos públicos, com foco na área ambiental.
+                    </p>
+                    <p>
+                        Trabalho com <strong>arquitetura e desenvolvimento</strong> utilizando tecnologias como <strong>JavaScript, TypeScript, Node.js</strong> e bancos de dados relacionais e não relacionais.
+                    </p>
+                    <p>
+                        Também participo da <strong>definição técnica das soluções</strong>, condução de code reviews e disseminação de conhecimento por meio de documentação e oficinas técnicas.
                     </p>
                 </div>
 
-                <div className='topo' data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1200">
-                    <div className='trabalho'>
-                        <div className='itens'>
-                            <img src={elogroupLogo} className='elogroupLogo'></img><br></br>
-                            <div>
-                                <p> Elogroup </p>
-                                <strong>  Desenvolvedor IV / Tech Lead (Sênior) </strong>
+                <div className='professional-summary' data-aos="fade-up" data-aos-duration="1200">
+                    {/* Card 1: Experiência Profissional */}
+                    <div className='summary-card'>
+                        <div className='card-header'>
+                            <img src={elogroupLogo} alt="EloGroup" className='company-logo' />
+                            <div className='title-area'>
+                                <h3>EloGroup</h3>
+                                <span className='badge-senior'>Software Engineer</span>
                             </div>
                         </div>
-                        <div className='itens'>
-                            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Instituto_Federal_Baiano_-_Marca_Vertical_2015.svg/1200px-Instituto_Federal_Baiano_-_Marca_Vertical_2015.svg.png'></img>
-                            <div>
-                                <p> Instituto Federal Baiano</p>
-                                <strong>Ciencia da computação 🎓</strong>
-                            </div>
+                        <div className='card-body'>
+                            <h4 className='main-role'>Tech Lead e Desenvolvedor</h4>
+                            <p className='simple-text'>
+                                Liderança técnica em projetos de impacto ambiental e governo digital.
+                            </p>
 
+                            <p className='simple-text'>
+                                Envolvendo o desenvolvimento de Web-components de soluções geograficas (mapas)
+                            </p>
                         </div>
-
-
                     </div>
-                    <div className='iconesL'>
-                        <img src='https://img.icons8.com/color/344/javascript--v1.png' width='45px'></img>
-                        <img src='https://img.icons8.com/color/344/vue-js.png' width='45px'></img>
-                        <img src='https://img.icons8.com/officel/344/react.png' width='45px'></img>
-                        <img src='https://img.icons8.com/fluency/452/node-js.png' width='45px'></img>
-                        <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAZlBMVEUAAAD///8dHR2lpaXl5eW5ubnp6enGxsb6+vry8vLS0tK3t7c9PT12dnZnZ2eXl5cPDw/a2trNzc0UFBRiYmLAwMAyMjKJiYmPj4+enp5RUVGtra0sLCwiIiJCQkItLS1NTU1zc3Olivw1AAACEklEQVR4nO3d626CQBCGYagInvF8rFbv/yZrE3fB+sNYZzLTzftcwfcFgd1hm2YfqcsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACeW2+Gg0JKtbSu82Bb5rJ21o3ubXrC/a721qVapjP5fnk+tK7VGClcwKu5da9opNIvzw/WxSKdK5jna+tiwUCp4Ni6WDBupyqqrpDOp3WxqN/0c/YGE9JcwuJonUVHvAtL6yRKpvES+rlvZE1CQUcLEFl1aHiyTqJleCvYsw6ipro1nFkHUZN+w/R/pfFJM7JOoiW+LfxsdYQ1b/wv6yha4vwi1VVbe+W9sM6ipL17SrPjrx3wOw5bTwPEhuwkce5v1i0+iSr9dRSfJq6sGz0QnwiX7v4xxUJ6qt93VzHbCFf0uH6oZb+u+bsXs58vpN3BrHzDXUV/T1QJ+6pp6PF3KuHcPJYn1lmUTGPFgXUULad4Ea2TqFml/jPNzqFhbZ1ETbgTu9ZB1IQloJ+TCtLSbxjmIpV1EC3H8KTpWCfREsfobg5jSItv/FS/Ks9DwcI6iZK4okn0hT9p7RGtszQuu46Qbmt+7uf40Unp3J6bDfBU62Cimy+u9fOsf3KxLhZVz8P+74LxpIKo3tm6VstSoaCzfeHqeeLXrNw8YwK5vyTp9YthsqttAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAV3wDiqUZ1a+a7UIAAAAASUVORK5CYII=' width='45px'></img>
 
-                        <img src='https://seeklogo.com/images/S/stencil-logo-2361B95AA4-seeklogo.com.png' width='50px'></img>
+                    {/* Card 2: Formação Acadêmica */}
+                    <div className='summary-card'>
+                        <div className='card-header'>
+                            <img
+                                src="https://ifbaiano.edu.br/portal/wp-content/themes/ReitoriaIfbaianoPortal/imagens/marca-if-baiano.svg"
+                                alt="IF Baiano"
+                                className='company-logo'
+                            />
+                            <div className='title-area'>
+                                <h3>IF Baiano</h3>
+                                <div className='status-tag'>Formado</div>
+                            </div>
+                        </div>
+                        <div className='card-body'>
+
+                            <h4 className='main-role'>
+                                Graduado em Ciência da Computação
+                            </h4>
+
+                            <a href="https://suap.ifbaiano.edu.br/media/edu/projeto_final/TCC_II_-_SABERFLIX-468450e2b8734f75a8c75af0c4ddad49.pdf" target="_blank" rel="noreferrer" className="external-link">
+                                <p className='simple-text'>
+                                    TCC: Plataforma Saberflix <IconExternal />
+                                </p>
+                            </a>
+
+                            <a href="https://editorarealize.com.br/artigo/visualizar/80791" target="_blank" rel="noreferrer" className="external-link">
+                                <p className='simple-text'>
+                                    Artigo: Segurança em Escolas (Ed. Realize) <IconExternal />
+                                </p>
+                            </a>
+
+                            <div className='card-info-summary'>
+                                <p className='simple-text-mini'>
+                                    Bolsista PIBID: Oficinas de tecnologia em escolas públicas.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    {/* Card 3: Tecnologias Principais */}
+                    <div className='summary-card'>
+                        <div className='card-header'>
+                            <div className='title-area'>
+                                <h3>Tecnologias Principais</h3>
+                            </div>
+                        </div>
+                        <div className='card-body'>
+                            <div className='tech-grid-small'>
+                                <div className='tech-item-mini'><IconJS /> <span>JavaScript</span></div>
+                                <div className='tech-item-mini'><IconTS /> <span>TypeScript</span></div>
+                                <div className='tech-item-mini'><IconReact /> <span>React</span></div>
+                                <div className='tech-item-mini'><IconNode /> <span>Node.js</span></div>
+                                <div className='tech-item-mini'><IconDatabase /> <span>SQL/NoSQL</span></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className='work-experience-section' id='experiencias'>
