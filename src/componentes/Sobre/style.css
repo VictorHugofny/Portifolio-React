@@ -310,6 +310,14 @@
     border-radius: 0 8px 8px 0;
 }
 
+.tech-subtitle {
+    font-size: 1rem;
+    color: var(--accent-purple-light);
+    margin-bottom: 12px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
 /* Tech Grid Small */
 .tech-grid-small {
     display: grid;

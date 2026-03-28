@@ -10,7 +10,11 @@ import 'aos/dist/aos.css';
 import { useEffect, useState } from 'react';
 import './ProfileImage.css'; // CSS separado
 import Background3D from '../Background3D';
-import { IconJS, IconTS, IconReact, IconNode, IconDatabase, IconIFBaiano, IconExternal } from './SVGIcons';
+import {
+    IconJS, IconTS, IconReact, IconNode, IconDatabase,
+    IconExternal, IconStencil, IconAzure, IconGeo,
+    IconAutomation, IconSydle, RestApi, WebComponents
+} from './SVGIcons';
 
 
 function ProfileImage() {
@@ -160,9 +164,17 @@ function Sobre() {
                             <div className='tech-grid-small'>
                                 <div className='tech-item-mini'><IconJS /> <span>JavaScript</span></div>
                                 <div className='tech-item-mini'><IconTS /> <span>TypeScript</span></div>
+                                <div className='tech-item-mini'><IconSydle /> <span>Sydle One</span></div>
+                                <div className='tech-item-mini'><IconStencil /> <span>Stencil.js</span></div>
+                                <div className='tech-item-mini'><WebComponents /> <span>Web Components</span></div>
+                                <div className='tech-item-mini'><IconGeo /> <span>Cálculos GEO</span></div>
                                 <div className='tech-item-mini'><IconReact /> <span>React</span></div>
                                 <div className='tech-item-mini'><IconNode /> <span>Node.js</span></div>
                                 <div className='tech-item-mini'><IconDatabase /> <span>SQL/NoSQL</span></div>
+                                <div className='tech-item-mini'><IconAzure /> <span>Azure DevOps</span></div>
+                                <div className='tech-item-mini'><IconAutomation /> <span>Automação</span></div>
+                                <div className='tech-item-mini'><RestApi /> <span>REST APIs</span></div>
+
                             </div>
                         </div>
                     </div>
