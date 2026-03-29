@@ -251,10 +251,10 @@ function Sobre() {
 
                 <div data-aos="zoom-in" data-aos-duration="900" id='texto'>
                     <p>
-                        Sou <strong>Victor Hugo, Desenvolvedor IV (Sênior) e Tech Lead</strong> na <strong>EloGroup</strong>, atuando na construção de soluções digitais para órgãos públicos, com foco na área ambiental.
+                        Sou <strong>Victor Hugo, Software Engineer IV (Sênior) e Tech Lead</strong> na <strong>EloGroup</strong>, atuando na construção de soluções digitais para órgãos públicos, com foco na área ambiental.
                     </p>
                     <p>
-                        Trabalho com <strong>arquitetura e desenvolvimento</strong> utilizando tecnologias como <strong>JavaScript, TypeScript, Node.js</strong> e bancos de dados relacionais e não relacionais.
+                        Trabalho com <strong>arquitetura e desenvolvimento</strong> utilizando tecnologias como <strong>JavaScript, TypeScript, Node.js, SydleOne, Stencil.js, React.js</strong> e bancos de dados relacionais e não relacionais.
                     </p>
                     <p>
                         Também participo da <strong>definição técnica das soluções</strong>, condução de code reviews e disseminação de conhecimento por meio de documentação e oficinas técnicas.

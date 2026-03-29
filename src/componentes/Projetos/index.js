@@ -13,6 +13,7 @@ import {
 import saberflixImg from '../../assets/chrome_CxkeZYfgdq (2).gif';
 import sigerhGif from '../../assets/portal-atos.png';
 import portalAtos from '../../assets/portal-atos-autorizativos.png';
+import kora3d from '../../assets/KORA.png';
 
 // Componente para Tags de Tecnologia com Ícones
 const TechTag = ({ tech }) => {
@@ -166,6 +167,7 @@ function Projetos() {
             'saberflix': saberflixImg,
             'sigerh': sigerhGif,
             'portal-atos': portalAtos,
+            'kora3d': kora3d,
             'universitario-world': 'https://m.gjcdn.net/fireside-post-image/800/2993169-m2kyu7ri-v4.webp'
         };
         return imageMap[project.id] || project.background;

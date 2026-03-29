@@ -89,6 +89,34 @@
         "year": "2023"
     },
     {
+        "id": "kora3d",
+        "name": "Kora 3D",
+        "description": "Presentes únicos feitos com impressão 3D em Montes Claros - MG.",
+        "role": "Desenvolvedor Front-end",
+        "language": [
+            "React",
+            "Three.js",
+            "Styled Components",
+            "Vercel"
+        ],
+        "background": "https://images.unsplash.com/photo-1631035252538-2d8869ff9ba1?auto=format&fit=crop&q=80",
+        "client": "Kora 3D",
+        "year": 2026,
+        "homepage": "https://kora-3d.vercel.app/",
+        "longDescription": "Na Kora Design, materializamos sua vontade de presentear de forma singular. De utilidades domésticas a Action Figures, cada peça é criada com tecnologia de impressão 3D e enviada para todo o Brasil diretamente de Montes Claros/MG. A plataforma oferece uma experiência imersiva com visualização de modelos 3D.",
+        "responsibilities": [
+            "Desenvolvimento de interface interativa com integração de modelos 3D usando Three.js",
+            "Criação de um catálogo responsivo para exibição de produtos personalizados",
+            "Implementação de botões flutuantes e fluxos de contato direto para WhatsApp e Instagram",
+            "Otimização de performance e deploy automatizado na Vercel"
+        ],
+        "metrics": [
+            "Experiência de usuário imersiva com visualização 3D em tempo real",
+            "Conversão estratégica focada em redes sociais",
+            "Design responsivo otimizado para navegação mobile"
+        ]
+    },
+    {
         "id": "universitario-world",
         "name": "Universitario World",
         "featured": false,
