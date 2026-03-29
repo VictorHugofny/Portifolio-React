@@ -1,7 +1,7 @@
 import sobre from './sobre.json';
 import './style.css';
 import foto from '../../assets/foto.jpeg';
-import avatar from '../../assets/logo-cartoon.png'
+import avatar from '../../assets/cartoon.png'
 import linkedin from '../../assets/linkedin.png';
 import github from '../../assets/github.png';
 import elogroupLogo from '../../assets/elogroup.jpg';
@@ -167,26 +167,35 @@ function Modal({ isOpen, onClose, experience }) {
 
 
 function ProfileImage() {
-    const [showLogo, setShowLogo] = useState(false);
+    // const [showLogo, setShowLogo] = useState(false);
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setShowLogo(prev => !prev);
-        }, 3000); // troca a cada 3 segundos
-        return () => clearInterval(interval);
-    }, []);
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         setShowLogo(prev => !prev);
+    //     }, 3000); // troca a cada 3 segundos
+    //     return () => clearInterval(interval);
+    // }, []);
 
+    // return (
+    //     <div className="profile-container">
+    //         <img
+    //             src={foto}
+    //             alt="Profile"
+    //             className={`profile-image ${showLogo ? 'hidden' : 'visible'}`}
+    //         />
+    //         <img
+    //             src={avatar}
+    //             alt="Avatar"
+    //             className={`profile-image ${showLogo ? 'visible' : 'hidden'}`}
+    //         />
+    //     </div>
+    // );
     return (
         <div className="profile-container">
             <img
-                src={foto}
-                alt="Profile"
-                className={`profile-image ${showLogo ? 'hidden' : 'visible'}`}
-            />
-            <img
                 src={avatar}
                 alt="Avatar"
-                className={`profile-image ${showLogo ? 'visible' : 'hidden'}`}
+                className="profile-image"
             />
         </div>
     );

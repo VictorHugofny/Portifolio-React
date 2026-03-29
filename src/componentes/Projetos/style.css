@@ -192,7 +192,12 @@
     justify-content: center;
 }
 
-.overlay-btns a, .overlay-btns button {
+.overlay-btns a,
+.overlay-btns button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
     padding: 8px 16px;
     border-radius: 8px;
     font-size: 0.8rem;
@@ -200,12 +205,16 @@
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    margin: 0;
+    white-space: nowrap;
 }
 
 .overlay-btns a {
     background: var(--accent-purple);
     color: white;
-    border: none;
+    border-color: var(--accent-purple);
 }
 
 .overlay-btns button {
@@ -400,12 +409,61 @@
     color: var(--text-primary);
 }
 
-.tag-grid, .metrics-grid {
+.modal-description,
+.modal-responsibilities,
+.modal-tech-stack,
+.modal-metrics {
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+.modal-body-content h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-description p {
+    line-height: 1.7;
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.modal-responsibilities ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-responsibilities li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.modal-responsibilities li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent-purple-light);
+    font-size: 1.5rem;
+    line-height: 1;
+    top: -2px;
+}
+
+.tag-grid,
+.metrics-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 15px;
-    margin-bottom: 30px;
 }
 
 .metric-item {
@@ -419,22 +477,35 @@
 
 .modal-actions {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
-    margin-top: 20px;
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .btn-action {
-    padding: 12px 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
     border-radius: 12px;
     font-weight: 700;
+    font-size: 0.9rem;
     cursor: pointer;
     transition: all 0.3s;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    margin: 0;
+    white-space: nowrap;
 }
 
 .btn-action.primary {
     background: var(--accent-purple);
     color: white;
     text-decoration: none;
+    border-color: var(--accent-purple);
 }
 
 .btn-action.secondary {
@@ -454,17 +525,21 @@
     .featured-card {
         grid-template-columns: 1fr;
     }
+
     .featured-content {
         padding: 30px;
     }
+
     .featured-content h3 {
         font-size: 1.8rem;
     }
+
     .timeline-line {
         flex-direction: column;
         gap: 30px;
         padding-left: 60px;
     }
+
     .timeline-line::before {
         left: 55px;
         top: 0;
@@ -472,11 +547,13 @@
         width: 2px;
         height: auto;
     }
+
     .timeline-item {
         flex-direction: row;
         align-items: center;
         gap: 20px;
     }
+
     .timeline-dot {
         margin-bottom: 0;
     }
@@ -486,9 +563,11 @@
     .project-grid {
         grid-template-columns: 1fr;
     }
+
     .modal-header-overlay h2 {
         font-size: 1.8rem;
     }
+
     .modal-main-info {
         flex-direction: column;
         gap: 15px;

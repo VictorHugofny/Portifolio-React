@@ -3,17 +3,18 @@ import projetos from './projetos.json';
 import './style.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { 
-    IconReact, IconNode, IconDatabase, IconJS, IconSydle, 
+import {
+    IconReact, IconNode, IconDatabase, IconJS, IconSydle,
     IconStencil, IconExternal, WebComponents, IconElastic,
     IconUnity, IconCSharp, IconMongoDB, IconExpress
 } from '../Sobre/SVGIcons';
 
 // Import local images
-import saberflixImg from '../../assets/saberflix.png';
+import saberflixImg from '../../assets/chrome_CxkeZYfgdq (2).gif';
 import devtoolsImg from '../../assets/DEVTOOLS.png';
 import eloGroupImg from '../../assets/elogroup.jpg';
-import sigerhGif from '../../assets/chrome_CxkeZYfgdq (2).gif';
+import sigerhGif from '../../assets/portal-atos.png';
+import portalAtos from '../../assets/portal-atos-autorizativos.png';
 
 // Componente para Tags de Tecnologia com Ícones
 const TechTag = ({ tech }) => {
@@ -57,7 +58,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
         <div className="modal-overlay" onClick={onClose}>
             <div className="modal-content project-modal glass-morphism" onClick={(e) => e.stopPropagation()}>
                 <button className="modal-close-btn" onClick={onClose}>&times;</button>
-                
+
                 <div className="modal-header-hero" style={{ backgroundImage: `url(${project.background})` }}>
                     <div className="modal-header-overlay">
                         <h2>{project.name}</h2>
@@ -125,23 +126,23 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
     );
 };
 
-// Componente Timeline
-const ProjectTimeline = ({ projects, onSelect }) => {
-    return (
-        <div className="project-timeline-container" data-aos="fade-up">
-            <h3 className="timeline-title">Trajetória de Projetos</h3>
-            <div className="timeline-line">
-                {projects.sort((a, b) => b.year - a.year).map((proj, index) => (
-                    <div key={proj.id} className="timeline-item" onClick={() => onSelect(proj)}>
-                        <div className="timeline-dot"></div>
-                        <span className="timeline-year">{proj.year}</span>
-                        <span className="timeline-name">{proj.name}</span>
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
-};
+// // Componente Timeline
+// const ProjectTimeline = ({ projects, onSelect }) => {
+//     return (
+//         <div className="project-timeline-container" data-aos="fade-up">
+//             <h3 className="timeline-title">Trajetória de Projetos</h3>
+//             <div className="timeline-line">
+//                 {projects.sort((a, b) => b.year - a.year).map((proj, index) => (
+//                     <div key={proj.id} className="timeline-item" onClick={() => onSelect(proj)}>
+//                         <div className="timeline-dot"></div>
+//                         <span className="timeline-year">{proj.year}</span>
+//                         <span className="timeline-name">{proj.name}</span>
+//                     </div>
+//                 ))}
+//             </div>
+//         </div>
+//     );
+// };
 
 function Projetos() {
     const [selectedProject, setSelectedProject] = useState(null);
@@ -166,8 +167,8 @@ function Projetos() {
         const imageMap = {
             'saberflix': saberflixImg,
             'sigerh': sigerhGif,
-            'portal-atos': devtoolsImg,
-            'universitario-world': 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800'
+            'portal-atos': portalAtos,
+            'universitario-world': 'https://m.gjcdn.net/fireside-post-image/800/2993169-m2kyu7ri-v4.webp'
         };
         return imageMap[project.id] || project.background;
     };
@@ -180,7 +181,7 @@ function Projetos() {
             <div className='container'>
                 <div className='section-header' data-aos="fade-down">
                     <h2 className='section-title'>Projetos 🔧</h2>
-                    <p className='section-subtitle'>Soluções entregues com foco em performance e inovação</p>
+                    <h4 className='section-subtitle'>Soluções entregues com foco em performance e inovação</h4>
                 </div>
 
                 {/* Projeto em Destaque */}
@@ -213,8 +214,8 @@ function Projetos() {
                 {/* Grid de Projetos Regulares */}
                 <div className='project-grid'>
                     {regularProjects.map((project, index) => (
-                        <div 
-                            key={project.id} 
+                        <div
+                            key={project.id}
                             className="project-card-container"
                             data-aos="fade-up"
                             data-aos-delay={index * 100}
@@ -232,7 +233,7 @@ function Projetos() {
                                                     </a>
                                                 )}
                                                 <button onClick={() => openModal(project)}>
-                                                   📖 Detalhes
+                                                    📖 Detalhes
                                                 </button>
                                             </div>
                                         </div>
@@ -252,13 +253,13 @@ function Projetos() {
                 </div>
 
                 {/* Linha do Tempo */}
-                <ProjectTimeline projects={projetos} onSelect={openModal} />
+                {/* <ProjectTimeline projects={projetos} onSelect={openModal} /> */}
             </div>
 
-            <ProjectModal 
-                isOpen={isModalOpen} 
-                onClose={closeModal} 
-                project={{...selectedProject, background: selectedProject ? getImage(selectedProject) : ''}} 
+            <ProjectModal
+                isOpen={isModalOpen}
+                onClose={closeModal}
+                project={{ ...selectedProject, background: selectedProject ? getImage(selectedProject) : '' }}
             />
         </section>
     );

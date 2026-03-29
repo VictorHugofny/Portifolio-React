@@ -15,52 +15,51 @@
 }
 
 .academico-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
     width: 100%;
-}
-
-@media (min-width: 900px) {
-    .academico-grid {
-        grid-template-columns: 1fr 1fr;
-    }
+    max-width: 900px; /* Constrained for better vertical flow */
 }
 
 .academico-card {
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
+    border-left: 4px solid var(--accent-purple); /* Timeline accent */
     border-radius: 16px;
-    padding: 32px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 24px;
     backdrop-filter: var(--glass-blur);
     transition: all var(--transition-normal);
 }
 
 .academico-card:hover {
-    transform: translateY(-4px);
-    border-color: rgba(99, 102, 241, 0.4);
-    box-shadow: 0 12px 32px rgba(99, 102, 241, 0.1);
+    transform: translateX(10px); /* Slide effect instead of raise */
+    border-color: rgba(139, 92, 246, 0.4);
+    box-shadow: 0 12px 32px rgba(139, 92, 246, 0.1);
 }
 
 .academico-card-header h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem; /* Larger for vertical list */
     color: var(--text-primary);
     margin: 12px 0 0 0;
+    line-height: 1.2;
 }
 
 .academico-badge {
-    background: rgba(0, 229, 255, 0.1);
-    color: var(--accent-cyan);
-    padding: 4px 12px;
+    display: inline-block;
+    background: rgba(139, 92, 246, 0.1);
+    color: var(--accent-purple-light);
+    padding: 6px 16px;
     border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 600;
+    font-size: 0.8rem;
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    border: 1px solid rgba(0, 229, 255, 0.2);
+    letter-spacing: 1px;
+    border: 1px solid rgba(139, 92, 246, 0.2);
 }
 
 .academico-card-body p {
@@ -102,20 +101,39 @@
     height: 100%;
 }
 
+.academico-card-footer {
+    margin-top: auto;
+}
+
 .academico-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    background: rgba(99, 102, 241, 0.1);
-    color: var(--accent-indigo);
-    border: 1px solid var(--accent-indigo);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background: rgba(139, 92, 246, 0.1);
+    color: var(--accent-purple-light);
+    border: 1px solid var(--accent-purple-light);
     border-radius: 8px;
     font-weight: 600;
+    font-size: 0.9rem;
     text-decoration: none;
     transition: all var(--transition-fast);
 }
 
 .academico-btn:hover {
-    background: var(--accent-indigo);
+    background: var(--accent-purple);
     color: #fff;
-    box-shadow: 0 0 16px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 0 16px var(--accent-glow);
+}
+
+.academico-btn.secondary {
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: var(--text-secondary);
+}
+
+.academico-btn.secondary:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: white;
+    color: white;
 }

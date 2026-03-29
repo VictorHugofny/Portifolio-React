@@ -12,7 +12,8 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: transparent;
     border-radius: 50%;
     top: 0;
     left: 0;
