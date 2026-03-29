@@ -1,5 +1,6 @@
 import './style.css'
 import { useEffect } from 'react';
+import PDFPreview from '../PDFPreview';
 
 function Academico() {
     useEffect(() => {
@@ -22,9 +23,10 @@ function Academico() {
                         <p className="academico-publisher">Publicado em: IF Baiano - Senhor do Bonfim (2023)</p>
 
                         <div className="academico-embed pdf-embed">
-                            <object data="https://suap.ifbaiano.edu.br/media/edu/projeto_final/TCC_II_-_SABERFLIX-468450e2b8734f75a8c75af0c4ddad49.pdf#zoom=92" type="application/pdf" width="100%" height="400">
-                                <p>Seu navegador não tem um plugin de PDF. <a target="_blank" rel="noreferrer" href="https://suap.ifbaiano.edu.br/media/edu/projeto_final/TCC_II_-_SABERFLIX-468450e2b8734f75a8c75af0c4ddad49.pdf">Clique aqui para acessar o TCC.</a></p>
-                            </object>
+                            <PDFPreview 
+                                pdfUrl="https://suap.ifbaiano.edu.br/media/edu/projeto_final/TCC_II_-_SABERFLIX-468450e2b8734f75a8c75af0c4ddad49.pdf"
+                                title="SaberFlix: Plataforma educacional"
+                            />
                         </div>
                     </div>
                     <div className="academico-card-footer">
@@ -45,9 +47,10 @@ function Academico() {
                         <p className="academico-publisher">Publicado em: Editora Realize (2022)</p>
 
                         <div className="academico-embed pdf-embed">
-                            <object data="https://editorarealize.com.br/editora/anais/conedu/2021/TRABALHO_EV150_MD1_SA119_ID1208_22092021174849.pdf#zoom=92" type="application/pdf" width="100%" height="400">
-                                <p>Seu navegador não tem um plugin de PDF. <a target="_blank" rel="noreferrer" href="https://editorarealize.com.br/artigo/visualizar/80791">Clique aqui para acessar.</a></p>
-                            </object>
+                            <PDFPreview 
+                                pdfUrl="https://editorarealize.com.br/editora/anais/conedu/2021/TRABALHO_EV150_MD1_SA119_ID1208_22092021174849.pdf"
+                                title="Segurança da Informação no Contexto Escolar"
+                            />
                         </div>
                     </div>
                     <div className="academico-card-footer">

@@ -77,14 +77,11 @@
     margin-top: 24px;
     border-radius: 12px;
     overflow: hidden;
-    border: 1px solid var(--glass-border);
-    background: #000;
 }
 
-.pdf-embed object {
-    display: block;
+/* pdf-embed now uses PDFPreview component - no object sizing needed */
+.pdf-embed {
     width: 100%;
-    min-height: 400px;
 }
 
 .video-embed {

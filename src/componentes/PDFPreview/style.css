@@ -1,0 +1,245 @@
+.pdf-preview-container {
+    width: 100%;
+}
+
+.pdf-preview-card {
+    position: relative;
+    width: 100%;
+    height: 180px; 
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(139, 92, 246, 0.05);
+    border: 1px dashed rgba(139, 92, 246, 0.3);
+    transition: all var(--transition-normal);
+}
+
+.pdf-preview-card:hover {
+    border: 1px solid var(--accent-purple);
+    background: rgba(139, 92, 246, 0.1);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.15);
+}
+
+.pdf-thumbnail-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pdf-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    color: var(--accent-purple-light);
+}
+
+.pdf-placeholder svg {
+    width: 48px;
+    height: 48px;
+    opacity: 0.6;
+}
+
+.pdf-placeholder span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.pdf-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.pdf-preview-card:hover .pdf-card-overlay {
+    opacity: 1;
+}
+
+.preview-trigger-btn {
+    background: var(--accent-purple);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+}
+
+/* Modal Stylings */
+.pdf-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.pdf-modal-content {
+    background: #0f172a; /* Slate 900 */
+    width: 100%;
+    max-width: 1200px;
+    height: 90vh;
+    border-radius: 20px;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    animation: modalPop 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pdf-modal-header {
+    padding: 16px 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(15, 23, 42, 0.8);
+}
+
+.pdf-modal-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pdf-modal-title svg {
+    color: var(--accent-purple-light);
+    width: 24px;
+    height: 24px;
+}
+
+.pdf-modal-title h3 {
+    color: white;
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.pdf-modal-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pdf-action-btn {
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.pdf-action-btn.primary {
+    background: rgba(139, 92, 246, 0.1);
+    color: var(--accent-purple-light);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.pdf-action-btn.primary:hover {
+    background: var(--accent-purple);
+    color: white;
+}
+
+.pdf-modal-close {
+    background: rgba(255, 255, 255, 0.05);
+    border: none;
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.pdf-modal-close:hover {
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+}
+
+.pdf-modal-body {
+    flex: 1;
+    background: #1e293b; /* Slate 800 */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* For mobile layout */
+.mobile-pdf-fallback {
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.mobile-pdf-fallback svg {
+    width: 64px;
+    height: 64px;
+    color: var(--accent-purple-light);
+    opacity: 0.5;
+}
+
+.mobile-pdf-fallback p {
+    color: var(--text-secondary);
+    max-width: 300px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes modalPop {
+    from { opacity: 0; transform: scale(0.95) translateY(10px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pdf-modal-content {
+        height: 100%;
+        max-width: 100%;
+        border-radius: 0;
+    }
+    
+    .pdf-modal-header {
+        padding: 12px 16px;
+    }
+    
+    .pdf-modal-title h3 {
+        font-size: 1rem;
+        max-width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
