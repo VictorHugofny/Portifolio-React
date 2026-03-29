@@ -1,6 +1,4 @@
-import sobre from './sobre.json';
 import './style.css';
-import foto from '../../assets/foto.jpeg';
 import avatar from '../../assets/cartoon.png'
 import linkedin from '../../assets/linkedin.png';
 import github from '../../assets/github.png';
@@ -13,8 +11,8 @@ import Background3D from '../Background3D';
 import {
     IconJS, IconTS, IconReact, IconNode, IconDatabase,
     IconExternal, IconStencil, IconAzure, IconGeo,
-    IconAutomation, IconSydle, IconDefault, RestApi, WebComponents,
-    IconStar, IconBook, IconPalette, IconRocket, IconTool, IconLink
+    IconAutomation, IconSydle, RestApi, WebComponents,
+    IconStar, IconBook, IconPalette, IconTool, IconLink
 } from './SVGIcons';
 
 

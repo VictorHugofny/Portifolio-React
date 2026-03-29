@@ -5,14 +5,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {
     IconReact, IconNode, IconDatabase, IconJS, IconSydle,
-    IconStencil, IconExternal, WebComponents, IconElastic,
+    IconStencil, WebComponents, IconElastic,
     IconUnity, IconCSharp, IconMongoDB, IconExpress
 } from '../Sobre/SVGIcons';
 
 // Import local images
 import saberflixImg from '../../assets/chrome_CxkeZYfgdq (2).gif';
-import devtoolsImg from '../../assets/DEVTOOLS.png';
-import eloGroupImg from '../../assets/elogroup.jpg';
 import sigerhGif from '../../assets/portal-atos.png';
 import portalAtos from '../../assets/portal-atos-autorizativos.png';
 

@@ -1,31 +1,17 @@
-import api from '../../services/api';
-import Projetos from '../../componentes/Projetos'
-import Academico from '../../componentes/Academico'
-import { useEffect, useState} from 'react';
-import Sobre from '../../componentes/Sobre'
-import Footer from '../../componentes/Footer'
+import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './style.css';
 
 function Home(){
-    const [sobre, setSobre] = useState({});
-    
     useEffect(()=>{
         AOS.init();
-        
-        async function carregarDados(){
-            const response = await api.get()
-            setSobre(response.data)
-            console.log(response.data)
-        }
-        carregarDados();
     },[])
 
     return( 
         <div> 
             <div className='div-extra'>
-                <a href='https://steamcommunity.com/id/HugoFUNNY/' target='_blank'>
+                <a href='https://steamcommunity.com/id/HugoFUNNY/' target='_blank' rel="noreferrer">
                     <div className='card-extra' id='steam'>
                         <h1>Meu perfil na Steam</h1>
                     </div>
