@@ -1,0 +1,75 @@
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-color: #030014;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Moving Glow Blobs */
+.glow-blob {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.4;
+  mix-blend-mode: screen;
+  animation: float 20s infinite alternate ease-in-out;
+}
+
+.blob-1 {
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.8) 0%, transparent 70%);
+  top: -10%;
+  left: -10%;
+}
+
+.blob-2 {
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.6) 0%, transparent 70%);
+  bottom: -10%;
+  right: -10%;
+  animation-delay: -5s;
+}
+
+@keyframes float {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+/* Optimized Stars Layer (Single DIV) */
+.stars-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: 
+    /* Generated shades of stars using box-shadow offsets */
+    451px 361px #FFF, 145px 698px #FFF, 1205px 456px #a855f7, 545px 892px #FFF,
+    982px 145px #6366f1, 1542px 782px #FFF, 321px 124px #FFF, 876px 982px #FFF,
+    142px 451px #a855f7, 1823px 234px #FFF, 543px 678px #FFF, 912px 12px #FFF,
+    1123px 567px #6366f1, 432px 876px #FFF, 765px 345px #FFF, 1567px 901px #FFF,
+    234px 543px #FFF, 1098px 234px #a855f7, 678px 123px #FFF, 1432px 654px #FFF;
+  /* More stars added via repeat in index.js for dynamism */
+}
+
+/* Subtle Tech Grid */
+.grid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(99, 102, 241, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  mask-image: radial-gradient(circle at center, black 30%, transparent 80%);
+}

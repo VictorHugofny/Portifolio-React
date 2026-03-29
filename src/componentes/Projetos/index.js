@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import projetos from './projetos.json';
 import './style.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import {
     IconReact, IconNode, IconDatabase, IconJS, IconSydle,
     IconStencil, WebComponents, IconElastic,
@@ -10,10 +8,26 @@ import {
 } from '../Sobre/SVGIcons';
 
 // Import local images
-import saberflixImg from '../../assets/chrome_CxkeZYfgdq (2).gif';
+import saberflixImg from '../../assets/saberflix png.png';
 import sigerhGif from '../../assets/portal-atos.png';
 import portalAtos from '../../assets/portal-atos-autorizativos.png';
 import kora3d from '../../assets/KORA.png';
+
+const ImageWithLoader = ({ src, alt, className, ...props }) => {
+    const [isLoading, setIsLoading] = useState(true);
+
+    return (
+        <div className={`image-loader-container ${isLoading ? 'skeleton-loader' : ''}`} style={{ height: '100%', width: '100%' }}>
+            <img
+                src={src}
+                alt={alt}
+                className={`${className} ${isLoading ? 'hidden-img' : 'visible-img'}`}
+                onLoad={() => setIsLoading(false)}
+                {...props}
+            />
+        </div>
+    );
+};
 
 // Componente para Tags de Tecnologia com Ícones
 const TechTag = ({ tech }) => {
@@ -148,7 +162,7 @@ function Projetos() {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     useEffect(() => {
-        AOS.init();
+        // Redundant initialization removed - Now handled in App.js
     }, []);
 
     const openModal = (project) => {
@@ -190,7 +204,7 @@ function Projetos() {
                         <h3 className="sub-title">Em Destaque</h3>
                         <div className='featured-card glass-morphism' onClick={() => openModal(featuredProject)}>
                             <div className='featured-image'>
-                                <img src={getImage(featuredProject)} alt={featuredProject.name} />
+                                <ImageWithLoader src={getImage(featuredProject)} alt={featuredProject.name} loading="lazy" />
                                 <div className='featured-badge'>DESTAQUE</div>
                             </div>
                             <div className='featured-content'>
@@ -222,7 +236,7 @@ function Projetos() {
                         >
                             <div className="project-card glass-morphism">
                                 <div className="card-top">
-                                    <img src={getImage(project)} alt={project.name} />
+                                    <ImageWithLoader src={getImage(project)} alt={project.name} loading="lazy" />
                                     <div className="card-hover-overlay">
                                         <div className="overlay-content">
                                             <p>{project.description}</p>

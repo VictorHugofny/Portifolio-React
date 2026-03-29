@@ -3,8 +3,6 @@ import avatar from '../../assets/cartoon.png'
 import linkedin from '../../assets/linkedin.png';
 import github from '../../assets/github.png';
 import elogroupLogo from '../../assets/elogroup.jpg';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { useEffect, useState } from 'react';
 import './ProfileImage.css'; // CSS separado
 import Background3D from '../Background3D';
@@ -205,7 +203,7 @@ function Sobre() {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     useEffect(() => {
-        AOS.init();
+        // Redundant initialization removed - Now handled in App.js
     }, []);
 
     const openModal = (exp) => {
