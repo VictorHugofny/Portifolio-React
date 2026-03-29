@@ -1,6 +1,7 @@
 import './style.css'
 import { useEffect } from 'react';
 import PDFPreview from '../PDFPreview';
+import YouTubePlayer from '../YouTubePlayer';
 
 function Academico() {
     useEffect(() => {
@@ -68,9 +69,10 @@ function Academico() {
                         <p className="academico-authors"><strong>Ministrado por:</strong> Victor Hugo, Douglas Silva, Marcos Santos</p>
                         <p className="academico-publisher">Publicado em: 26 de Março de 2021</p>
 
-                        <div className="academico-embed video-embed">
-                            <iframe src="https://www.youtube.com/embed/h5i7P6rqAhU" frameBorder="0" allowFullScreen title="Minicurso JS"></iframe>
-                        </div>
+                        <YouTubePlayer
+                            videoId="h5i7P6rqAhU"
+                            title="Introdução a Algoritmo em JavaScript"
+                        />
                     </div>
                 </div>
             </div>
