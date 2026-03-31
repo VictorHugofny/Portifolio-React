@@ -5,9 +5,10 @@
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  background-color: #030014;
+  background-color: var(--bg-primary);
   overflow: hidden;
   pointer-events: none;
+  transition: background-color 0.35s ease;
 }
 
 /* Moving Glow Blobs */
@@ -20,6 +21,7 @@
   opacity: 0.4;
   mix-blend-mode: screen;
   animation: float 20s infinite alternate ease-in-out;
+  transition: opacity 0.35s ease;
 }
 
 .blob-1 {
@@ -33,6 +35,23 @@
   bottom: -10%;
   right: -10%;
   animation-delay: -5s;
+}
+
+/* Clean theme: softer blobs, no stars */
+[data-theme="clean"] .glow-blob {
+  opacity: 0.12;
+  mix-blend-mode: multiply;
+}
+
+[data-theme="clean"] .stars-layer {
+  opacity: 0 !important;
+}
+
+[data-theme="clean"] .grid-overlay {
+  background-image:
+    linear-gradient(rgba(99, 102, 241, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99, 102, 241, 0.07) 1px, transparent 1px);
+  mask-image: radial-gradient(circle at center, black 40%, transparent 85%);
 }
 
 @keyframes float {
@@ -58,6 +77,7 @@
     1123px 567px #6366f1, 432px 876px #FFF, 765px 345px #FFF, 1567px 901px #FFF,
     234px 543px #FFF, 1098px 234px #a855f7, 678px 123px #FFF, 1432px 654px #FFF;
   /* More stars added via repeat in index.js for dynamism */
+  transition: opacity 0.35s ease;
 }
 
 /* Subtle Tech Grid */
@@ -72,4 +92,5 @@
     linear-gradient(90deg, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
   background-size: 50px 50px;
   mask-image: radial-gradient(circle at center, black 30%, transparent 80%);
+  transition: opacity 0.35s ease;
 }

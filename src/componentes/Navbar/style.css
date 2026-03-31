@@ -36,7 +36,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--accent-cyan);
+  background-color: var(--accent-purple-light);
   transition: width var(--transition-fast);
   box-shadow: 0 0 8px var(--accent-glow);
 }
@@ -49,12 +49,61 @@
   width: 100%;
 }
 
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--toggle-border);
+  background: var(--toggle-bg);
+  color: var(--toggle-color);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: all var(--transition-fast);
+  margin-bottom: 0;
+  margin-left: 8px;
+  box-shadow: none;
+  backdrop-filter: var(--glass-blur);
+}
+
+.theme-toggle-btn:hover {
+  background: var(--toggle-hover-bg);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px var(--accent-glow);
+}
+
+.toggle-icon {
+  font-size: 15px;
+  line-height: 1;
+  transition: transform 0.4s ease;
+}
+
+.theme-toggle-btn:hover .toggle-icon {
+  transform: rotate(20deg) scale(1.2);
+}
+
+.toggle-label {
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 @media (max-width: 600px) {
   .navContainer {
     gap: 16px;
   }
   .navMenu a {
     font-size: 13px;
+  }
+  .toggle-label {
+    display: none;
+  }
+  .theme-toggle-btn {
+    padding: 7px 10px;
   }
 }
 

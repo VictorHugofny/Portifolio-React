@@ -3,6 +3,7 @@ import './App.css';
 import RoutesAPP from './routes';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { ThemeProvider } from './contexts/ThemeContext';
 
 function App() {
   useEffect(() => {
@@ -15,9 +16,11 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <RoutesAPP/>
-    </div>
+    <ThemeProvider>
+      <div className="App">
+        <RoutesAPP/>
+      </div>
+    </ThemeProvider>
   );
 }
 
