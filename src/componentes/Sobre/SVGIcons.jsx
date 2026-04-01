@@ -94,7 +94,7 @@ export const IconStencil = () => (
     preserveAspectRatio="xMidYMid meet">
 
     <g transform="translate(0.000000,192.000000) scale(0.100000,-0.100000)"
-      fill="#ffffffff" stroke="none">
+      fill="currentColor" stroke="none">
       <path d="M793 1905 c-129 -23 -268 -80 -380 -156 -80 -54 -224 -208 -277 -297
 -149 -250 -176 -571 -70 -841 73 -185 235 -376 402 -475 251 -149 571 -176
 841 -70 185 73 376 235 475 402 149 251 176 571 70 841 -73 185 -235 376 -402
@@ -137,7 +137,7 @@ export const IconSydle = () => (
     preserveAspectRatio="xMidYMid meet">
 
     <g transform="translate(0.000000,841.000000) scale(0.100000,-0.100000)"
-      fill="#ffffffff" stroke="#ffffffff">
+      fill="currentColor" stroke="currentColor">
       <path d="M0 4205 l0 -4205 4205 0 4205 0 0 4205 0 4205 -4205 0 -4205 0 0
 -4205z m5850 1074 c54 -31 84 -88 78 -151 -6 -56 -30 -94 -79 -123 -33 -20
 -57 -20 -1434 -25 l-1400 -5 -53 -29 c-65 -36 -107 -83 -140 -154 -20 -45 -24
@@ -155,13 +155,13 @@ l-42 23 -1195 5 c-1326 6 -1233 1 -1380 73 -97 47 -226 178 -273 277 -69 143
 
 // Sydle One Icon (Stylized Professional Portal)
 export const RestApi = () => (
-  <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#ffffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect x="0" fill="none" width="20" height="20"></rect> <g> <path d="M16 13c-1.3 0-2.4.8-2.8 2H9c0-.7-.2-1.3-.5-1.8l7.1-7.3c.3 0 .6.1.9.1C17.9 6 19 4.9 19 3.5S17.9 1 16.5 1 14 2.1 14 3.5c0 .3.1.7.2 1l-7 7.2c-.6-.5-1.4-.7-2.2-.7V6.8C6.2 6.4 7 5.3 7 4c0-1.7-1.3-3-3-3S1 2.3 1 4c0 1.3.8 2.4 2 2.8v4.7c-1.2.7-2 2-2 3.4 0 2.2 1.8 4 4 4 1.5 0 2.8-.8 3.4-2h4.7c.4 1.1 1.5 2 2.8 2 1.6 0 3-1.3 3-3C19 14.3 17.6 13 16 13z"></path> </g> </g></svg>
+  <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect x="0" fill="none" width="20" height="20"></rect> <g> <path d="M16 13c-1.3 0-2.4.8-2.8 2H9c0-.7-.2-1.3-.5-1.8l7.1-7.3c.3 0 .6.1.9.1C17.9 6 19 4.9 19 3.5S17.9 1 16.5 1 14 2.1 14 3.5c0 .3.1.7.2 1l-7 7.2c-.6-.5-1.4-.7-2.2-.7V6.8C6.2 6.4 7 5.3 7 4c0-1.7-1.3-3-3-3S1 2.3 1 4c0 1.3.8 2.4 2 2.8v4.7c-1.2.7-2 2-2 3.4 0 2.2 1.8 4 4 4 1.5 0 2.8-.8 3.4-2h4.7c.4 1.1 1.5 2 2.8 2 1.6 0 3-1.3 3-3C19 14.3 17.6 13 16 13z"></path> </g> </g></svg>
 
 );
 
 // Web Components Icon
 export const WebComponents = () => (
-  <svg fill="#ffffffff" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>ionicons-v5-d</title><path d="M385,224a64,64,0,0,0-55.33,31.89c-42.23-1.21-85.19-12.72-116.21-31.33-32.2-19.32-49.71-44-52.15-73.35a64,64,0,1,0-64.31.18V360.61a64,64,0,1,0,64,0V266.15c44.76,34,107.28,52.38,168.56,53.76A64,64,0,1,0,385,224ZM129,64A32,32,0,1,1,97,96,32,32,0,0,1,129,64Zm0,384a32,32,0,1,1,32-32A32,32,0,0,1,129,448ZM385,320a32,32,0,1,1,32-32A32,32,0,0,1,385,320Z"></path></g></svg>
+  <svg fill="currentColor" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>ionicons-v5-d</title><path d="M385,224a64,64,0,0,0-55.33,31.89c-42.23-1.21-85.19-12.72-116.21-31.33-32.2-19.32-49.71-44-52.15-73.35a64,64,0,1,0-64.31.18V360.61a64,64,0,1,0,64,0V266.15c44.76,34,107.28,52.38,168.56,53.76A64,64,0,1,0,385,224ZM129,64A32,32,0,1,1,97,96,32,32,0,0,1,129,64Zm0,384a32,32,0,1,1,32-32A32,32,0,0,1,129,448ZM385,320a32,32,0,1,1,32-32A32,32,0,0,1,385,320Z"></path></g></svg>
 );
 
 // Star Icon
