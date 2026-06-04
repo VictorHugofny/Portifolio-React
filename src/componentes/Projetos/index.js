@@ -4,7 +4,8 @@ import './style.css';
 import {
     IconReact, IconNode, IconDatabase, IconJS, IconSydle,
     IconStencil, WebComponents, IconElastic,
-    IconUnity, IconCSharp, IconMongoDB, IconExpress
+    IconUnity, IconCSharp, IconMongoDB, IconExpress,
+    IconTS, IconAzure, IconGeo, IconAutomation
 } from '../Sobre/SVGIcons';
 
 // Import local images
@@ -12,6 +13,7 @@ import saberflixImg from '../../assets/saberflix png.png';
 import sigerhGif from '../../assets/portal-atos.png';
 import portalAtos from '../../assets/portal-atos-autorizativos.png';
 import kora3d from '../../assets/KORA.png';
+import sicarBanner from '../../assets/BANNER SICAR.png';
 
 const ImageWithLoader = ({ src, alt, className, ...props }) => {
     const [isLoading, setIsLoading] = useState(true);
@@ -38,13 +40,21 @@ const TechTag = ({ tech }) => {
             'MongoDB': <IconMongoDB />,
             'Express.js': <IconExpress />,
             'JavaScript': <IconJS />,
+            'TypeScript': <IconTS />,
             'SYDLE': <IconSydle />,
             'Stencil.js': <IconStencil />,
             'Web Components': <WebComponents />,
             'ElasticSearch': <IconElastic />,
             'Unity': <IconUnity />,
             'C#': <IconCSharp />,
-            'SQL/NoSQL': <IconDatabase />
+            'SQL/NoSQL': <IconDatabase />,
+            'PostGIS': <IconDatabase />,
+            'GeoServer': <IconGeo />,
+            'Turf.js': <IconGeo />,
+            'JSTS': <IconGeo />,
+            'QGIS': <IconGeo />,
+            'Azure DevOps': <IconAzure />,
+            'CI/CD': <IconAutomation />
         };
         return iconMap[name] || <IconDatabase />;
     };
@@ -182,7 +192,8 @@ function Projetos() {
             'sigerh': sigerhGif,
             'portal-atos': portalAtos,
             'kora3d': kora3d,
-            'universitario-world': 'https://m.gjcdn.net/fireside-post-image/800/2993169-m2kyu7ri-v4.webp'
+            'universitario-world': 'https://m.gjcdn.net/fireside-post-image/800/2993169-m2kyu7ri-v4.webp',
+            'sicar-pa-plus': sicarBanner
         };
         return imageMap[project.id] || project.background;
     };

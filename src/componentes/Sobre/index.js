@@ -40,7 +40,7 @@ const experienceData = [
         fullContent: {
             intro: 'Desenvolvimento de soluções digitais completas utilizando a plataforma SYDLE One.',
             sections: [
-                { title: 'Projetos relevantes', items: ['SIGERH', 'SICAR', 'Licenciamento Ambiental (SEMAS-PA)'] },
+                { title: 'Projetos relevantes', items: ['SIGERH', 'SICAR/PA+', 'Licenciamento Ambiental (SEMAS-PA)'] },
                 { title: 'Principais atividades', items: ['Criação de portais personalizados', 'Desenvolvimento de automações BPM', 'Integração entre sistemas', 'Construção de soluções escaláveis', 'Implementação de regras de negócio', 'Suporte técnico e evolução contínua das soluções'] }
             ]
         }

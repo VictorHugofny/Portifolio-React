@@ -1,8 +1,47 @@
 [
     {
+        "id": "sicar-pa-plus",
+        "name": "SICAR/PA+ — Cadastro Ambiental Rural",
+        "featured": true,
+        "description": "Plataforma de Cadastro Ambiental Rural do Pará, com ferramentas avançadas de geoprocessamento e análises automatizadas.",
+        "longDescription": "Atuei como Tech Lead na modernização do módulo de cadastro geoespacial do SICAR/PA+, liderando a substituição de um sistema legado e desenvolvendo funcionalidades avançadas de geoprocessamento. Trabalhei com operações espaciais utilizando PostGIS, Turf.js e JSTS, integração com GeoServer para visualização cartográfica e implementação de análises ambientais automatizadas. O projeto exigiu forte atuação em arquitetura de software, liderança técnica e desenvolvimento para uma plataforma governamental de grande escala utilizada pela SEMAS-PA.",
+        "client": "SEMAS-PA (Secretaria de Estado de Meio Ambiente e Sustentabilidade)",
+        "role": "Tech Lead / Full Stack Developer",
+        "language": [
+            "TypeScript",
+            "Javascript",
+            "SydleOne",
+            "Stencil.js",
+            "Node.js",
+            "PostGIS",
+            "GeoServer",
+            "Turf.js",
+            "JSTS",
+            "Azure DevOps"
+        ],
+        "responsibilities": [
+            "Liderança técnica da equipe e definição da arquitetura do módulo de cadastro geoespacial",
+            "Liderança na substituição completa do sistema legado CAROFF por uma solução escalável",
+            "Desenvolvimento de novos fluxos para cadastro, edição e validação de geometrias",
+            "Implementação de cálculos espaciais complexos e validações topológicas OGC usando Turf.js, JSTS e PostGIS",
+            "Integração com GeoServer para publicação de camadas cartográficas e consumo de serviços de mapas",
+            "Integração com modelos de análises espaciais automatizadas para apoiar a validação ambiental"
+        ],
+        "metrics": [
+            "🏛 Sistema Governamental",
+            "🌍 Uso em escala estadual (Pará)",
+            "⚡ Modernização do legado CAROFF",
+            "📊 Automação de análises ambientais",
+            "🛠 Arquitetura de serviços reutilizáveis"
+        ],
+        "background": "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=1200",
+        "homepage": "https://www.semas.pa.gov.br/2026/05/12/governo-do-para-lanca-sicar-para-modernizar-a-gestao-ambiental-e-agilizar-a-regularizacao-rural/",
+        "year": "2023 - 2026"
+    },
+    {
         "id": "sigerh",
         "name": "SIGERH - PARÁ",
-        "featured": true,
+        "featured": false,
         "description": "Sistema de gerenciamento de recursos hídricos com funcionalidades geoespaciais avançadas.",
         "longDescription": "O SIGERH é uma plataforma robusta desenvolvida para o estado do Pará, focada no monitoramento e gestão estratégica de recursos hídricos. O sistema integra dados complexos de bacias hidrográficas com visualizações em tempo real.",
         "client": "SEMAS-PA (Secretaria de Estado de Meio Ambiente e Sustentabilidade)",
