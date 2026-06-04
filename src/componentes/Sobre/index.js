@@ -17,21 +17,25 @@ import {
 const experienceData = [
     {
         id: 'tech-lead',
-        title: 'Tech Lead & Arquitetura Técnica',
-        shortDesc: 'Atuação como Tech Lead com foco em arquitetura de soluções, automação de processos e integração de serviços digitais.',
+        title: 'Tech Lead & Arquitetura de Soluções',
+        shortDesc: 'Liderança técnica de equipes e definição de arquiteturas escaláveis para sistemas web, integrações governamentais e soluções geoespaciais.',
         icon: <IconStar />,
         fullContent: {
-            intro: 'Atuação como Tech Lead promovendo boas práticas de desenvolvimento e arquitetura técnica.',
+            intro: 'Atuação como Tech Lead na definição de arquiteturas, evolução técnica de equipes e desenvolvimento de soluções de alta complexidade.',
             topics: [
-                'Participação ativa no planejamento técnico e definição de arquitetura',
-                'Organização e gestão técnica das tarefas da equipe',
-                'Definição de padrões técnicos e boas práticas',
-                'Uso de metodologias ágeis (Scrum)',
-                'Apoio na tomada de decisões técnicas',
-                'Foco em automação de processos e integração de serviços digitais'
+                'Definição de arquitetura e direcionamento técnico de projetos',
+                'Liderança e acompanhamento técnico de equipes de desenvolvimento',
+                'Code reviews e disseminação de boas práticas de engenharia',
+                'Planejamento técnico e apoio na tomada de decisões estratégicas',
+                'Automação de processos e implementação de pipelines CI/CD',
+                'Integração entre sistemas governamentais e serviços digitais',
+                'Desenvolvimento de soluções geoespaciais e APIs escaláveis',
+                'Aplicação de metodologias ágeis (Scrum)'
             ]
         }
+
     },
+
     {
         id: 'sydle',
         title: 'Desenvolvimento em SYDLE One',
@@ -47,19 +51,56 @@ const experienceData = [
     },
     {
         id: 'geo',
-        title: 'Web Components Geoespaciais',
-        shortDesc: 'Criação de Web Components reutilizáveis com foco em mapas e cálculos geoespaciais.',
+        title: 'Soluções Geoespaciais & GIS',
+        shortDesc: 'Desenvolvimento de componentes geoespaciais, operações espaciais avançadas e integrações com plataformas GIS.',
         icon: <IconGeo />,
         fullContent: {
-            intro: 'Desenvolvimento de Web Components reutilizáveis com foco em aplicações geoespaciais.',
+            intro: 'Experiência no desenvolvimento de soluções GIS para sistemas ambientais e governamentais, com foco em visualização cartográfica, geoprocessamento e análise espacial.',
             sections: [
-                { title: 'Tecnologias utilizadas', items: ['Stencil.js', 'TypeScript', 'JavaScript', 'Node.js'] },
-                { title: 'Conceitos aplicados', items: ['Projeções geográficas', 'Sobreposição de geometrias', 'Análises espaciais', 'Manipulação de coordenadas geográficas'] },
-                { title: 'Ferramentas utilizadas', items: ['QGIS', 'Bibliotecas de cálculos geográficos'] },
-                { title: 'Atividades principais', items: ['Criação de componentes reutilizáveis', 'Integração com mapas e dados espaciais', 'Implementação de cálculos geográficos', 'Desenvolvimento de soluções GIS personalizadas'] }
+                {
+                    title: 'Tecnologias utilizadas',
+                    items: [
+                        'Stencil.js',
+                        'TypeScript',
+                        'Node.js',
+                        'PostGIS',
+                        'GeoServer',
+                        'Turf.js',
+                        'JSTS'
+                    ]
+                },
+                {
+                    title: 'Conceitos aplicados',
+                    items: [
+                        'Projeções cartográficas',
+                        'Validações topológicas (OGC)',
+                        'Interseção, união e diferença de geometrias',
+                        'Análises espaciais',
+                        'Manipulação de coordenadas geográficas'
+                    ]
+                },
+                {
+                    title: 'Ferramentas utilizadas',
+                    items: [
+                        'GeoServer',
+                        'QGIS',
+                        'PostGIS'
+                    ]
+                },
+                {
+                    title: 'Atividades principais',
+                    items: [
+                        'Desenvolvimento de Web Components geoespaciais reutilizáveis',
+                        'Integração com serviços WMS e WFS',
+                        'Visualização e processamento de dados espaciais',
+                        'Implementação de cálculos geográficos avançados',
+                        'Geração de análises e imagens de inconsistências geográficas'
+                    ]
+                }
             ]
         }
     },
+
     {
         id: 'api',
         title: 'APIs e Backend',
@@ -249,13 +290,20 @@ function Sobre() {
 
                 <div data-aos="zoom-in" data-aos-duration="900" id='texto'>
                     <p>
-                        Sou <strong>Victor Hugo, Software Engineer IV e Tech Lead</strong> na <strong>EloGroup</strong>, atuando na construção de soluções digitais para órgãos públicos, com foco na área ambiental.
+                        Sou <strong>Victor Hugo, Software Engineer IV e Tech Lead</strong> na
+                        <strong>EloGroup</strong>, atuando no desenvolvimento de soluções digitais
+                        para o setor público com foco em sistemas ambientais e geoespaciais.
                     </p>
+
                     <p>
-                        Trabalho com <strong>arquitetura e desenvolvimento</strong> utilizando tecnologias como <strong>JavaScript, TypeScript, Node.js, SydleOne, Stencil.js, React.js</strong> e bancos de dados relacionais e não relacionais.
+                        Tenho experiência em arquitetura de software, desenvolvimento full stack e
+                        liderança técnica, utilizando tecnologias como <strong>JavaScript, TypeScript, Sydle One, Node.js e Stencil.js</strong>.
                     </p>
+
                     <p>
-                        Também participo da <strong>definição técnica das soluções</strong>, condução de code reviews e disseminação de conhecimento por meio de documentação e oficinas técnicas.
+                        Participei de projetos estratégicos, desenvolvendo e liderando
+                        a modernização de sistemas e a implementação de soluções GIS com apoio de ferramentas como
+                        <strong>JSTS, Turf.js, Mapviewer, PostGIS e GeoServer</strong>.
                     </p>
                 </div>
 
