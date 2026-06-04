@@ -290,13 +290,13 @@ function Sobre() {
 
                 <div data-aos="zoom-in" data-aos-duration="900" id='texto'>
                     <p>
-                        Sou <strong>Victor Hugo, Software Engineer IV e Tech Lead</strong> na
-                        <strong>EloGroup</strong>, atuando no desenvolvimento de soluções digitais
+                        Sou <strong>Victor Hugo, Software Engineer IV e Tech Lead</strong> na 
+                        <strong> EloGroup</strong>, atuando no desenvolvimento de soluções digitais
                         para o setor público com foco em sistemas ambientais e geoespaciais.
                     </p>
 
                     <p>
-                        Tenho experiência em arquitetura de software, desenvolvimento full stack e
+                        Tenho experiência em arquitetura de software, desenvolvimento e
                         liderança técnica, utilizando tecnologias como <strong>JavaScript, TypeScript, Sydle One, Node.js e Stencil.js</strong>.
                     </p>
 
@@ -333,7 +333,7 @@ function Sobre() {
                     <div className='summary-card'>
                         <div className='card-header'>
                             <img
-                                src="https://ifbaiano.edu.br/portal/wp-content/themes/ReitoriaIfbaianoPortal/imagens/marca-if-baiano.svg"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC128Y9-TDPq-XwtCZCarGmgNHr0nEjtsNGg&s"
                                 alt="IF Baiano"
                                 className='company-logo'
                             />
