@@ -303,7 +303,7 @@ function Sobre() {
                     <p>
                         Participei de projetos estratégicos, desenvolvendo e liderando
                         a modernização de sistemas e a implementação de soluções GIS com apoio de ferramentas como
-                        <strong>JSTS, Turf.js, Mapviewer, PostGIS e GeoServer</strong>.
+                        <strong> JSTS, Turf.js, Mapviewer, PostGIS e GeoServer</strong>.
                     </p>
                 </div>
 
