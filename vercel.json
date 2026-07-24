@@ -1,8 +1,9 @@
 {
-    "build": {
-      "env": {
-        "NODE_VERSION": "24"
-      }
+  "outputDirectory": "dist",
+  "build": {
+    "env": {
+      "NODE_VERSION": "24"
     }
   }
+}
   
