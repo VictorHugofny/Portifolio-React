@@ -72,7 +72,7 @@ export default function Stack() {
   const totalTechs = categories.reduce((acc, c) => acc + c.techs.length, 0);
 
   return (
-    <div className="p-4 sm:p-8 pb-24 md:pb-8 max-w-4xl mx-auto">
+    <div className="p-4 sm:p-8 pb-12 sm:pb-8 max-w-4xl mx-auto">
       <div className="flex items-center space-x-2 text-vscode-text/50 mb-4 sm:mb-6 font-mono text-xs sm:text-sm">
         <span>//</span>
         <span>Tecnologias e Ferramentas</span>
@@ -92,7 +92,7 @@ export default function Stack() {
           <span className="text-vscode-text">myStack</span> = {'{'}
         </div>
 
-        <div className="space-y-8 pl-4 md:pl-8 mb-6">
+        <div className="space-y-6 sm:space-y-8 pl-2 sm:pl-4 md:pl-8 mb-6">
           {categories.map((cat, catIdx) => (
             <motion.div
               key={cat.label}
@@ -101,24 +101,24 @@ export default function Stack() {
               transition={{ delay: catIdx * 0.1 }}
             >
               {/* Category label */}
-              <div className={`font-mono text-xs font-bold uppercase tracking-widest mb-3 flex items-center gap-2 ${cat.color}`}>
+              <div className={`font-mono text-[11px] sm:text-xs font-bold uppercase tracking-widest mb-2 sm:mb-3 flex items-center gap-2 ${cat.color}`}>
                 <span className="text-vscode-text/30 font-normal">// </span>
                 {cat.label}
               </div>
 
               {/* Tech chips */}
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-2 sm:gap-3">
                 {cat.techs.map((tech, i) => (
                   <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: catIdx * 0.1 + i * 0.06 }}
-                    whileHover={{ scale: 1.06 }}
+                    transition={{ delay: catIdx * 0.1 + i * 0.04 }}
+                    whileHover={{ scale: 1.05 }}
                     key={tech.name}
-                    className={`flex items-center gap-2 px-4 py-2 border rounded-lg cursor-default select-none ${tech.color}`}
+                    className={`flex items-center gap-1.5 sm:gap-2 px-2.5 py-1.5 sm:px-4 sm:py-2 border rounded-lg cursor-default select-none ${tech.color}`}
                   >
-                    <span>{tech.icon}</span>
-                    <span className="font-bold text-sm">{tech.name}</span>
+                    <span className="text-xs sm:text-base">{tech.icon}</span>
+                    <span className="font-bold text-xs sm:text-sm">{tech.name}</span>
                   </motion.div>
                 ))}
               </div>

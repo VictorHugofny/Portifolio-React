@@ -155,7 +155,7 @@ const projects: Project[] = [
 
 function ProjectModal({ project, onClose }: { project: Project; onClose: () => void }) {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4">
       {/* Backdrop */}
       <motion.div
         initial={{ opacity: 0 }}
@@ -171,15 +171,15 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.93, y: 30 }}
         transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-        className="relative z-10 w-full max-w-3xl max-h-[90vh] flex flex-col bg-[#0D1117] border border-vscode-border rounded-2xl shadow-2xl overflow-hidden"
+        className="relative z-10 w-full max-w-3xl max-h-[92vh] flex flex-col bg-[#0D1117] border border-vscode-border rounded-xl sm:rounded-2xl shadow-2xl overflow-hidden"
       >
         {/* Hero Banner */}
         {project.background && (
-          <div className="relative h-44 flex-shrink-0 overflow-hidden">
+          <div className="relative h-32 sm:h-44 flex-shrink-0 overflow-hidden">
             <img src={project.background} alt={project.name} className="w-full h-full object-cover opacity-40" />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0D1117]" />
             {project.featured && (
-              <span className="absolute top-4 left-4 px-3 py-1 bg-vscode-yellow/20 border border-vscode-yellow/40 text-vscode-yellow text-xs font-bold uppercase tracking-wider rounded-full">
+              <span className="absolute top-3 left-3 sm:top-4 sm:left-4 px-2.5 py-0.5 sm:px-3 sm:py-1 bg-vscode-yellow/20 border border-vscode-yellow/40 text-vscode-yellow text-[10px] sm:text-xs font-bold uppercase tracking-wider rounded-full">
                 ⭐ Em destaque
               </span>
             )}
@@ -187,8 +187,8 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
         )}
 
         {/* Header bar */}
-        <div className="flex items-center justify-between px-6 pt-4 pb-2 flex-shrink-0">
-          <span className="font-mono text-xs text-vscode-text/50">// {project.id}.json</span>
+        <div className="flex items-center justify-between px-4 sm:px-6 pt-3 sm:pt-4 pb-2 flex-shrink-0">
+          <span className="font-mono text-[11px] sm:text-xs text-vscode-text/50">// {project.id}.json</span>
           <button
             onClick={onClose}
             className="text-vscode-text/50 hover:text-white hover:bg-white/10 p-1.5 rounded-md transition-colors"
@@ -198,11 +198,11 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
         </div>
 
         {/* Scrollable body */}
-        <div className="overflow-y-auto px-6 pb-6 flex-1">
-          <h2 className="text-2xl font-bold text-white mb-1">{project.name}</h2>
+        <div className="overflow-y-auto px-4 sm:px-6 pb-4 sm:pb-6 flex-1">
+          <h2 className="text-xl sm:text-2xl font-bold text-white mb-1 leading-tight">{project.name}</h2>
 
           {/* Meta row */}
-          <div className="flex flex-wrap gap-4 text-sm text-vscode-text/60 mb-6">
+          <div className="flex flex-wrap gap-2 sm:gap-4 text-xs sm:text-sm text-vscode-text/60 mb-4 sm:mb-6">
             {project.client && (
               <span className="flex items-center gap-1.5">
                 <User size={13} />
@@ -297,7 +297,7 @@ export default function Projects() {
   const [selected, setSelected] = useState<Project | null>(null);
 
   return (
-    <div className="p-4 sm:p-8 pb-24 md:pb-8 max-w-6xl mx-auto">
+    <div className="p-4 sm:p-8 pb-12 sm:pb-8 max-w-6xl mx-auto">
       <div className="flex items-center space-x-2 text-vscode-text/50 mb-4 font-mono text-xs sm:text-sm">
         <span>//</span>
         <span>Meus projetos em destaque</span>

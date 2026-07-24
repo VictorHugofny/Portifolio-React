@@ -60,7 +60,7 @@ export default function Experience() {
   ];
 
   return (
-    <div className="p-4 sm:p-8 pb-24 md:pb-8 max-w-3xl mx-auto relative">
+    <div className="p-4 sm:p-8 pb-12 sm:pb-8 max-w-3xl mx-auto relative">
       <div className="flex items-center space-x-2 text-vscode-text/50 mb-6 font-mono text-xs sm:text-sm">
         <span>//</span>
         <span>Minha jornada até aqui</span>
@@ -77,14 +77,14 @@ export default function Experience() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: index * 0.15 }}
             key={exp.id}
-            className="relative pl-8"
+            className="relative pl-5 sm:pl-8"
           >
             <div className="absolute w-4 h-4 bg-vscode-bg border-2 border-vscode-blue rounded-full -left-[9px] top-1.5 shadow-[0_0_10px_rgba(88,166,255,0.4)]"></div>
 
             {/* Header: logo + title */}
-            <div className="flex items-start gap-3 mb-2">
+            <div className="flex items-start gap-2.5 sm:gap-3 mb-2">
               <div
-                className="flex-shrink-0 w-10 h-10 rounded-lg overflow-hidden border border-vscode-border flex items-center justify-center shadow-md"
+                className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-lg overflow-hidden border border-vscode-border flex items-center justify-center shadow-md mt-0.5"
                 style={{ background: exp.logoBg }}
               >
                 <img
@@ -93,14 +93,14 @@ export default function Experience() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <div>
-                <div className="text-vscode-blue font-mono text-xs font-bold mb-0.5">{exp.year}</div>
-                <h3 className="text-xl font-semibold text-white leading-tight">{exp.title}</h3>
+              <div className="min-w-0 flex-1">
+                <div className="text-vscode-blue font-mono text-[11px] sm:text-xs font-bold mb-0.5">{exp.year}</div>
+                <h3 className="text-base sm:text-xl font-semibold text-white leading-tight break-words">{exp.title}</h3>
                 <div className="text-vscode-text/50 text-xs mt-0.5">{exp.company}</div>
               </div>
             </div>
 
-            <p className="text-vscode-text/70 leading-relaxed mb-4">
+            <p className="text-xs sm:text-sm text-vscode-text/70 leading-relaxed mb-3 sm:mb-4">
               {exp.description}
             </p>
 

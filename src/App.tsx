@@ -220,7 +220,7 @@ function App() {
           </div>
 
           {/* Content */}
-          <div className="flex-1 overflow-y-auto no-scrollbar relative z-0">
+          <div className="flex-1 overflow-y-auto overflow-x-hidden no-scrollbar relative z-0 w-full mb-[60px] md:mb-0">
             {renderActiveFile()}
           </div>
 
@@ -262,21 +262,6 @@ function App() {
           MOBILE ONLY: Drawer + Bottom Nav + Terminal
          ══════════════════════════════════════════ */}
       <div className="md:hidden">
-
-        {/* Floating terminal button */}
-        <AnimatePresence>
-          {mobilePanel === null && (
-            <motion.button
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              exit={{ scale: 0 }}
-              onClick={() => togglePanel('terminal')}
-              className="fixed bottom-20 right-4 z-40 w-12 h-12 rounded-full bg-vscode-blue shadow-lg flex items-center justify-center text-white"
-            >
-              <TerminalSquare size={20} />
-            </motion.button>
-          )}
-        </AnimatePresence>
 
         {/* Mobile terminal overlay */}
         <AnimatePresence>

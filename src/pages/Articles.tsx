@@ -41,7 +41,7 @@ const typeColor: Record<string, string> = {
 
 export default function Articles() {
   return (
-    <div className="p-4 sm:p-6 pb-24 md:pb-8 max-w-2xl mx-auto">
+    <div className="p-4 sm:p-6 pb-12 sm:pb-8 max-w-2xl mx-auto">
       <div className="flex items-center gap-2 text-vscode-text/40 mb-6 font-mono text-xs">
         <span>#</span>
         <span>articles.md</span>

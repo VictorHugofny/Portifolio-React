@@ -7,7 +7,7 @@ export default function About() {
     <motion.div
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
-      className="p-4 sm:p-8 pb-24 md:pb-8 max-w-4xl mx-auto"
+      className="p-4 sm:p-8 pb-12 sm:pb-8 max-w-4xl mx-auto"
     >
       <div className="flex items-center space-x-2 text-vscode-text/50 mb-6 font-mono text-xs sm:text-sm">
         <span>//</span>
