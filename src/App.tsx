@@ -188,7 +188,7 @@ function App() {
         <div className="flex items-center justify-center h-full w-full opacity-50">
           <div className="text-center">
             <h1 className="text-4xl mb-4 font-mono">portfolio.dev</h1>
-            <p>Selecione um arquivo para visualizar</p>
+            <p>Abra um arquivo para começar</p>
           </div>
         </div>
       );

@@ -68,7 +68,7 @@ export function Terminal({ isMobile = false, onClose }: { isMobile?: boolean; on
           setInput('');
           return;
         default:
-          response = <span className="text-red-400">Comando não encontrado: {cmd}. Digite "help" para ver os comandos.</span>;
+          response = <span className="text-red-400">'{cmd}' não reconhecido. Digite help.</span>;
       }
 
       addTerminalHistory(input, response);

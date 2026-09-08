@@ -6,7 +6,7 @@ const articles = [
   {
     id: 'saberflix',
     type: 'TCC',
-    title: 'SaberFlix: Plataforma educacional para catalogação de filmes educacionais',
+    title: 'SaberFlix — Plataforma de Catalogação de Filmes Educacionais',
     authors: ['Victor Hugo de Carvalho Santana'],
     publisher: 'IF Baiano — Senhor do Bonfim',
     year: '2023',
@@ -47,7 +47,7 @@ export default function Articles() {
         <span>articles.md</span>
       </div>
 
-      <h1 className="text-xl font-bold text-white mb-6">Publicações Acadêmicas</h1>
+      <h1 className="text-xl font-bold text-white mb-6">Publicações</h1>
 
       <div className="space-y-3">
         {articles.map((article, i) => (

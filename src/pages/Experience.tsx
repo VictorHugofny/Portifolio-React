@@ -15,17 +15,14 @@ export default function Experience() {
       company: 'EloGroup',
       logo: elogroupLogo,
       logoBg: '#1a1a1a',
-      description: 'Atuação na construção de soluções digitais para órgãos públicos (como SEMAS-PA no desenvolvimento do SICAR, SIGERH e Portal de Atos Autorizativos). Liderança em desenvolvimento de software, Web Components, integrações geoespaciais e gestão técnica de equipes.',
+      description: 'Desenvolvimento de soluções para órgãos públicos (SICAR, SIGERH, Portal de Atos). Liderança técnica, Web Components geoespaciais e gestão de equipe.',
       details: [
-        'Liderança técnica (equipe de DEV) / desenvolvimento em projetos de alta complexidade governamental.',
-        'Modelagem de processos BPM complexos e desenvolvimento de interfaces dinâmicas em SYDLE e Stencil.js.',
+        'Liderança técnica em projetos governamentais de alta complexidade.',
+        'Modelagem BPM e interfaces dinâmicas com SYDLE e Stencil.js.',
         'Arquitetura de Web Components geoespaciais e integração com GeoServer.',
-        'Integração com modelos de análises espaciais automatizadas para apoiar a validação ambiental e licenciamento eletrônico.',
-        'Desenvolvimento de novos fluxos para cadastro, edição e validação de geometrias (Libs GEO, Turf.js).',
-        'Implementação de cálculos espaciais complexos e validações topológicas OGC usando JSTS e PostGIS.',
-
-
-
+        'Integração com análises espaciais automatizadas para licenciamento ambiental.',
+        'Fluxos de cadastro e validação de geometrias com GEO Libs e Turf.js.',
+        'Cálculos espaciais e validações topológicas OGC com JSTS e PostGIS.',
       ]
     },
     {
@@ -35,11 +32,11 @@ export default function Experience() {
       company: 'IF Baiano',
       logo: ifbaiano,
       logoBg: '#ffffff',
-      description: 'Participação no Programa Institucional de Bolsa de Iniciação à Docência (PIBID). Experiência com práticas educacionais, disseminação de conhecimento e minicursos voltados para programação e tecnologia.',
+      description: 'Bolsista PIBID com foco em práticas educacionais e minicursos de programação e tecnologia.',
       details: [
-        'Elaboração e condução de práticas educacionais voltadas para o ensino de tecnologia.',
-        'Disseminação de conhecimento através de minicursos, como "Introdução a Algoritmo em JavaScript".',
-        'Criação de material didático e apoio pedagógico em ambientes escolares.'
+        'Práticas educacionais para o ensino de tecnologia.',
+        'Minicurso: Introdução a Algoritmos em JavaScript.',
+        'Material didático e apoio pedagógico em escolas.'
       ]
     },
     {
@@ -49,12 +46,12 @@ export default function Experience() {
       company: 'IF Baiano',
       logo: ifbaiano,
       logoBg: '#ffffff',
-      description: 'Formação acadêmica no Instituto Federal Baiano (Campus Senhor do Bonfim). Desenvolvimento de projetos práticos, artigos científicos de segurança da informação e o TCC SaberFlix (plataforma educacional desenvolvida com a stack MERN).',
+      description: 'Bacharelado no IF Baiano — Senhor do Bonfim. TCC: SaberFlix (stack MERN), projetos práticos e artigo científico em segurança da informação.',
       details: [
-        'Desenvolvimento da plataforma SaberFlix (MERN stack) como Trabalho de Conclusão de Curso (TCC).',
-        'Publicação de artigo científico "Segurança da Informação no Contexto Escolar" na Editora Realize.',
-        'Participação ativa em projetos práticos de desenvolvimento de software e GameDev (Unity/C#).',
-        'Formação sólida em algoritmos, estruturas de dados, banco de dados (SQL/NoSQL) e engenharia de software.'
+        'TCC: SaberFlix — plataforma educacional com MERN stack.',
+        'Artigo publicado: Segurança da Informação no Contexto Escolar — Editora Realize.',
+        'Projetos de software e GameDev com Unity/C#.',
+        'Base em algoritmos, estruturas de dados, SQL/NoSQL e engenharia de software.'
       ]
     }
   ];
@@ -63,7 +60,7 @@ export default function Experience() {
     <div className="p-4 sm:p-8 pb-12 sm:pb-8 max-w-3xl mx-auto relative">
       <div className="flex items-center space-x-2 text-vscode-text/50 mb-6 font-mono text-xs sm:text-sm">
         <span>//</span>
-        <span>Minha jornada até aqui</span>
+        <span>Trajetória</span>
       </div>
 
       <h1 className="text-2xl sm:text-3xl font-bold text-white mb-8 sm:mb-12">

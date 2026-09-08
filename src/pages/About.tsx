@@ -31,16 +31,42 @@ export default function About() {
             Software Engineer IV & Tech Lead na Elogroup
           </h2>
 
-          <div className="space-y-4 text-sm sm:text-base text-vscode-text/90 leading-relaxed text-left">
+          <div className="space-y-3 text-sm sm:text-base text-vscode-text/80 leading-relaxed text-left">
             <p>
-              Atuo na construção de soluções digitais para órgãos públicos, com foco na área ambiental, trabalhando na Elogroup..
+              Desenvolvo soluções digitais para órgãos públicos, com foco ambiental, na Elogroup.
             </p>
             <p>
-              Trabalho com arquitetura e desenvolvimento utilizando tecnologias como JavaScript, TypeScript, Node.js, SydleOne, Stencil.js, React.js e bancos de dados relacionais e não relacionais.
+              Stack principal: JavaScript, TypeScript, Node.js, React.js, Stencil.js e SydleOne — com bancos SQL e NoSQL.
             </p>
             <p>
-              Também participo da definição técnica das soluções, condução de code reviews e disseminação de conhecimento por meio de documentação e oficinas técnicas.
+              Defino arquitetura, conduzo code reviews e compartilho conhecimento em oficinas técnicas.
             </p>
+          </div>
+
+          {/* Interesses pessoais */}
+          <div className="mt-6 text-left">
+            <div className="flex items-center space-x-2 text-vscode-text/40 mb-3 font-mono text-xs">
+              <span>//</span>
+              <span>além do código</span>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {[
+                { emoji: '🎮', label: 'Video Games' },
+                { emoji: '🤖', label: 'Cultura Geek' },
+                { emoji: '💻', label: 'Open Source' },
+                { emoji: '🚀', label: 'Tecnologia' },
+                { emoji: '🎬', label: 'Séries & Filmes' },
+                { emoji: '📚', label: 'Aprendizado contínuo' },
+              ].map(({ emoji, label }) => (
+                <span
+                  key={label}
+                  className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-vscode-panel border border-vscode-border text-xs text-vscode-text/70 hover:border-vscode-blue/40 hover:text-vscode-text transition-colors"
+                >
+                  <span>{emoji}</span>
+                  <span>{label}</span>
+                </span>
+              ))}
+            </div>
           </div>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start w-full sm:w-auto">
