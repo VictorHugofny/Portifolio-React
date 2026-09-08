@@ -11,6 +11,7 @@ import {
   Search,
   TerminalSquare,
   User,
+  Briefcase,
   ChevronDown,
   ChevronRight,
   FileCode,
@@ -37,10 +38,10 @@ import { ContactFAB } from './components/ContactFAB';
 
 const files: { name: AppFileType; icon: React.ReactNode; color: string; label: string }[] = [
   { name: 'about.tsx',      icon: <User size={16} />,      color: 'text-vscode-blue',   label: 'Sobre mim' },
+  { name: 'experience.tsx', icon: <Briefcase size={16} />, color: 'text-vscode-purple', label: 'Minha experiência' },
   { name: 'projects.tsx',   icon: <FileType size={16} />,  color: 'text-vscode-blue',   label: 'Meus projetos' },
-  { name: 'articles.md',    icon: <FileType size={16} />,  color: 'text-vscode-green',  label: 'Artigos e conteúdos' },
-  { name: 'experience.tsx', icon: <FileType size={16} />,  color: 'text-vscode-blue',   label: 'Minha experiência' },
   { name: 'stack.ts',       icon: <FileCode size={16} />,  color: 'text-vscode-blue',   label: 'Tecnologias' },
+  { name: 'articles.md',    icon: <FileType size={16} />,  color: 'text-vscode-green',  label: 'Artigos e conteúdos' },
   { name: 'contact.ts',     icon: <FileJson size={16} />,  color: 'text-vscode-yellow', label: 'Contato' },
 ];
 
@@ -357,16 +358,16 @@ function App() {
             <span className="text-[10px] font-medium">Projetos</span>
           </button>
 
-          {/* Stack */}
+          {/* Experiência */}
           <button
-            onClick={() => { openFile('stack.ts'); setMobilePanel(null); }}
+            onClick={() => { openFile('experience.tsx'); setMobilePanel(null); }}
             className={clsx(
               'flex-1 flex flex-col items-center justify-center gap-0.5 transition-colors',
-              activeFile === 'stack.ts' && !mobilePanel ? 'text-vscode-blue' : 'text-vscode-text/50 hover:text-vscode-text'
+              activeFile === 'experience.tsx' && !mobilePanel ? 'text-vscode-blue' : 'text-vscode-text/50 hover:text-vscode-text'
             )}
           >
-            <FileCode size={18} />
-            <span className="text-[10px] font-medium">Stack</span>
+            <Briefcase size={18} />
+            <span className="text-[10px] font-medium">Experiência</span>
           </button>
 
           {/* Terminal */}
