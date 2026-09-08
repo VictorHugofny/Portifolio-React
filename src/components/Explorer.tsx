@@ -4,22 +4,23 @@ import { useAppStore, FileType as AppFileType } from '../store/useAppStore';
 import { clsx } from 'clsx';
 
 const files: { name: AppFileType; icon: React.ReactNode; color: string }[] = [
-  { name: 'about.tsx', icon: <FileType size={16} />, color: 'text-vscode-blue' },
-  { name: 'projects.tsx', icon: <FileType size={16} />, color: 'text-vscode-blue' },
-  { name: 'experience.tsx', icon: <FileType size={16} />, color: 'text-vscode-blue' },
-  { name: 'stack.ts', icon: <FileCode size={16} />, color: 'text-vscode-blue' },
-  { name: 'articles.md', icon: <FileType size={16} />, color: 'text-vscode-blue' }, // Should be markdown icon, but using generic for now
-  { name: 'contact.ts', icon: <FileJson size={16} />, color: 'text-vscode-yellow' },
+  { name: 'about.tsx',      icon: <FileType size={16} />,  color: 'text-vscode-blue' },
+  { name: 'projects.tsx',   icon: <FileType size={16} />,  color: 'text-vscode-blue' },
+  { name: 'experience.tsx', icon: <FileType size={16} />,  color: 'text-vscode-blue' },
+  { name: 'stack.ts',       icon: <FileCode size={16} />,  color: 'text-vscode-blue' },
+  { name: 'articles.md',    icon: <FileType size={16} />,  color: 'text-vscode-blue' },
+  { name: 'contact.ts',     icon: <FileJson size={16} />,  color: 'text-vscode-yellow' },
 ];
 
 export function Explorer() {
   const [isOpen, setIsOpen] = useState(true);
-  const { activeFile, openFile } = useAppStore();
+  const { activeFile, openFile, visitedFiles } = useAppStore();
 
   return (
     <div className="w-60 bg-[#0F1319] border-r border-vscode-border flex flex-col flex-shrink-0">
       <div className="py-2 px-4 text-[11px] text-vscode-text/70 flex items-center justify-between uppercase">
         <span>Explorer</span>
+        <span className="text-vscode-text/30 text-[10px] font-mono">{visitedFiles.length}/{files.length}</span>
       </div>
       
       <div className="flex-1 overflow-y-auto">
@@ -38,22 +39,34 @@ export function Explorer() {
               src
             </div>
             
-            {files.map((file) => (
-              <div
-                key={file.name}
-                onClick={() => openFile(file.name)}
-                className={clsx(
-                  "flex items-center pl-8 pr-4 py-1 text-[13px] cursor-pointer hover:bg-vscode-card",
-                  activeFile === file.name ? "bg-vscode-card text-vscode-blue" : "text-vscode-text/90"
-                )}
-              >
-                <div className={clsx("mr-2", file.color)}>{file.icon}</div>
-                {file.name}
-              </div>
-            ))}
+            {files.map((file) => {
+              const visited = visitedFiles.includes(file.name);
+              return (
+                <div
+                  key={file.name}
+                  onClick={() => openFile(file.name)}
+                  className={clsx(
+                    'flex items-center pl-8 pr-3 py-1 text-[13px] cursor-pointer hover:bg-vscode-card group',
+                    activeFile === file.name ? 'bg-vscode-card text-vscode-blue' : 'text-vscode-text/90'
+                  )}
+                >
+                  <div className={clsx('mr-2', file.color)}>{file.icon}</div>
+                  <span className="flex-1">{file.name}</span>
+                  {/* visited indicator */}
+                  <span
+                    title={visited ? 'Visitado' : 'Não visitado'}
+                    className={clsx(
+                      'w-1.5 h-1.5 rounded-full flex-shrink-0 transition-colors',
+                      visited ? 'bg-vscode-green' : 'bg-vscode-text/20'
+                    )}
+                  />
+                </div>
+              );
+            })}
           </div>
         )}
       </div>
     </div>
   );
 }
+

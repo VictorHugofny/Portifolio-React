@@ -295,6 +295,15 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
 
 export default function Projects() {
   const [selected, setSelected] = useState<Project | null>(null);
+  const [activeFilter, setActiveFilter] = useState<string>('Todos');
+
+  const filterOptions = ['Todos', 'TypeScript', 'React', 'Node.js', 'PostGIS', 'Stencil.js', 'Three.js', 'Unity'];
+
+  const filteredProjects = activeFilter === 'Todos'
+    ? projects
+    : projects.filter((p) =>
+        p.language.some((lang) => lang.toLowerCase().includes(activeFilter.toLowerCase()))
+      );
 
   return (
     <div className="p-4 sm:p-8 pb-12 sm:pb-8 max-w-6xl mx-auto">
@@ -320,12 +329,33 @@ export default function Projects() {
         </a>
       </div>
 
-      <p className="text-vscode-text/80 mb-6 sm:mb-8 max-w-2xl text-xs sm:text-sm leading-relaxed">
+      <p className="text-vscode-text/80 mb-4 max-w-2xl text-xs sm:text-sm leading-relaxed">
         Alguns projetos que desenvolvi para resolver problemas reais e aprimorar minhas habilidades.
       </p>
 
+      {/* Filtro interativo por Tech */}
+      <div className="flex flex-wrap gap-2 mb-6 sm:mb-8 items-center">
+        <span className="text-xs font-mono text-vscode-text/40 mr-1">// filtrar:</span>
+        {filterOptions.map((filter) => {
+          const isActive = activeFilter === filter;
+          return (
+            <button
+              key={filter}
+              onClick={() => setActiveFilter(filter)}
+              className={`px-3 py-1 rounded-md text-xs font-mono transition-all ${
+                isActive
+                  ? 'bg-vscode-blue text-white shadow-sm font-semibold'
+                  : 'bg-vscode-panel border border-vscode-border text-vscode-text/70 hover:text-white hover:border-vscode-blue/40'
+              }`}
+            >
+              {filter}
+            </button>
+          );
+        })}
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-        {projects.map((project, i) => (
+        {filteredProjects.map((project, i) => (
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}

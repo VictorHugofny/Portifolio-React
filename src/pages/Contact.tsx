@@ -65,6 +65,33 @@ export default function Contact() {
 
           <div>{'};'}</div>
         </div>
+
+        {/* Ações rápidas em 1 toque */}
+        <div className="mt-6 flex flex-wrap gap-3 justify-center">
+          <button
+            onClick={() => {
+              navigator.clipboard.writeText('victorhugofny@gmail.com');
+              alert('E-mail copiado com sucesso!');
+            }}
+            className="flex items-center gap-2 px-4 py-2 bg-vscode-panel hover:bg-vscode-border border border-vscode-border rounded-lg text-xs sm:text-sm font-medium text-vscode-text transition-colors"
+          >
+            📋 Copiar E-mail
+          </button>
+          <a
+            href="mailto:victorhugofny@gmail.com"
+            className="flex items-center gap-2 px-4 py-2 bg-vscode-blue/10 hover:bg-vscode-blue/20 text-vscode-blue border border-vscode-blue/30 rounded-lg text-xs sm:text-sm font-medium transition-colors"
+          >
+            ✉️ Enviar Mensagem
+          </a>
+          <a
+            href="https://www.linkedin.com/in/victor-hugo-santana/"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2 px-4 py-2 bg-[#0A66C2]/10 hover:bg-[#0A66C2]/20 text-[#0A66C2] border border-[#0A66C2]/30 rounded-lg text-xs sm:text-sm font-medium transition-colors"
+          >
+            💼 Conectar no LinkedIn
+          </a>
+        </div>
       </motion.div>
     </div>
   );

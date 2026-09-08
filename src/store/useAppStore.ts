@@ -5,11 +5,13 @@ export type FileType = 'about.tsx' | 'projects.tsx' | 'experience.tsx' | 'stack.
 interface AppState {
   activeFile: FileType | null;
   openFiles: FileType[];
+  visitedFiles: FileType[];
   isTerminalOpen: boolean;
   terminalHistory: { command: string; response: string | React.ReactNode }[];
   
   openFile: (file: FileType) => void;
   closeFile: (file: FileType) => void;
+  markVisited: (file: FileType) => void;
   toggleTerminal: () => void;
   setTerminalOpen: (isOpen: boolean) => void;
   addTerminalHistory: (command: string, response: string | React.ReactNode) => void;
@@ -19,6 +21,7 @@ interface AppState {
 export const useAppStore = create<AppState>((set) => ({
   activeFile: 'about.tsx',
   openFiles: ['about.tsx'],
+  visitedFiles: ['about.tsx'],
   isTerminalOpen: true,
   terminalHistory: [
     { command: '', response: 'Welcome to portfolio.dev terminal. Type "help" to see available commands.' }
@@ -26,10 +29,18 @@ export const useAppStore = create<AppState>((set) => ({
   
   openFile: (file) => set((state) => {
     if (!state.openFiles.includes(file)) {
-      return { openFiles: [...state.openFiles, file], activeFile: file };
+      return {
+        openFiles: [...state.openFiles, file],
+        activeFile: file,
+        visitedFiles: state.visitedFiles.includes(file) ? state.visitedFiles : [...state.visitedFiles, file],
+      };
     }
     return { activeFile: file };
   }),
+  
+  markVisited: (file) => set((state) => ({
+    visitedFiles: state.visitedFiles.includes(file) ? state.visitedFiles : [...state.visitedFiles, file],
+  })),
   
   closeFile: (file) => set((state) => {
     const newOpenFiles = state.openFiles.filter((f) => f !== file);
@@ -56,3 +67,4 @@ export const useAppStore = create<AppState>((set) => ({
   
   clearTerminal: () => set({ terminalHistory: [] }),
 }));
+

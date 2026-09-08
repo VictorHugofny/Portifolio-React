@@ -1,8 +1,25 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import profilePhoto from '../assets/cartoon.png';
+import elogroupLogo from '../assets/elogroup.jpg';
+import ifbaianoLogo from '../assets/ifbaiano.png';
 
 export default function About() {
+  const fullText = 'Victor Hugo';
+  const [typedName, setTypedName] = React.useState('');
+
+  React.useEffect(() => {
+    let index = 0;
+    const timer = setInterval(() => {
+      setTypedName(fullText.slice(0, index + 1));
+      index++;
+      if (index >= fullText.length) {
+        clearInterval(timer);
+      }
+    }, 120);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 10 }}
@@ -25,11 +42,38 @@ export default function About() {
 
         <div className="flex-1 w-full">
           <h1 className="text-2xl sm:text-4xl font-bold text-white mb-2 leading-tight">
-            Olá! <span className="text-vscode-blue">{'<'}</span> Sou o <span className="text-vscode-purple">Victor Hugo</span> <span className="text-vscode-blue">{'/>'}</span>
+            Olá! <span className="text-vscode-blue">{'<'}</span> Sou o{' '}
+            <span className="text-vscode-purple inline-block">
+              {typedName}
+              <span className="animate-pulse text-vscode-blue">|</span>
+            </span>{' '}
+            <span className="text-vscode-blue">{'/>'}</span>
           </h1>
-          <h2 className="text-base sm:text-xl text-vscode-blue mb-4 sm:mb-6 font-mono">
+          <h2 className="text-base sm:text-xl text-vscode-blue mb-3 sm:mb-4 font-mono">
             Software Engineer IV & Tech Lead na Elogroup
           </h2>
+
+          {/* Destaques compactos: empresa + formação */}
+          <div className="flex flex-wrap gap-2 mb-4 justify-center md:justify-start">
+            {/* Empresa */}
+            <div className="flex items-center gap-2.5 px-3 py-2 bg-vscode-panel border border-vscode-border rounded-lg">
+              <img src={elogroupLogo} alt="EloGroup" className="w-6 h-6 rounded object-cover flex-shrink-0" />
+              <div className="leading-tight">
+                <div className="text-[10px] text-vscode-text/40 font-mono mb-0.5">Empresa atual</div>
+                <div className="text-xs text-vscode-text/90 font-semibold">EloGroup</div>
+                <div className="text-[10px] text-vscode-blue/80">Software Engineer IV & Tech Lead</div>
+              </div>
+            </div>
+            {/* Formação */}
+            <div className="flex items-center gap-2.5 px-3 py-2 bg-vscode-panel border border-vscode-border rounded-lg">
+              <img src={ifbaianoLogo} alt="IF Baiano" className="w-6 h-6 rounded object-contain bg-white flex-shrink-0" />
+              <div className="leading-tight">
+                <div className="text-[10px] text-vscode-text/40 font-mono mb-0.5">Formação</div>
+                <div className="text-xs text-vscode-text/90 font-semibold">IF Baiano</div>
+                <div className="text-[10px] text-vscode-green/80">Ciências da Computação</div>
+              </div>
+            </div>
+          </div>
 
           <div className="space-y-3 text-sm sm:text-base text-vscode-text/80 leading-relaxed text-left">
             <p>

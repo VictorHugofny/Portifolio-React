@@ -29,6 +29,10 @@ import Stack from './pages/Stack';
 import Articles from './pages/Articles';
 import Contact from './pages/Contact';
 
+// UX Enhancements
+import { OnboardingOverlay } from './components/OnboardingOverlay';
+import { ContactFAB } from './components/ContactFAB';
+
 // ─── Mobile Explorer Drawer ──────────────────────────────────────────────────
 
 const files: { name: AppFileType; icon: React.ReactNode; color: string; label: string }[] = [
@@ -161,7 +165,7 @@ function MobileTabsSheet({ onClose }: { onClose: () => void }) {
 type MobilePanel = 'explorer' | 'tabs' | 'terminal' | null;
 
 function App() {
-  const { activeFile, isTerminalOpen, toggleTerminal, setTerminalOpen } = useAppStore();
+  const { activeFile, openFile, isTerminalOpen, toggleTerminal, setTerminalOpen } = useAppStore();
   const [mobilePanel, setMobilePanel] = useState<MobilePanel>(null);
 
   useEffect(() => {
@@ -329,25 +333,40 @@ function App() {
         {/* ── Bottom Navigation Bar ── */}
         <div className="fixed bottom-0 inset-x-0 h-[60px] bg-[#0F1319] border-t border-vscode-border z-30 flex items-stretch">
 
-          {/* Explorer */}
+          {/* Sobre */}
           <button
-            onClick={() => togglePanel('explorer')}
+            onClick={() => { openFile('about.tsx'); setMobilePanel(null); }}
             className={clsx(
               'flex-1 flex flex-col items-center justify-center gap-0.5 transition-colors',
-              mobilePanel === 'explorer' ? 'text-vscode-blue' : 'text-vscode-text/50 hover:text-vscode-text'
+              activeFile === 'about.tsx' && !mobilePanel ? 'text-vscode-blue' : 'text-vscode-text/50 hover:text-vscode-text'
             )}
           >
-            <FolderOpen size={18} />
-            <span className="text-[10px] font-medium">Explorer</span>
+            <User size={18} />
+            <span className="text-[10px] font-medium">Sobre</span>
           </button>
 
-          {/* Search (opens explorer) */}
+          {/* Projetos */}
           <button
-            onClick={() => togglePanel('explorer')}
-            className="flex-1 flex flex-col items-center justify-center gap-0.5 text-vscode-text/50 hover:text-vscode-text transition-colors"
+            onClick={() => { openFile('projects.tsx'); setMobilePanel(null); }}
+            className={clsx(
+              'flex-1 flex flex-col items-center justify-center gap-0.5 transition-colors',
+              activeFile === 'projects.tsx' && !mobilePanel ? 'text-vscode-blue' : 'text-vscode-text/50 hover:text-vscode-text'
+            )}
           >
-            <Search size={18} />
-            <span className="text-[10px] font-medium">Search</span>
+            <FileType size={18} />
+            <span className="text-[10px] font-medium">Projetos</span>
+          </button>
+
+          {/* Stack */}
+          <button
+            onClick={() => { openFile('stack.ts'); setMobilePanel(null); }}
+            className={clsx(
+              'flex-1 flex flex-col items-center justify-center gap-0.5 transition-colors',
+              activeFile === 'stack.ts' && !mobilePanel ? 'text-vscode-blue' : 'text-vscode-text/50 hover:text-vscode-text'
+            )}
+          >
+            <FileCode size={18} />
+            <span className="text-[10px] font-medium">Stack</span>
           </button>
 
           {/* Terminal */}
@@ -362,20 +381,24 @@ function App() {
             <span className="text-[10px] font-medium">Terminal</span>
           </button>
 
-          {/* Abas */}
+          {/* Mais / Explorer */}
           <button
-            onClick={() => togglePanel('tabs')}
+            onClick={() => togglePanel('explorer')}
             className={clsx(
               'flex-1 flex flex-col items-center justify-center gap-0.5 transition-colors',
-              mobilePanel === 'tabs' ? 'text-vscode-blue' : 'text-vscode-text/50 hover:text-vscode-text'
+              mobilePanel === 'explorer' ? 'text-vscode-blue' : 'text-vscode-text/50 hover:text-vscode-text'
             )}
           >
-            <FileType size={18} />
-            <span className="text-[10px] font-medium">Abas</span>
+            <FolderOpen size={18} />
+            <span className="text-[10px] font-medium">Mais</span>
           </button>
 
         </div>
       </div>
+
+      {/* Onboarding de 1ª visita & Botão flutuante de contato (Mobile) */}
+      <OnboardingOverlay />
+      <ContactFAB />
     </div>
   );
 }
